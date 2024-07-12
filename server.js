@@ -18,7 +18,7 @@ server.use(
 
 server.use(app);
 
-const mongoUri = `mongodb+srv://mikkyboy:mikkyboy@tutorial.sbvct.mongodb.net/straca?retryWrites=true&w=majority`;
+const mongoUri = process.env.DB_URL;
 
 mongoose.set("strictQuery", false);
 mongoose
