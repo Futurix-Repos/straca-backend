@@ -2,6 +2,22 @@ const jwt = require("jsonwebtoken");
 const User = require("../models/userModel");
 const bcrypt = require("bcrypt");
 const { validPermissionNames } = require("./constants");
+
+module.exports.authorizePublic = (tokenToVerify) => {
+  return async (req, res, next) => {
+
+    const authToken = req.headers.authorization;
+    const [bearer, token] = authToken?.split(" ") ?? [null, null];
+
+    if (bearer === "Bearer" && token) {
+
+      if (token === tokenToVerify)  next();
+      else  res.status(401).json({ message: "Unauthorized-Invalid Token" });
+
+    } else res.status(401).json({ message: "Invalid authorization header" });
+
+  };
+};
 module.exports.authorizeJwt = (req, res, next) => {
   const authToken = req.headers.authorization;
   const [bearer, token] = authToken?.split(" ") ?? [null, null];
