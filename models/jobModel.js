@@ -1,7 +1,5 @@
 const mongoose = require("mongoose");
 
-const validContractTypes = ["fulltime", "parttime"];
-
 const jobSchema = new mongoose.Schema(
   {
     post: {
@@ -14,12 +12,12 @@ const jobSchema = new mongoose.Schema(
     },
     proximity: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'Proximity',
-      required: true
+      ref: "Proximity",
+      required: true,
     },
     contractType: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'ContractType',
+      ref: "ContractType",
       required: true,
     },
     dateOfCreation: {
@@ -33,7 +31,7 @@ const jobSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
-  }
+  },
 );
 
 const Job = mongoose.model("Job", jobSchema);

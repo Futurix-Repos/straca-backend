@@ -11,7 +11,92 @@ require("dotenv").config();
 const User = require("../models/userModel");
 const Client = require("../models/clientModel");
 const Employee = require("../models/employeeModel");
+const { authorizePublic } = require("../helpers/verifyAccount");
 
+router.post(
+  "/public/register",
+  authorizePublic(process.env.PUBLIC_TOKEN),
+  async (req, res) => {
+    let hashedPassword;
+
+    try {
+      const data = { ...req.body, confirmed: false };
+
+      let hashedPassword = await bcrypt.hash(req.body.password, 10);
+
+      const user = new User({
+        _id: new mongoose.Types.ObjectId(),
+        phone: req.body.phone,
+        type: "client",
+        email: req.body.email,
+        lastName: req.body.lastName,
+        firstName: req.body.firstName,
+        password: hashedPassword,
+      });
+
+      await user.save();
+
+      // Remove password from user object
+      const { password: _, ...userWithoutPassword } = user.toObject();
+      res.status(201).json({ client: userWithoutPassword });
+    } catch (error) {
+      console.log(error.message);
+      res.status(500).json({ message: error.message });
+    }
+  },
+);
+
+router.post(
+  "/public/login",
+  authorizePublic(process.env.PUBLIC_TOKEN),
+  async (req, res) => {
+    let hashedPassword;
+
+    try {
+      const data = { ...req.body, confirmed: false };
+
+      const user = await User.findOne({ email: req.body.email });
+
+      if (!user)
+        return res.status(400).json({ message: "Utilisateur non trouvé" });
+
+      const isValid = await bcrypt.compare(req.body.password, user.password);
+
+      if (!isValid)
+        return res.status(400).json({ message: "Utilisateur non trouvé" });
+
+      if (!user.confirmed)
+        return res.status(400).json({ message: "Utilisateur non confirmé" });
+
+      const token = jwt.sign(
+        {
+          email: user.email,
+          userId: user._id,
+          type: user.type,
+        },
+        process.env.JWT_KEY, // Use environment variable for the secret key
+        {
+          expiresIn: "5h", // Token expiration time
+        },
+      );
+
+      res.status(200).json({
+        user: {
+          id: user._id,
+          firstName: user.firstName,
+          lastName: user.lastName,
+          email: user.email,
+          phone: user.phone,
+        },
+        token,
+        expiresIn: "5h",
+      });
+    } catch (error) {
+      console.log(error.message);
+      res.status(500).json({ message: error.message });
+    }
+  },
+);
 router.post("/signup", async (req, res) => {
   // Check if the email already exists in the database
   User.find({ email: req.body.email })
@@ -41,6 +126,7 @@ router.post("/signup", async (req, res) => {
               firstName: req.body.firstName,
               address: req.body.address,
               password: hash,
+              confirmed: true,
             });
             // Save the new user in the database
             user
@@ -55,7 +141,7 @@ router.post("/signup", async (req, res) => {
                   process.env.JWT_KEY, // Use environment variable for the secret key
                   {
                     expiresIn: "5h", // Token expiration time
-                  }
+                  },
                 );
 
                 // If the user is successfully created, return a 201 Created status code
@@ -141,7 +227,7 @@ router.post("/login", async (req, res) => {
             process.env.JWT_KEY, // Use environment variable for the secret key
             {
               expiresIn: "5h", // Token expiration time
-            }
+            },
           );
           // Return a 200 OK status code with the token for successful authentication
           delete user[0].password;
