@@ -12,7 +12,11 @@ server.use(express.json({ limit: "10mb" }));
 // Allow requests from http://localhost:3001 (your frontend origin)
 server.use(
   cors({
-    origin: ["http://localhost:3001", "https://straca-sa.com"],
+    origin: [
+      "http://localhost:3001",
+      "https://dashboard.straca-sa.com",
+      "https://straca-sa.com",
+    ],
   }),
 );
 
