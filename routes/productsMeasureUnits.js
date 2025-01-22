@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Product = require("../models/productModel");
+
 const ProductMeasureUnit = require("../models/productMeasureUnitModel");
 const Transaction = require("../models/transactionModel");
 const mongoose = require("mongoose");
@@ -13,32 +13,41 @@ const cron = require("node-cron");
 router.get(
   "/",
   authorizeJwt,
-  verifyAccount([{ name: "product", action: "read" }]),
+  verifyAccount([{ name: "productMeasureUnit", action: "read" }]),
   async (req, res) => {
     const filter = {};
     const search = req.query.search;
 
     if (search) {
       filter.$or = [
-        { description: { $regex: search, $options: "i" } },
-        { name: { $regex: search, $options: "i" } },
+        {
+          $or: [
+            { "product.name": { $regex: search, $options: "i" } },
+            { "product.description": { $regex: search, $options: "i" } },
+          ],
+        },
+
+        // Search in MeasureUnit fields
+        {
+          $or: [
+            { "measureUnit.label": { $regex: search, $options: "i" } },
+            { "measureUnit.description": { $regex: search, $options: "i" } },
+          ],
+        },
       ];
 
       if (!isNaN(Number(search))) {
-        filter["$or"].push({ price: { $eq: Number(search) } });
+        filter["$or"].push({ amount: { $eq: Number(search) } });
       }
     }
 
     try {
-      const products = await Product.find(filter).populate([
+      const products = await ProductMeasureUnit.find(filter).populate([
         {
-          path: "measureUnits",
-          populate: {
-            path: "measureUnit",
-          },
+          path: "measureUnit",
         },
         {
-          path: "productType",
+          path: "product",
         },
       ]);
       res.status(200).json(products);
@@ -53,19 +62,23 @@ router.get(
 router.get(
   "/:id",
   authorizeJwt,
-  verifyAccount([{ name: "product", action: "read" }]),
+  verifyAccount([{ name: "productMeasureUnit", action: "read" }]),
   async (req, res) => {
     try {
       const { id } = req.params;
-      const product = await Product.findById(id).populate([
+      const product = await ProductMeasureUnit.findById(id).populate([
         {
-          path: "measureUnits",
-          populate: {
-            path: "measureUnit",
-          },
+          path: "measureUnit",
         },
         {
-          path: "productType",
+          path: "product",
+          populate: {
+            path: "measureUnits",
+            select: ["measureUnit"],
+            populate: {
+              path: "measureUnit",
+            },
+          },
         },
       ]);
       if (!product) {
@@ -85,12 +98,12 @@ router.get(
 router.post(
   "/",
   authorizeJwt,
-  verifyAccount([{ name: "product", action: "create" }]),
+  verifyAccount([{ name: "productMeasureUnit", action: "create" }]),
   async (req, res) => {
     req.body._id = new mongoose.Types.ObjectId();
 
     try {
-      const newProduct = await Product.create(req.body);
+      const newProduct = await ProductMeasureUnit.create(req.body);
 
       res.status(201).json(newProduct);
     } catch (error) {
@@ -104,17 +117,17 @@ router.post(
 router.put(
   "/:id",
   authorizeJwt,
-  verifyAccount([{ name: "product", action: "update" }]),
+  verifyAccount([{ name: "productMeasureUnit", action: "update" }]),
   async (req, res) => {
     try {
       const { id } = req.params;
-      const product = await Product.findByIdAndUpdate(id, req.body, {
+      const product = await ProductMeasureUnit.findByIdAndUpdate(id, req.body, {
         new: true,
       });
       if (!product) {
         return res
           .status(404)
-          .json({ message: `Cannot find any Product with ID ${id}` });
+          .json({ message: `Cannot find any Product Measure with ID ${id}` });
       }
 
       res.status(200).json(product);
@@ -129,7 +142,7 @@ router.put(
 router.delete(
   "/:id",
   authorizeJwt,
-  verifyAccount([{ name: "product", action: "delete" }]),
+  verifyAccount([{ name: "productMeasureUnit", action: "delete" }]),
   async (req, res) => {
     const session = await mongoose.startSession();
     session.startTransaction();
@@ -137,26 +150,13 @@ router.delete(
     try {
       const { id } = req.params;
 
-      // Check if product exists
-      const product = await Product.findById(id);
-      if (!product) {
-        await session.abortTransaction();
-        session.endSession();
-        return res
-          .status(404)
-          .json({ message: `Cannot find any Product with ID ${id}` });
-      }
-
-      // Delete all associated measure unit relationships
-      await ProductMeasureUnit.deleteMany({ product: id }, { session });
-
-      // Delete the product
-      await Product.findByIdAndDelete(id, { session });
+      // Delete the product measure
+      await ProductMeasureUnit.findByIdAndDelete(id, { session });
 
       await session.commitTransaction();
       session.endSession();
 
-      res.status(200).json({ message: "Product deleted successfully" });
+      res.status(200).json({ message: "Product Measure deleted successfully" });
     } catch (error) {
       await session.abortTransaction();
       session.endSession();

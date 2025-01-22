@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const measureUnitSchema = mongoose.Schema(
+const productTypeSchema = mongoose.Schema(
   {
     _id: mongoose.Schema.Types.ObjectId,
     label: { type: String, required: true },
@@ -8,15 +8,16 @@ const measureUnitSchema = mongoose.Schema(
   },
   {
     timestamps: true,
-    toJSON: { virtuals: true },
+    toJSON: { virtuals: true }, // Enable virtuals
     toObject: { virtuals: true },
   },
 );
 
-measureUnitSchema.virtual("products", {
-  ref: "ProductMeasureUnit",
+// Virtual populate
+productTypeSchema.virtual("products", {
+  ref: "Product",
   localField: "_id",
-  foreignField: "measureUnit",
+  foreignField: "productType",
 });
 
-module.exports = mongoose.model("MeasureUnit", measureUnitSchema);
+module.exports = mongoose.model("ProductType", productTypeSchema);

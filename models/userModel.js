@@ -26,6 +26,15 @@ const userSchema = mongoose.Schema(
     address: {
       type: String,
     },
+    title: {
+      type: String,
+      required: function () {
+        return this.type !== "admin" && this.type !== "client";
+      },
+    },
+    company: {
+      type: String,
+    },
     type: {
       type: String,
       required: true,
@@ -56,5 +65,23 @@ const userSchema = mongoose.Schema(
     timestamps: true,
   },
 );
+
+userSchema.virtual("createdBlogs", {
+  ref: "Blog",
+  localField: "_id",
+  foreignField: "createdBy",
+});
+
+userSchema.virtual("vehicles", {
+  ref: "Vehicle",
+  localField: "_id",
+  foreignField: "driver",
+});
+
+userSchema.virtual("createdVehicles", {
+  ref: "Vehicle",
+  localField: "_id",
+  foreignField: "createdBy",
+});
 
 module.exports = mongoose.model("User", userSchema);

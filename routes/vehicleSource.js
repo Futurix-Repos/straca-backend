@@ -1,29 +1,29 @@
 const express = require("express");
 const router = express.Router();
-const ProductType = require("../models/productTypeModel");
+const VehicleSource = require("../models/vehicleSourceModel");
 
 const mongoose = require("mongoose");
 const { authorizeJwt, verifyAccount } = require("../helpers/verifyAccount");
 
-// GET /productType - Get all package types
+// GET /vehicleSource - Get all vehicleSources
 router.get(
   "/",
   authorizeJwt,
-  verifyAccount([{ name: "productType", action: "read" }]),
+  verifyAccount([{ name: "vehicleSource", action: "read" }]),
   async (req, res) => {
     const filter = {};
     const search = req.query.search;
 
     if (search) {
       filter.$or = [
-        { description: { $regex: search, $options: "i" } },
         { label: { $regex: search, $options: "i" } },
+        { description: { $regex: search, $options: "i" } },
       ];
     }
 
     try {
-      const productType = await ProductType.find(filter);
-      res.status(200).json(productType);
+      const vehicleSources = await VehicleSource.find(filter);
+      res.status(200).json(vehicleSources);
     } catch (error) {
       console.error(error.message);
       res.status(500).json({ message: error.message });
@@ -31,23 +31,23 @@ router.get(
   },
 );
 
-// GET /productTypes/:id - Get a specific package type by ID
+// GET /vehicleSource/:id - Get a specific vehicleSource by ID
 router.get(
   "/:id",
   authorizeJwt,
-  verifyAccount([{ name: "productType", action: "read" }]),
+  verifyAccount([{ name: "vehicleSource", action: "read" }]),
   async (req, res) => {
     try {
       const { id } = req.params;
-      const productType = await ProductType.findById(id);
+      const vehicleSource = await VehicleSource.findById(id);
 
-      if (!productType) {
+      if (!vehicleSource) {
         return res
           .status(404)
-          .json({ message: `Product type with ID ${id} not found` });
+          .json({ message: `vehicleSource with ID ${id} not found` });
       }
 
-      res.status(200).json(productType);
+      res.status(200).json(vehicleSource);
     } catch (error) {
       console.error(error.message);
       res.status(500).json({ message: error.message });
@@ -55,11 +55,11 @@ router.get(
   },
 );
 
-// POST /productTypes - Create a new package type
+// POST /vehicleSource - Create a new vehicleSource
 router.post(
   "/",
   authorizeJwt,
-  verifyAccount([{ name: "productType", action: "create" }]),
+  verifyAccount([{ name: "vehicleSource", action: "create" }]),
   async (req, res) => {
     try {
       // Generate a new ObjectId for the _id field
@@ -68,8 +68,8 @@ router.post(
       // Assign the generated _id to req.body
       req.body._id = newId;
 
-      const productType = await ProductType.create(req.body);
-      res.status(201).json(productType);
+      const vehicleSource = await VehicleSource.create(req.body);
+      res.status(201).json(vehicleSource);
     } catch (error) {
       console.error(error.message);
       res.status(500).json({ message: error.message });
@@ -77,25 +77,29 @@ router.post(
   },
 );
 
-// PUT /productTypes/:id - Update a package type by ID
+// PUT /vehicleSource/:id - Update a vehicleSource by ID
 router.put(
   "/:id",
   authorizeJwt,
-  verifyAccount([{ name: "productType", action: "update" }]),
+  verifyAccount([{ name: "vehicleSource", action: "update" }]),
   async (req, res) => {
     try {
       const { id } = req.params;
-      const productType = await ProductType.findByIdAndUpdate(id, req.body, {
-        new: true,
-      });
+      const vehicleSource = await VehicleSource.findByIdAndUpdate(
+        id,
+        req.body,
+        {
+          new: true,
+        },
+      );
 
-      if (!productType) {
+      if (!vehicleSource) {
         return res
           .status(404)
-          .json({ message: `Cannot find any product type with ID ${id}` });
+          .json({ message: `Cannot find any vehicleSource with ID ${id}` });
       }
 
-      res.status(200).json(productType);
+      res.status(200).json(vehicleSource);
     } catch (error) {
       console.error(error.message);
       res.status(500).json({ message: error.message });
@@ -103,23 +107,23 @@ router.put(
   },
 );
 
-// DELETE /productTypes/:id - Delete a package type by ID
+// DELETE /vehicleSource/:id - Delete a vehicleSource by ID
 router.delete(
   "/:id",
   authorizeJwt,
-  verifyAccount([{ name: "productType", action: "delete" }]),
+  verifyAccount([{ name: "vehicleSource", action: "delete" }]),
   async (req, res) => {
     try {
       const { id } = req.params;
-      const productType = await ProductType.findByIdAndDelete(id);
+      const vehicleSource = await VehicleSource.findByIdAndDelete(id);
 
-      if (!productType) {
+      if (!vehicleSource) {
         return res
           .status(404)
-          .json({ message: `Cannot find any product type with ID ${id}` });
+          .json({ message: `Cannot find any vehicleSource with ID ${id}` });
       }
 
-      res.status(200).json(productType);
+      res.status(200).json(vehicleSource);
     } catch (error) {
       console.error(error.message);
       res.status(500).json({ message: error.message });

@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const vehicleTypeSchema = mongoose.Schema(
+const vehicleSourceSchema = mongoose.Schema(
   {
     label: {
       type: String,
@@ -17,11 +17,11 @@ const vehicleTypeSchema = mongoose.Schema(
   },
 );
 
-vehicleTypeSchema.virtual("vehicles", {
+vehicleSourceSchema.virtual("vehicles", {
   ref: "Vehicle",
   localField: "_id",
-  foreignField: "type",
+  foreignField: "source",
 });
 
-const VehicleType = mongoose.model("VehicleType", vehicleTypeSchema);
-module.exports = VehicleType;
+const VehicleSource = mongoose.model("VehicleSource", vehicleSourceSchema);
+module.exports = VehicleSource;

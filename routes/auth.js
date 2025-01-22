@@ -9,8 +9,6 @@ const jwt = require("jsonwebtoken");
 require("dotenv").config();
 
 const User = require("../models/userModel");
-const Client = require("../models/clientModel");
-const Employee = require("../models/employeeModel");
 const { authorizePublic } = require("../helpers/verifyAccount");
 
 router.post(
@@ -147,33 +145,6 @@ router.post("/signup", async (req, res) => {
                 // If the user is successfully created, return a 201 Created status code
                 console.log(result);
 
-                // Check the user type and create a Client or Employee accordingly
-                if (req.body.type === "client") {
-                  const newClient = new Client({
-                    _id: user._id,
-                    email: user.email,
-                    phone: user.phone,
-                    lastName: req.body.lastName,
-                    firstName: req.body.firstName,
-                    address: req.body.address,
-                    password: hash,
-                  });
-
-                  await newClient.save();
-                } else if (req.body.type === "employee") {
-                  const newEmployee = new Employee({
-                    _id: user._id,
-                    email: user.email,
-                    phone: user.phone,
-                    lastName: req.body.lastName,
-                    firstName: req.body.firstName,
-                    password: hash,
-                    title: req.body.title,
-                  });
-
-                  await newEmployee.save();
-                }
-
                 delete result.password;
 
                 res.status(201).json({
@@ -226,7 +197,7 @@ router.post("/login", async (req, res) => {
             },
             process.env.JWT_KEY, // Use environment variable for the secret key
             {
-              expiresIn: "5h", // Token expiration time
+              expiresIn: "24h", // Token expiration time
             },
           );
           // Return a 200 OK status code with the token for successful authentication

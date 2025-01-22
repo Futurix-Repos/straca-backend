@@ -7,13 +7,13 @@ const app = require("./app");
 const server = express();
 
 server.use(express.urlencoded({ limit: "10mb", extended: true }));
-server.use(express.json({ limit: "10mb" })); 
+server.use(express.json({ limit: "10mb" }));
 
 // Allow requests from http://localhost:3001 (your frontend origin)
 server.use(
   cors({
-    origin: "*",
-  })
+    origin: ["http://localhost:3001"],
+  }),
 );
 
 server.use(app);
@@ -34,10 +34,8 @@ mongoose
     console.log(error);
   });
 
-  // initialize Firebase
+// initialize Firebase
 //   initFirebase();
-
-
 
 // // Initialize Firebase Admin SDK
 // admin.initializeApp({

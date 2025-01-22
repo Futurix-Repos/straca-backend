@@ -1,21 +1,21 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
 const mongoose = require("mongoose");
-const Commande = require('../models/commandeModel');
-const Client = require('../models/clientModel');
+const Order = require("../models/orderModel");
+const User = require("../models/userModel");
 
-router.get('/', async (req, res) => {
-    const commandes = await Commande.find();
-    const clients = await Client.find();
-    const deliveredCommandes = await Commande.find({ status: 'Commande Arrivée' });
+router.get("/", async (req, res) => {
+  const orders = await Order.find();
+  const clients = await User.find({ type: "client" });
+  const deliveredOrders = await Order.find({ status: "Commande Arrivée" });
 
-    const myData = {
-        totalColis: commandes.length,
-        totalClients: clients.length,
-        totalColisDelivered: deliveredCommandes.length,
-    }
-    res.status(200).json(myData);
+  const myData = {
+    totalColis: orders.length,
+    totalClients: clients.length,
+    totalColisDelivered: deliveredOrders.length,
+  };
+  res.status(200).json(myData);
 });
 
 module.exports = router;

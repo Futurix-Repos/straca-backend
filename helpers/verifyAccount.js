@@ -5,17 +5,13 @@ const { validPermissionNames } = require("./constants");
 
 module.exports.authorizePublic = (tokenToVerify) => {
   return async (req, res, next) => {
-
     const authToken = req.headers.authorization;
     const [bearer, token] = authToken?.split(" ") ?? [null, null];
 
     if (bearer === "Bearer" && token) {
-
-      if (token === tokenToVerify)  next();
-      else  res.status(401).json({ message: "Unauthorized-Invalid Token" });
-
+      if (token === tokenToVerify) next();
+      else res.status(401).json({ message: "Unauthorized-Invalid Token" });
     } else res.status(401).json({ message: "Invalid authorization header" });
-
   };
 };
 module.exports.authorizeJwt = (req, res, next) => {
@@ -37,6 +33,12 @@ module.exports.authorizeJwt = (req, res, next) => {
                 message: `User with email ${decoded.email} not found`,
               });
             else {
+              if (user.confirmed !== true) {
+                return res.status(401).json({
+                  message: `Cet utilisateur ${decoded.email} n'est pas confirmé`,
+                });
+              }
+
               req.user = user;
               next();
             }
@@ -56,7 +58,9 @@ module.exports.verifyAccount = (permissionsToVerify) => {
   return async (req, res, next) => {
     const user = req.user;
 
-    if (user) {
+    next();
+
+    /*if (user) {
       if (user.type === "employee") {
         if (user.permissions.length === 0)
           res.status(403).json({ message: "The user doesn't have permission" });
@@ -86,6 +90,6 @@ module.exports.verifyAccount = (permissionsToVerify) => {
         else
           res.status(403).json({ message: "The user doesnt have permissions" });
       } else next();
-    } else res.status(403).json({ message: "The user is not connected" });
+    } else res.status(403).json({ message: "The user is not connected" });*/
   };
 };
