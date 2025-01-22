@@ -334,7 +334,7 @@ router.put(
       }
 
       // Check if both sender and receiver have validated
-      if (delivery.sender.validate && delivery.receiver.validate) {
+      if (delivery.sender.validate || delivery.receiver.validate) {
         delivery.status = "DELIVERED";
       }
 
