@@ -8,6 +8,9 @@ const {
 } = require("../helpers/verifyAccount");
 const bcrypt = require("bcrypt");
 const mongoose = require("mongoose");
+const jwt = require("jsonwebtoken");
+const Delivery = require("../models/deliveryModel");
+const Order = require("../models/orderModel");
 
 router.get(
   "/",
@@ -38,6 +41,45 @@ router.get(
 );
 
 router.get(
+  "/stats",
+  authorizeJwt,
+  verifyAccount([{ name: "client", action: "read" }]),
+  async (req, res) => {
+    try {
+      const allStatuses = ["INITIATED", "IN_PROGRESS", "COMPLETED", "CANCELED"]; // Add all possible statuses
+
+      const stats = await Order.aggregate([
+        { $match: { client: req.user._id } },
+        {
+          $group: {
+            _id: "$status",
+            count: { $sum: 1 },
+            totalAmount: { $sum: "$totalAmount" },
+          },
+        },
+        {
+          $project: {
+            status: "$_id",
+            count: 1,
+            totalAmount: 1,
+            _id: 0,
+          },
+        },
+      ]);
+
+      const completeStats = allStatuses.map((status) => {
+        const found = stats.find((s) => s.status === status);
+        return found || { status, count: 0, totalAmount: 0 };
+      });
+
+      res.json(completeStats);
+    } catch (error) {
+      return res.status(500).json({ message: error.message });
+    }
+  },
+);
+
+router.get(
   "/:id",
   authorizeJwt,
   verifyAccount([{ name: "client", action: "read" }]),
@@ -59,6 +101,97 @@ router.get(
     }
   },
 );
+
+router.post("/login", async (req, res) => {
+  try {
+    const user = await User.findOne({ email: req.body.email }).populate(
+      "permissions",
+    );
+
+    if (!user) {
+      return res.status(400).json({
+        message: `User with email ${req.body.email} not found`,
+      });
+    }
+
+    const isValid = await bcrypt.compare(req.body.password, user.password);
+
+    if (!isValid)
+      return res.status(400).json({ message: "Mot de passe incorrect" });
+
+    if (!user.confirmed)
+      return res.status(400).json({ message: "Utilisateur non confirmé" });
+
+    if (user.type !== "client")
+      return res
+        .status(400)
+        .json({ message: "Vous ne pouvez pas accéder a cette page" });
+
+    const token = jwt.sign(
+      {
+        email: user.email,
+        userId: user._id,
+        type: user.type,
+      },
+      process.env.JWT_KEY, // Use environment variable for the secret key
+      {
+        expiresIn: "24h", // Token expiration time
+      },
+    );
+
+    delete user.password;
+    delete user.permissions;
+
+    return res.status(200).json({
+      message: "Auth successful",
+      token: token,
+      user: user,
+    });
+  } catch (e) {
+    console.log(e);
+    return res.status(500).json({ message: "Erreur de serveur" });
+  }
+});
+
+router.post("/register", async (req, res) => {
+  // Check if the email already exists in the database
+
+  try {
+    const user = await User.findOne({ email: req.body.email });
+
+    if (user) {
+      return res.status(400).json({
+        message: `Un utilisateur avec cet email existe déja`,
+      });
+    }
+
+    let hashedPassword = await bcrypt.hash(req.body.password, 10);
+
+    const newUserId = new mongoose.Types.ObjectId();
+    const newUser = new User({
+      _id: newUserId,
+      phone: req.body.phone,
+      type: "client",
+      email: req.body.email,
+      lastName: req.body.lastName,
+      firstName: req.body.firstName,
+      ...(req.body.address && {
+        address: req.body.address,
+      }),
+      password: hashedPassword,
+    });
+
+    newUser.save();
+
+    delete newUser.password;
+    delete newUser.permissions;
+
+    return res.status(201).json({
+      message: `User created`,
+      user: newUser,
+    });
+  } catch (e) {}
+});
 
 router.post(
   "/",

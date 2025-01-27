@@ -92,6 +92,8 @@ router.get(
     const search = req.query.search;
     const status = req.query.status;
 
+    if (req.user.type === "client") filter.client = req.user._id;
+
     if (status) {
       filter.status = status.toUpperCase();
     }

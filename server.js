@@ -15,6 +15,7 @@ server.use(
     origin: [
       "http://localhost:3001",
       "https://dashboard.straca-sa.com",
+      "https://dashboard.client.straca-sa.com",
       "https://straca-sa.com",
     ],
   }),
