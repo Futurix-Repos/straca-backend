@@ -104,9 +104,9 @@ router.post("/login", async (req, res) => {
 
     const token = jwt.sign(
       {
-        email: user[0].email,
-        userId: user[0]._id,
-        type: user[0].type,
+        email: user.email,
+        userId: user._id,
+        type: user.type,
       },
       process.env.JWT_KEY, // Use environment variable for the secret key
       {
@@ -114,12 +114,12 @@ router.post("/login", async (req, res) => {
       },
     );
 
-    delete user[0].password;
+    delete user.password;
 
     return res.status(200).json({
       message: "Auth successful",
       token: token,
-      user: user[0],
+      user: user,
     });
   } catch (e) {
     console.log(e);
