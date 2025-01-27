@@ -19,11 +19,6 @@ const vehicleSchema = new mongoose.Schema(
       unique: true,
       trim: true,
     },
-    brand: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "VehicleBrand",
-      required: true,
-    },
     model: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "VehicleModel",

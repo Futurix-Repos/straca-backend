@@ -14,6 +14,7 @@ server.use(
   cors({
     origin: [
       "http://localhost:3001",
+      "http://localhost:3003",
       "https://dashboard.straca-sa.com",
       "https://dashboard.client.straca-sa.com",
       "https://straca-sa.com",
