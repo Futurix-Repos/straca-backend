@@ -47,6 +47,20 @@ const populateArray = [
   {
     path: "vehicle",
     select: "name registrationNumber",
+    populate: [
+      {
+        path: "driver",
+        select: "firstName lastName phone",
+      },
+      {
+        path: "model",
+        select: "label",
+        populate: {
+          path: "brand",
+          select: "label",
+        },
+      },
+    ],
   },
   {
     path: "departureAddress",
@@ -102,13 +116,29 @@ router.get(
   async (req, res) => {
     try {
       const { id } = req.params;
-      const delivery = await Delivery.findById(id).populate(populateArray);
+      let filter = { _id: id };
 
-      if (!delivery) {
-        return res
-          .status(404)
-          .json({ message: `Cannot find any Delivery with ID ${id}` });
+      // For clients, use populate with match to only include orders they own
+      const populateOptions =
+        req.user.type === "client"
+          ? [
+              {
+                path: "order",
+                match: { client: req.user._id }, // This will return null if order doesn't belong to client
+              },
+              ...populateArray.filter((p) => p.path !== "order"),
+            ] // Include other standard populates
+          : populateArray; // For admin/employee, use standard populates
+
+      const delivery = await Delivery.findOne(filter).populate(populateOptions);
+
+      // For clients, if no matching order was found (populated as null), return 404
+      if (!delivery || (req.user.type === "client" && !delivery.order)) {
+        return res.status(404).json({
+          message: `Cannot find any Delivery with ID ${id}`,
+        });
       }
+
       res.status(200).json(delivery);
     } catch (error) {
       console.log(error.message);

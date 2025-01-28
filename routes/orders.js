@@ -124,7 +124,11 @@ router.get(
   async (req, res) => {
     try {
       const { id } = req.params;
-      const order = await Order.findById(id).populate(populateArray);
+      let filter = { _id: id };
+
+      if (req.user.type === "client") filter.client = req.user._id;
+
+      const order = await Order.findOne(filter).populate(populateArray);
 
       if (!order) {
         return res
