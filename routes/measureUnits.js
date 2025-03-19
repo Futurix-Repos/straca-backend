@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const MeasureUnit = require("../models/measureUnitModel");
+const ProductMeasureUnit = require("../models/productMeasureUnitModel");
 
 const mongoose = require("mongoose");
 const { authorizeJwt, verifyAccount } = require("../helpers/verifyAccount");
