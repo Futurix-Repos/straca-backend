@@ -55,8 +55,16 @@ const vehicleSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true },
   },
 );
+
+vehicleSchema.virtual("deliveries", {
+  ref: "Delivery",
+  localField: "_id",
+  foreignField: "vehicle",
+});
 
 const VehicleSchema = mongoose.model("Vehicle", vehicleSchema);
 

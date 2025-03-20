@@ -96,7 +96,7 @@ const deliverySchema = new Schema(
     },
   },
   {
-    timestamps: true, // This automatically handles createdAt and updatedAt
+    timestamps: true,
   },
 );
 

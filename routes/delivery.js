@@ -80,10 +80,15 @@ router.get(
     const filter = {};
     const search = req.query.search;
     const status = req.query.status;
+    const vehicleId = req.query.vehicleId;
 
     // Add status filter if provided
     if (status) {
       filter.status = status;
+    }
+
+    if (vehicleId) {
+      filter.vehicle = vehicleId;
     }
 
     // Add search filter if provided
