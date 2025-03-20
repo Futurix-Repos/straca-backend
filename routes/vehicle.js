@@ -136,6 +136,16 @@ router.get(
         ...populateArray,
         {
           path: "deliveries",
+          populate: [
+            {
+              path: "sender.user",
+              select: "firstName lastName email telephone",
+            },
+            {
+              path: "receiver.user",
+              select: "firstName lastName email telephone",
+            },
+          ],
         },
       ]);
 
