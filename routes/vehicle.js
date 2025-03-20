@@ -132,7 +132,12 @@ router.get(
   async (req, res) => {
     try {
       const { id } = req.params;
-      const vehicle = await Vehicle.findById(id).populate(populateArray);
+      const vehicle = await Vehicle.findById(id).populate([
+        ...populateArray,
+        {
+          path: "deliveries",
+        },
+      ]);
 
       if (!vehicle) {
         return res
