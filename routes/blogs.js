@@ -234,7 +234,16 @@ router.get(
   async (req, res) => {
     try {
       const { id } = req.params;
-      const blog = await Blog.findById(id);
+      const blog = await Blog.findById(id).populate([
+        {
+          path: "createdBy",
+          select: "firstName lastName",
+        },
+        {
+          path: "category",
+          select: "label slug",
+        },
+      ]);
 
       if (!blog) {
         return res
