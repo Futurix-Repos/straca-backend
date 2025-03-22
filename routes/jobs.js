@@ -263,7 +263,7 @@ router.get(
   async (req, res) => {
     try {
       const { id } = req.params;
-      const job = await job.findById(id).populate("proximity contractType");
+      const job = await Job.findById(id).populate("proximity contractType");
 
       if (!job) {
         return res.status(404).json({ message: `Job with ID ${id} not found` });
