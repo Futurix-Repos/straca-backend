@@ -12,6 +12,13 @@ const qosService = require("../helpers/qosHelper");
 const cron = require("node-cron");
 const { generateReference, ORDER_STATUS } = require("../helpers/constants");
 const uuid = require("uuid");
+const {
+  spaceImageDeleteHelper,
+  spaceImageUploadHelper,
+} = require("../helpers/spaceImageUploadHelper");
+const multer = require("multer");
+const { exportDeliveryToPdf } = require("../services/delivery");
+const upload = multer({ storage: multer.memoryStorage() });
 
 const populateArray = [
   {
@@ -60,6 +67,10 @@ const populateArray = [
           select: "label",
         },
       },
+      {
+        path: "source",
+        select: "label isExternal",
+      },
     ],
   },
   {
@@ -69,6 +80,14 @@ const populateArray = [
   {
     path: "order",
     select: "reference status description",
+  },
+  {
+    path: "destination",
+    select: "name location",
+  },
+  {
+    path: "replacementDriver",
+    select: "firstName lastName email telephone",
   },
 ];
 
@@ -102,8 +121,10 @@ router.get(
     }
 
     try {
+      let populate = populateArray;
+
       const deliveries = await Delivery.find(filter)
-        .populate(populateArray)
+        .populate(populate)
         .sort({ createdAt: -1 });
 
       res.status(200).json(deliveries);
@@ -160,17 +181,22 @@ router.post(
     try {
       const {
         departureAddress,
+        destination,
         vehicle,
         order,
         productMeasureUnit,
         quantity,
         note,
+        replacementDriver,
       } = req.body;
 
-      // Check for any deliveries where either sender or receiver hasn't validated
+      console.log(req.body);
+
+      // Check for any deliveries where either sender and receiver hasn't validated
       const pendingDelivery = await Delivery.findOne({
-        vehicle: vehicle._id,
-        $or: [{ "sender.validate": false }, { "receiver.validate": false }],
+        vehicle: vehicle,
+        "sender.validate": false,
+        "receiver.validate": false,
       }).populate([
         {
           path: "sender.user",
@@ -217,9 +243,11 @@ router.post(
         _id: newId,
         reference,
         departureAddress,
+        destination,
         vehicle,
         order,
         productMeasureUnit,
+        ...(replacementDriver && { replacementDriver }),
         sender: {
           user: req.user._id, // Current authenticated user
           quantity,
@@ -269,6 +297,7 @@ router.put(
   "/receiver/:deliveryId",
   authorizeJwt,
   verifyAccount([{ name: "delivery", action: "update" }]),
+  upload.single("proof"), // Expect a file named "proof"
   async (req, res) => {
     try {
       const { deliveryId } = req.params;
@@ -291,9 +320,30 @@ router.put(
         });
       }
 
+      if (delivery.sender.user.toString() === req.user._id.toString()) {
+        return res.status(400).json({
+          success: false,
+          message: "Sender and Receiver can be the same",
+        });
+      }
+
+      let proofUrl = delivery.receiver?.proof || null;
+      if (req.file) {
+        // Delete existing proof file if it exists
+        if (proofUrl) {
+          await spaceImageDeleteHelper(proofUrl);
+        }
+        // Upload new proof file to 'proofs' folder
+        proofUrl = await spaceImageUploadHelper(
+          req.file,
+          `deliveries/${deliveryId}/proofs/`,
+        );
+      }
+
       // Update the delivery with receiver information
       delivery.receiver = {
-        user: req.user._id, // Current authenticated user
+        user: req.user._id,
+        proof: proofUrl,
         quantity,
         note,
         validate: false,
@@ -314,6 +364,74 @@ router.put(
       });
     } catch (error) {
       console.error("Error in updateDeliveryByReceiver:", error);
+
+      if (error.name === "ValidationError") {
+        return res.status(400).json({
+          success: false,
+          message: "Validation Error",
+          errors: Object.values(error.errors).map((err) => err.message),
+        });
+      }
+
+      res.status(500).json({
+        success: false,
+        message: "Error updating delivery",
+        error: error.message,
+      });
+    }
+  },
+);
+
+router.put(
+  "/sender/:deliveryId",
+  authorizeJwt,
+  verifyAccount([{ name: "delivery", action: "update" }]),
+  async (req, res) => {
+    try {
+      const { deliveryId } = req.params;
+      const { departureAddress, destination, replacementDriver } = req.body;
+
+      // Find the delivery and verify it exists
+      const delivery = await Delivery.findById(deliveryId);
+      if (!delivery) {
+        return res.status(404).json({
+          success: false,
+          message: "Delivery not found",
+        });
+      }
+
+      // Verify delivery status is PENDING
+      if (delivery.status !== "IN_PROGRESS") {
+        return res.status(400).json({
+          success: false,
+          message: "Delivery cannot be modified in its current status",
+        });
+      }
+
+      if (delivery.sender.user.toString() !== req.user._id.toString()) {
+        return res.status(400).json({
+          success: false,
+          message: "Only the sender can update this delivery",
+        });
+      }
+
+      if (departureAddress) delivery.departureAddress = departureAddress;
+      if (destination) delivery.destination = destination;
+      if (replacementDriver) delivery.replacementDriver = replacementDriver;
+
+      await delivery.validate();
+      const updatedDelivery = await delivery.save();
+
+      const populatedDelivery = await Delivery.findById(
+        updatedDelivery._id,
+      ).populate(populateArray);
+
+      res.status(200).json({
+        success: true,
+        data: populatedDelivery,
+      });
+    } catch (error) {
+      console.error("Error in updateDeliveryBySender:", error);
 
       if (error.name === "ValidationError") {
         return res.status(400).json({
@@ -399,7 +517,7 @@ router.put(
 router.delete(
   "/:id",
   authorizeJwt,
-  verifyAccount([{ name: "order", action: "delete" }]),
+  verifyAccount([{ name: "delivery", action: "delete" }]),
   async (req, res) => {
     try {
       const { id } = req.params;
@@ -413,6 +531,27 @@ router.delete(
     } catch (error) {
       console.log(error.message);
       res.status(500).json({ message: error.message });
+    }
+  },
+);
+
+router.get(
+  "/export-to-pdf/:deliveryId",
+  authorizeJwt,
+  verifyAccount([{ name: "delivery", action: "read" }]),
+  async (req, res, next) => {
+    const { deliveryId } = req.params;
+    try {
+      const blob = await exportDeliveryToPdf({
+        deliveryId,
+      });
+
+      const buffer = Buffer.from(await blob.arrayBuffer());
+
+      // Send the Blob as the response
+      res.send(buffer);
+    } catch (error) {
+      next(error);
     }
   },
 );

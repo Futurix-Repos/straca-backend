@@ -106,8 +106,14 @@ router.get(
       ];
     }
 
+    let populate = populateArray;
+    populate.push({
+      path: "destinations",
+      select: "name location",
+    });
+
     try {
-      const orders = await Order.find(filter).populate(populateArray);
+      const orders = await Order.find(filter).populate(populate);
 
       res.status(200).json(orders);
     } catch (error) {
@@ -128,7 +134,13 @@ router.get(
 
       if (req.user.type === "client") filter.client = req.user._id;
 
-      const order = await Order.findOne(filter).populate(populateArray);
+      let populate = populateArray;
+      populate.push({
+        path: "destinations",
+        select: "name location",
+      });
+
+      const order = await Order.findOne(filter).populate(populate);
 
       if (!order) {
         return res

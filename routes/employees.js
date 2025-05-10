@@ -14,6 +14,7 @@ router.get(
   async (req, res) => {
     const filter = { type: "employee" };
     const search = req.query.search;
+    const title = req.query.title;
 
     if (search) {
       filter.$or = [
@@ -23,6 +24,11 @@ router.get(
         { email: { $regex: search, $options: "i" } },
         { address: { $regex: search, $options: "i" } },
       ];
+    }
+
+    if (title) {
+      if (title.toString().toLowerCase() === "driver")
+        filter.title = { $regex: "chauffeur", $options: "i" };
     }
 
     try {

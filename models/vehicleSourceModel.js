@@ -9,6 +9,10 @@ const vehicleSourceSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    isExternal: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamp: true,

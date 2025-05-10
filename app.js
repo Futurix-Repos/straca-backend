@@ -3,7 +3,7 @@ const app = express();
 const logger = require("morgan");
 
 const multer = require("multer");
-const upload = multer({ dest: "uploads/" });
+const upload = multer();
 
 // Routes
 const authRoutes = require("./routes/auth");
@@ -35,6 +35,7 @@ const newsLetterRoutes = require("./routes/newsletter");
 const locationRoutes = require("./routes/location");
 const productMeasureUnitRoutes = require("./routes/productsMeasureUnits");
 const deliveryRoutes = require("./routes/delivery");
+const addressesRoutes = require("./routes/address");
 
 app.use(logger('[:date[web]] ":method :url" :status :res[content-length]'));
 
@@ -71,6 +72,7 @@ app.use("/newsLetter", newsLetterRoutes);
 
 app.use("/locations", locationRoutes);
 app.use("/deliveries", deliveryRoutes);
+app.use("/addresses", addressesRoutes);
 
 app.get("/", (req, res) => {
   res.send("Hello NODE API");

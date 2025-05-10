@@ -46,17 +46,6 @@ const orderItemSchema = new mongoose.Schema({
   extra: extraSchema, // now optional
 });
 
-const addressSchema = {
-  name: { type: String, required: true },
-  location: {
-    type: {
-      lat: { type: Number, required: true },
-      lng: { type: Number, required: true },
-    },
-    required: true,
-  },
-};
-
 orderItemSchema.pre(["save", "findByIdAndUpdate"], async function (next) {
   try {
     // Get the product measure unit price
@@ -125,7 +114,21 @@ const orderSchemaNew = new mongoose.Schema(
         message: "Sender must be an admin or employee",
       },
     },
-    arrivalAddress: addressSchema,
+    destinations: {
+      type: [
+        {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "Address",
+          required: true,
+        },
+      ],
+      validate: {
+        validator: function (destinations) {
+          return destinations && destinations.length > 0;
+        },
+        message: "At least one destination is required",
+      },
+    },
     items: [orderItemSchema],
     totalAmount: {
       type: Number,

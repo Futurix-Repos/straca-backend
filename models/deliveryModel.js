@@ -13,6 +13,36 @@ const deliverySchema = new Schema(
       ref: "Location",
       required: true,
     },
+    destination: {
+      type: Schema.Types.ObjectId,
+      ref: "Address",
+      required: true,
+      validate: {
+        validator: async function (destinationId) {
+          // Check if the destination is in the order's destinations
+          const Order = mongoose.model("Order");
+          const order = await Order.findById(this.order);
+
+          if (!order) {
+            throw new Error("Associated order not found");
+          }
+
+          // Check if the destination is in the order's destinations array
+          const isValidDestination = order.destinations.some(
+            (dest) => dest.toString() === destinationId.toString(),
+          );
+
+          if (!isValidDestination) {
+            throw new Error(
+              "Destination must be one of the destinations in the associated order",
+            );
+          }
+
+          return true;
+        },
+        message: "Invalid destination for this order",
+      },
+    },
     vehicle: {
       type: Schema.Types.ObjectId,
       ref: "Vehicle",
@@ -79,6 +109,9 @@ const deliverySchema = new Schema(
       note: {
         type: String,
       },
+      proof: {
+        type: String,
+      },
       validate: {
         type: Boolean,
         default: false,
@@ -93,6 +126,35 @@ const deliverySchema = new Schema(
       type: String,
       enum: ["PENDING", "DELIVERED", "CANCELED", "IN_PROGRESS"],
       default: "PENDING",
+    },
+    replacementDriver: {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+      validate: {
+        validator: async function (userId) {
+          if (!userId) return true;
+
+          const Vehicle = mongoose.model("Vehicle");
+          const vehicle = await Vehicle.findById(this.vehicle).populate({
+            path: "source",
+            select: "isExternal",
+          });
+
+          if (!vehicle) {
+            return false;
+          }
+
+          if (vehicle.source && vehicle.source.isExternal === true) {
+            return false;
+          }
+
+          const User = mongoose.model("User");
+          const user = await User.findById(userId);
+          return user && (user.type === "admin" || user.type === "employee");
+        },
+        message:
+          "Replacement driver can only be set for non-external vehicles and must be an admin or employee",
+      },
     },
   },
   {

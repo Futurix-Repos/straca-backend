@@ -5,6 +5,7 @@ const Vehicle = require("../models/vehicleModel");
 const mongoose = require("mongoose");
 const { authorizeJwt, verifyAccount } = require("../helpers/verifyAccount");
 const Delivery = require("../models/deliveryModel");
+const wialonServices = require("../helpers/iotHelper");
 
 const populateArray = [
   {
@@ -21,7 +22,7 @@ const populateArray = [
   },
   {
     path: "source",
-    select: "label",
+    select: "label isExternal",
   },
   {
     path: "driver",
@@ -32,6 +33,44 @@ const populateArray = [
     select: "firstName lastName email phone",
   },
 ];
+
+// GET /vehicle - Get all vehicles
+router.get(
+  "/modules",
+  authorizeJwt,
+  verifyAccount([{ name: "vehicle", action: "read" }]),
+  async (req, res) => {
+    const search = req.query.search ?? "";
+
+    try {
+      let spec = {
+        itemsType: "avl_unit",
+        propName: "sys_name",
+        propValueMask: "*",
+        sortType: "sys_name",
+      };
+
+      if (search.length > 0) spec.propValueMask = `*${search.toString()}*`;
+
+      const response = await wialonServices.searchItems({ spec });
+
+      if (response.error)
+        return res.status(400).json({ message: "Une erreur est survenue." });
+
+      let modules = response.items.map((item) => {
+        return {
+          plate: item.nm,
+          id: item.id,
+        };
+      });
+
+      res.status(200).json({ modules });
+    } catch (error) {
+      console.error(error.message);
+      res.status(500).json({ message: error.message });
+    }
+  },
+);
 
 // GET /vehicle - Get all vehicles
 router.get(
@@ -119,6 +158,46 @@ router.get(
         message: "Error checking vehicle availability",
         error: error.message,
       });
+    }
+  },
+);
+
+// GET /vehicle/:id/module - Get a specific vehicle module by ID
+router.get(
+  "/:id/module",
+  authorizeJwt,
+  verifyAccount([{ name: "vehicle", action: "read" }]),
+
+  async (req, res) => {
+    try {
+      const { id } = req.params;
+      const vehicle = await Vehicle.findById(id);
+
+      if (!vehicle) {
+        return res
+          .status(404)
+          .json({ message: `Vehicle with ID ${id} not found` });
+      }
+
+      if (!vehicle?.tracking?.id) {
+        return res
+          .status(400)
+          .json({ message: `This vehicle has not tracking` });
+      }
+
+      const data = await wialonServices.searchItemById({
+        itemId: vehicle.tracking.id,
+      });
+
+      if (data.error)
+        return res.status(400).json({ message: "Une erreur est survenue." });
+
+      console.log(data);
+
+      res.status(200).json(vehicle);
+    } catch (error) {
+      console.error(error.message);
+      res.status(500).json({ message: error.message });
     }
   },
 );

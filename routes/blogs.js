@@ -13,6 +13,10 @@ const {
 } = require("../helpers/verifyAccount");
 const imageUploadHelper = require("../helpers/imageUploadHelper");
 const { htmlToText } = require("html-to-text");
+const {
+  spaceImageUploadHelper,
+  spaceImageDeleteHelper,
+} = require("../helpers/spaceImageUploadHelper");
 const upload = multer({ storage: multer.memoryStorage() });
 
 // GET /blogs - Get all blogs
@@ -302,10 +306,13 @@ router.post(
       }
 
       // Upload the image file
-      const imageUrl = await imageUploadHelper(req.file);
 
       // Generate a new ObjectId for the _id field
       const newId = new mongoose.Types.ObjectId();
+      const imageUrl = await spaceImageUploadHelper(
+        req.file,
+        `blogs/${newId.toString()}/`,
+      );
 
       // Assign the generated _id and imageUrl to req.body
       req.body._id = newId;
@@ -333,23 +340,28 @@ router.put(
 
       let editedBlog = { ...req.body };
 
-      // Upload the image file
-
-      // console.log(`file===>${req.file}`);
-      // console.log(`buffer===>${req.file.buffer}`);
-      if (req.file) {
-        const imageUrl = await imageUploadHelper(req.file);
-        // console.log(`\n\nImagURL -> ${imageUrl}\n\n`);
-        editedBlog.image = imageUrl;
-      }
-
-      const blog = await Blog.findByIdAndUpdate(id, editedBlog, { new: true });
-
-      if (!blog) {
+      const existingBlog = await Blog.findById(id);
+      if (!existingBlog) {
         return res
           .status(404)
           .json({ message: `Cannot find any blog with ID ${id}` });
       }
+
+      if (req.file) {
+        // Upload the new file to the 'images' folder
+        const imageUrl = await spaceImageUploadHelper(req.file, `blogs/${id}/`);
+        // Delete the existing image from DigitalOcean Spaces if it exists
+        if (existingBlog.image) {
+          spaceImageDeleteHelper(existingBlog.image).catch((err) => {
+            console.log(err);
+          });
+        }
+
+        // Update the image URL in the edited blog
+        editedBlog.image = imageUrl;
+      }
+
+      const blog = await Blog.findByIdAndUpdate(id, editedBlog, { new: true });
 
       res.status(200).json(blog);
     } catch (error) {
@@ -373,6 +385,12 @@ router.delete(
         return res
           .status(404)
           .json({ message: `Cannot find any blog with ID ${id}` });
+      }
+
+      if (blog.image) {
+        spaceImageDeleteHelper(blog.image).catch((err) => {
+          console.log(err);
+        });
       }
 
       res.status(200).json(blog);
