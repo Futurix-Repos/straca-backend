@@ -5,6 +5,19 @@ const Address = require("../models/addressModel");
 const mongoose = require("mongoose");
 const { authorizeJwt, verifyAccount } = require("../helpers/verifyAccount");
 
+const populateArray = [
+  {
+    // Populate owner with specific fields
+    path: "owner",
+    select: "firstName lastName email",
+  },
+  {
+    // Populate createdBy with specific fields
+    path: "createdBy",
+    select: "firstName lastName email",
+  },
+];
+
 // GET /addresses - Get all Addresses
 router.get(
   "/",
@@ -22,7 +35,7 @@ router.get(
     }
 
     try {
-      const address = await Address.find(filter);
+      const address = await Address.find(filter).populate(populateArray);
       res.status(200).json(address);
     } catch (error) {
       console.error(error.message);
@@ -39,7 +52,7 @@ router.get(
   async (req, res) => {
     try {
       const { id } = req.params;
-      const address = await Address.findById(id);
+      const address = await Address.findById(id).populate(populateArray);
 
       if (!address) {
         return res
