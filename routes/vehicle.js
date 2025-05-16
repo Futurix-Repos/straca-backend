@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 const { authorizeJwt, verifyAccount } = require("../helpers/verifyAccount");
 const Delivery = require("../models/deliveryModel");
 const wialonServices = require("../helpers/iotHelper");
+const { computeFuelValue } = require("../helpers/iotModule");
 
 const populateArray = [
   {
@@ -185,16 +186,54 @@ router.get(
           .json({ message: `This vehicle has not tracking` });
       }
 
-      const data = await wialonServices.searchItemById({
+      let response = {
+        id: vehicle.id,
+        tracking: vehicle.tracking,
+      };
+
+      const dataPos = await wialonServices.searchItemById({
         itemId: vehicle.tracking.id,
+        flags: 4294967295,
       });
 
-      if (data.error)
+      if (dataPos.error)
         return res.status(400).json({ message: "Une erreur est survenue." });
 
-      console.log(data);
+      //console.log(`https://hst-api.wialon.eu${dataPos.item.uri}`);
 
-      res.status(200).json(vehicle);
+      response["pin_img"] = dataPos?.item?.uri
+        ? `https://hst-api.wialon.eu${dataPos.item.uri}`
+        : null;
+
+      response["pos"] = {
+        lat: dataPos?.item?.pos?.y,
+        lng: dataPos?.item?.pos?.x,
+        speed: dataPos?.item?.pos?.s,
+      };
+
+      response["temp"] = {
+        value: dataPos?.item?.prms?.io_26?.v
+          ? dataPos.item.prms.io_26.v * 10
+          : null,
+        unit: dataPos?.item?.sens?.["6"]?.m,
+      };
+
+      response["active"] =
+        dataPos?.item?.prms?.io_239?.v !== null
+          ? dataPos.item.prms.io_239.v === 1
+          : null;
+
+      const fuelRaw = dataPos?.item?.prms?.io_273?.v;
+      const tbl = dataPos?.item?.sens?.["2"]?.tbl;
+
+      if (fuelRaw !== undefined && tbl && Array.isArray(tbl)) {
+        response.fuel = {
+          value: computeFuelValue(fuelRaw, tbl),
+          unit: dataPos?.item?.sens?.["2"]?.m,
+        };
+      }
+
+      res.status(200).json(response);
     } catch (error) {
       console.error(error.message);
       res.status(500).json({ message: error.message });
