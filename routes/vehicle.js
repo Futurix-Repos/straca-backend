@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const { authorizeJwt, verifyAccount } = require("../helpers/verifyAccount");
 const Delivery = require("../models/deliveryModel");
 const wialonServices = require("../helpers/iotHelper");
-const { computeFuelValue } = require("../helpers/iotModule");
+const { computeFuelValue, getSensorByP } = require("../helpers/iotModule");
 
 const populateArray = [
   {
@@ -211,11 +211,12 @@ router.get(
         speed: dataPos?.item?.pos?.s,
       };
 
-      response["temp"] = {
-        value: dataPos?.item?.prms?.io_26?.v
-          ? dataPos.item.prms.io_26.v * 10
-          : null,
-        unit: dataPos?.item?.sens?.["6"]?.m,
+      const tempRaw = dataPos?.item?.prms?.io_26?.v;
+      const tempSensor = getSensorByP(dataPos?.item?.sens, "io_26*const10");
+
+      response.temp = {
+        value: tempRaw !== undefined ? tempRaw * 10 : null,
+        unit: tempSensor?.m || null,
       };
 
       response["active"] =
@@ -224,12 +225,16 @@ router.get(
           : null;
 
       const fuelRaw = dataPos?.item?.prms?.io_273?.v;
-      const tbl = dataPos?.item?.sens?.["2"]?.tbl;
+      const fuelSensor = getSensorByP(dataPos?.item?.sens, "io_273");
 
-      if (fuelRaw !== undefined && tbl && Array.isArray(tbl)) {
+      if (
+        fuelRaw !== undefined &&
+        fuelSensor?.tbl &&
+        Array.isArray(fuelSensor.tbl)
+      ) {
         response.fuel = {
-          value: computeFuelValue(fuelRaw, tbl),
-          unit: dataPos?.item?.sens?.["2"]?.m,
+          value: computeFuelValue(fuelRaw, fuelSensor.tbl),
+          unit: fuelSensor.m || null,
         };
       }
 
