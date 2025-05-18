@@ -95,7 +95,11 @@ router.get(
     if (req.user.type === "client") filter.client = req.user._id;
 
     if (status) {
-      filter.status = status.toUpperCase();
+      if (Array.isArray(status)) {
+        filter.status = { $in: status.map((s) => s.toUpperCase()) };
+      } else if (typeof status === "string") {
+        filter.status = status.toUpperCase();
+      }
     }
 
     if (search) {
@@ -256,6 +260,48 @@ router.post(
         message: "Failed to create order",
         error: error.message,
       });
+    }
+  },
+);
+
+router.put(
+  "/cancel/:id",
+  authorizeJwt,
+  verifyAccount([{ name: "order", action: "update" }]),
+  async (req, res) => {
+    try {
+      const { id } = req.params;
+      const { reason } = req.body;
+
+      const order = await Order.findById(id);
+      if (!order) {
+        return res.status(404).json({ message: "Order not found" });
+      }
+
+      if (order?.canceled?.isCanceled) {
+        return res.status(400).json({ message: "Order already canceled" });
+      }
+
+      order.status = ORDER_STATUS.CANCELED;
+
+      order.canceled = {
+        isCanceled: true,
+        reason,
+        canceledAt: new Date(),
+        canceledBy: req.user._id,
+      };
+
+      await order.save();
+
+      res.status(200).json({
+        message: "Order canceled successfully",
+        data: order,
+      });
+    } catch (error) {
+      console.error("Cancel order error:", error);
+      res
+        .status(500)
+        .json({ message: "Error canceling order", error: error.message });
     }
   },
 );

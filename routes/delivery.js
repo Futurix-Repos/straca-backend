@@ -103,7 +103,11 @@ router.get(
 
     // Add status filter if provided
     if (status) {
-      filter.status = status;
+      if (Array.isArray(status)) {
+        filter.status = { $in: status.map((s) => s.toUpperCase()) };
+      } else if (typeof status === "string") {
+        filter.status = status.toUpperCase();
+      }
     }
 
     if (vehicleId) {
@@ -294,6 +298,48 @@ router.post(
 );
 
 router.put(
+  "/cancel/:id",
+  authorizeJwt,
+  verifyAccount([{ name: "delivery", action: "update" }]),
+  async (req, res) => {
+    try {
+      const { id } = req.params;
+      const { reason } = req.body;
+
+      const delivery = await Delivery.findById(id);
+      if (!delivery) {
+        return res.status(404).json({ message: "Delivery not found" });
+      }
+
+      if (delivery?.canceled?.isCanceled) {
+        return res.status(400).json({ message: "Delivery already canceled" });
+      }
+
+      delivery.status = "CANCELED";
+
+      delivery.canceled = {
+        isCanceled: true,
+        reason,
+        canceledAt: new Date(),
+        canceledBy: req.user._id,
+      };
+
+      await delivery.save();
+
+      res.status(200).json({
+        message: "Delivery canceled successfully",
+        data: delivery,
+      });
+    } catch (error) {
+      console.error("Cancel delivery error:", error);
+      res
+        .status(500)
+        .json({ message: "Error canceling delivery", error: error.message });
+    }
+  },
+);
+
+router.put(
   "/receiver/:deliveryId",
   authorizeJwt,
   verifyAccount([{ name: "delivery", action: "update" }]),
@@ -309,6 +355,14 @@ router.put(
         return res.status(404).json({
           success: false,
           message: "Delivery not found",
+        });
+      }
+
+      if (delivery?.canceled?.isCanceled) {
+        return res.status(400).json({
+          success: false,
+          message:
+            "Cette livraison a été annulée. Elle ne peut pas être modifiée.",
         });
       }
 
@@ -400,6 +454,33 @@ router.put(
         });
       }
 
+      const orderDoc = await Order.findById(order);
+      if (!orderDoc) {
+        return res.status(404).json({
+          success: false,
+          message: "Commande associée introuvable.",
+        });
+      }
+
+      if (
+        orderDoc?.canceled?.isCanceled ||
+        orderDoc?.status === ORDER_STATUS.CANCELED
+      ) {
+        return res.status(400).json({
+          success: false,
+          message:
+            "Impossible de créer une livraison pour une commande annulée.",
+        });
+      }
+
+      if (delivery?.canceled?.isCanceled) {
+        return res.status(400).json({
+          success: false,
+          message:
+            "Cette livraison a été annulée. Elle ne peut pas être modifiée.",
+        });
+      }
+
       // Verify delivery status is PENDING
       if (delivery.status !== "IN_PROGRESS") {
         return res.status(400).json({
@@ -474,6 +555,14 @@ router.put(
         return res.status(404).json({
           success: false,
           message: "Delivery not found",
+        });
+      }
+
+      if (delivery?.canceled?.isCanceled) {
+        return res.status(400).json({
+          success: false,
+          message:
+            "Cette livraison a été annulée. Elle ne peut pas être modifiée.",
         });
       }
 

@@ -156,11 +156,36 @@ const deliverySchema = new Schema(
           "Replacement driver can only be set for non-external vehicles and must be an admin or employee",
       },
     },
+    canceled: {
+      isCanceled: { type: Boolean, default: false },
+      reason: { type: String },
+      canceledAt: { type: Date },
+      canceledBy: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+        validate: {
+          validator: async function (userId) {
+            const User = mongoose.model("User");
+            const user = await User.findById(userId);
+            return user && (user.type === "admin" || user.type === "employee");
+          },
+          message: "Sender must be an admin or employee",
+        },
+      },
+    },
   },
   {
     timestamps: true,
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true },
   },
 );
+
+deliverySchema.virtual("transfers", {
+  ref: "DeliveryTransfer",
+  localField: "_id",
+  foreignField: "delivery",
+});
 
 const Delivery = mongoose.model("Delivery", deliverySchema);
 
