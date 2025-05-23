@@ -2,25 +2,28 @@ const express = require("express");
 const newsLetter = require("../models/newsletter");
 const router = express.Router();
 const mongoose = require("mongoose");
+const { authorizePublic } = require("../helpers/verifyAccount");
 
 //create a newsLetter
-router.post("/", async (req, res) => {
+router.post("/subscribe", async (req, res) => {
   try {
     const { email } = req.body;
+
+    if (!email || email.trim() === "") {
+      return res.status(400).json({ message: "L'email est requis." });
+    }
+
     const existingEmail = await newsLetter.findOne({ email });
     if (existingEmail) {
-      return res.status(409).json({ message: "Email Already exists" });
+      return res.status(400).json({ message: "Cet email existe déjà." });
     }
-    // Generate a new ObjectId for the _id field
-    const newId = new mongoose.Types.ObjectId();
 
-    // Assign the generated _id to req.body
-    req.body._id = newId;
-    const newEmail = await newsLetter.create(req.body);
+    const newId = new mongoose.Types.ObjectId();
+    const newEmail = await newsLetter.create({ _id: newId, email });
     res.status(201).json(newEmail);
   } catch (error) {
     console.log(error);
-    res.status(500).json({ message: "Internal Server Error" });
+    res.status(500).json({ message: "Erreur interne" });
   }
 });
 module.exports = router;

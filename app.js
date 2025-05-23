@@ -37,6 +37,7 @@ const productMeasureUnitRoutes = require("./routes/productsMeasureUnits");
 const deliveryRoutes = require("./routes/delivery");
 const addressesRoutes = require("./routes/address");
 const deliveryTransfersRoutes = require("./routes/deliveryTransfer");
+const contactRoutes = require("./routes/contact");
 
 app.use(logger('[:date[web]] ":method :url" :status :res[content-length]'));
 
@@ -70,6 +71,7 @@ app.use("/contractTypes", contractTypeRoutes);
 app.use("/proximity", proximityRoutes);
 
 app.use("/newsLetter", newsLetterRoutes);
+app.use("/contact", contactRoutes);
 
 app.use("/locations", locationRoutes);
 app.use("/deliveries", deliveryRoutes);
