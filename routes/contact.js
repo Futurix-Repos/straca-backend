@@ -15,7 +15,7 @@ const transporter = require("../services/mail");
 // 🛡️ Limite : max 3 messages / 15 minutes / IP
 const contactLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 2,
+  max: 3,
   message: "Trop de messages envoyés. Réessayez plus tard.",
 });
 
