@@ -7,6 +7,7 @@ const { authorizeJwt, verifyAccount } = require("../helpers/verifyAccount");
 const Delivery = require("../models/deliveryModel");
 const wialonServices = require("../helpers/iotHelper");
 const { computeFuelValue, getSensorByP } = require("../helpers/iotModule");
+const vehicleTrackingService = require("../services/vehicleTracking");
 
 const populateArray = [
   {
@@ -163,7 +164,7 @@ router.get(
   },
 );
 
-// GET /vehicle/:id/module - Get a specific vehicle module by ID
+// GET /vehicles/:id/module - Get a specific vehicle module by ID
 router.get(
   "/:id/module",
   authorizeJwt,

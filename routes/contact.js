@@ -43,8 +43,7 @@ router.post(
 
       await transporter.sendMail({
         from: `"Formulaire Straca" <${process.env.EMAIL_USER}>`,
-        //to: "contact@straca-sa.com",
-        to: "kilianvitou1@gmail.com",
+        to: "contact@straca-sa.com",
         subject: `📨 Nouveau message - ${category}`,
         html: `
         <h3>Message reçu via le site Straca</h3>

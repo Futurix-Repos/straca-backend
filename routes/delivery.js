@@ -3,21 +3,16 @@ const router = express.Router();
 const Delivery = require("../models/deliveryModel");
 const Order = require("../models/orderModel");
 
-const { sendMsg } = require("../helpers/fasterMessageHelper");
 const { authorizeJwt, verifyAccount } = require("../helpers/verifyAccount");
 const mongoose = require("mongoose");
-const ProductMeasureUnit = require("../models/productMeasureUnitModel");
-const Transaction = require("../models/transactionModel");
-const qosService = require("../helpers/qosHelper");
-const cron = require("node-cron");
 const { generateReference, ORDER_STATUS } = require("../helpers/constants");
-const uuid = require("uuid");
 const {
   spaceImageDeleteHelper,
   spaceImageUploadHelper,
 } = require("../helpers/spaceImageUploadHelper");
 const multer = require("multer");
 const { exportDeliveryToPdf } = require("../services/delivery");
+const vehicleTrackingService = require("../services/vehicleTracking");
 const upload = multer({ storage: multer.memoryStorage() });
 
 const populateArray = [
@@ -53,7 +48,7 @@ const populateArray = [
   },
   {
     path: "vehicle",
-    select: "name registrationNumber",
+    select: "name registrationNumber tracking",
     populate: [
       {
         path: "driver",
@@ -192,9 +187,8 @@ router.post(
         quantity,
         note,
         replacementDriver,
+        autoStartTracking = true,
       } = req.body;
-
-      console.log(req.body);
 
       // Check for any deliveries where either sender and receiver hasn't validated
       const pendingDelivery = await Delivery.findOne({
@@ -273,9 +267,29 @@ router.post(
         savedDelivery._id,
       ).populate(populateArray);
 
+      let trackingResult = null;
+      if (autoStartTracking) {
+        try {
+          trackingResult = await vehicleTrackingService.startDeliveryTracking(
+            savedDelivery._id.toString(),
+            vehicle,
+            300, //5min
+          );
+          console.log(
+            `✅ Tracking started for delivery ${savedDelivery.reference}`,
+          );
+        } catch (trackingError) {
+          console.error(
+            "⚠️  Warning: Could not start tracking:",
+            trackingError.message,
+          );
+        }
+      }
+
       res.status(201).json({
         success: true,
         data: populatedDelivery,
+        tracking: trackingResult,
       });
     } catch (error) {
       console.error("Error in createDeliveryBySender:", error);
@@ -326,9 +340,23 @@ router.put(
 
       await delivery.save();
 
+      let trackingResult = null;
+      try {
+        trackingResult = await vehicleTrackingService.stopDeliveryTracking(id);
+        console.log(
+          `🛑 Tracking stopped for canceled delivery ${delivery.reference}`,
+        );
+      } catch (trackingError) {
+        console.error(
+          "⚠️  Warning: Could not stop tracking:",
+          trackingError.message,
+        );
+      }
+
       res.status(200).json({
         message: "Delivery canceled successfully",
         data: delivery,
+        tracking: trackingResult,
       });
     } catch (error) {
       console.error("Cancel delivery error:", error);
@@ -408,6 +436,20 @@ router.put(
       await delivery.validate();
       const updatedDelivery = await delivery.save();
 
+      let trackingResult = null;
+      try {
+        trackingResult =
+          await vehicleTrackingService.stopDeliveryTracking(deliveryId);
+        console.log(
+          `🏁 Tracking stopped for completed delivery ${delivery.reference}`,
+        );
+      } catch (trackingError) {
+        console.error(
+          "⚠️  Warning: Could not stop tracking:",
+          trackingError.message,
+        );
+      }
+
       const populatedDelivery = await Delivery.findById(
         updatedDelivery._id,
       ).populate(populateArray);
@@ -415,6 +457,7 @@ router.put(
       res.status(200).json({
         success: true,
         data: populatedDelivery,
+        tracking: trackingResult,
       });
     } catch (error) {
       console.error("Error in updateDeliveryByReceiver:", error);
@@ -576,7 +619,9 @@ router.put(
       }
 
       // Check if both sender and receiver have validated
-      if (delivery.sender.validate || delivery.receiver.validate) {
+      const isDeliveryComplete =
+        delivery.sender.validate || delivery.receiver.validate;
+      if (isDeliveryComplete) {
         delivery.status = "DELIVERED";
       }
 
@@ -641,6 +686,141 @@ router.get(
       res.send(buffer);
     } catch (error) {
       next(error);
+    }
+  },
+);
+
+router.post(
+  "/tracking/start/:deliveryId",
+  authorizeJwt,
+  verifyAccount([{ name: "delivery", action: "update" }]),
+  async (req, res) => {
+    try {
+      const { deliveryId } = req.params;
+      const { intervalSeconds = 300 } = req.body;
+
+      const delivery = await Delivery.findById(deliveryId).populate("vehicle");
+      if (!delivery) {
+        return res.status(404).json({
+          success: false,
+          message: "Delivery not found",
+        });
+      }
+
+      if (delivery.status !== "IN_PROGRESS") {
+        return res.status(400).json({
+          success: false,
+          message: "Tracking can only be started for deliveries in progress",
+        });
+      }
+
+      const result = await vehicleTrackingService.startDeliveryTracking(
+        deliveryId,
+        delivery.vehicle._id.toString(),
+        intervalSeconds,
+      );
+
+      res.status(200).json(result);
+    } catch (error) {
+      console.error("Error starting tracking:", error);
+      res.status(500).json({
+        success: false,
+        message: "Error starting tracking",
+        error: error.message,
+      });
+    }
+  },
+);
+
+router.post(
+  "/tracking/stop/:deliveryId",
+  authorizeJwt,
+  verifyAccount([{ name: "delivery", action: "update" }]),
+  async (req, res) => {
+    try {
+      const { deliveryId } = req.params;
+
+      const result =
+        await vehicleTrackingService.stopDeliveryTracking(deliveryId);
+
+      res.status(200).json(result);
+    } catch (error) {
+      console.error("Error stopping tracking:", error);
+      res.status(500).json({
+        success: false,
+        message: "Error stopping tracking",
+        error: error.message,
+      });
+    }
+  },
+);
+
+router.get(
+  "/tracking/history/:deliveryId",
+  authorizeJwt,
+  verifyAccount([{ name: "delivery", action: "read" }]),
+  async (req, res) => {
+    try {
+      const { deliveryId } = req.params;
+      const { format = "json" } = req.query;
+
+      const result = await vehicleTrackingService.getDeliveryHistory(
+        deliveryId,
+        format,
+      );
+
+      res.status(200).json(result);
+    } catch (error) {
+      console.error("Error getting delivery history:", error);
+      res.status(500).json({
+        success: false,
+        message: "Error getting delivery history",
+        error: error.message,
+      });
+    }
+  },
+);
+
+router.get(
+  "/tracking/current/:vehicleId",
+  authorizeJwt,
+  verifyAccount([{ name: "vehicle", action: "read" }]),
+  async (req, res) => {
+    try {
+      const { vehicleId } = req.params;
+
+      const result = await vehicleTrackingService.getCurrentPosition(vehicleId);
+
+      res.status(200).json(result);
+    } catch (error) {
+      console.error("Error getting current position:", error);
+      res.status(500).json({
+        success: false,
+        message: "Error getting current position",
+        error: error.message,
+      });
+    }
+  },
+);
+
+router.get(
+  "/tracking/stats",
+  authorizeJwt,
+  verifyAccount([{ name: "delivery", action: "read" }]),
+  async (req, res) => {
+    try {
+      const stats = vehicleTrackingService.getTrackingStats();
+      res.status(200).json({
+        success: true,
+        data: stats,
+      });
+    } catch (error) {
+      console.error("Error getting tracking stats:", error);
+      res.status(500).json({
+        success: false,
+        message: "Error getting tracking stats",
+        error: error.message,
+      });
     }
   },
 );
