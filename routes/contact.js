@@ -23,7 +23,7 @@ const contactLimiter = rateLimit({
 router.post(
   "/send",
   authorizePublic(process.env.PUBLIC_TOKEN),
-  contactLimiter,
+  //contactLimiter,
 
   async (req, res) => {
     const { name, email, number, category, message } = req.body;
