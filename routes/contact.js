@@ -12,9 +12,9 @@ const {
 const rateLimit = require("express-rate-limit");
 const transporter = require("../services/mail");
 
-// 🛡️ Limite : max 3 messages / 15 minutes / IP
+// 🛡️ Limite : max 3 messages / 5 minutes / IP
 const contactLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
+  windowMs: 5 * 60 * 1000,
   max: 3,
   message: "Trop de messages envoyés. Réessayez plus tard.",
 });
@@ -43,7 +43,9 @@ router.post(
 
       await transporter.sendMail({
         from: `"Formulaire Straca" <${process.env.EMAIL_USER}>`,
-        to: "contact@straca-sa.com",
+        //to: "contact@straca-sa.com",
+        to: "kilianvitou1@gmail.com",
+
         subject: `📨 Nouveau message - ${category}`,
         html: `
         <h3>Message reçu via le site Straca</h3>
