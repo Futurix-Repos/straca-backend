@@ -1,0 +1,13 @@
+
+services:
+  straca-backend:
+    container_name: straca-backend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: straca-backend:latest
+    ports:
+      - "3002:3002"
+    env_file:
+      - .env
+    restart: unless-stopped
