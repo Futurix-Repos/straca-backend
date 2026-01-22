@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     image: straca-backend:latest
     ports:
-      - "3005:3005"
+      - "3002:3005"
     env_file:
       - .env
     restart: unless-stopped
