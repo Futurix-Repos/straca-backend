@@ -6,7 +6,7 @@ const {
   verifyAccount,
   authorizePublic,
 } = require("../helpers/verifyAccount");
-const bcrypt = require("bcrypt");
+const bcrypt = require('bcryptjs');
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const Delivery = require("../models/deliveryModel");

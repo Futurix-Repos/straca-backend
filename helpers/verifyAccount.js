@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 const User = require("../models/userModel");
-const bcrypt = require("bcrypt");
+const bcrypt = require('bcryptjs');
 const { validPermissionNames } = require("./constants");
 
 module.exports.authorizePublic = (tokenToVerify) => {
