@@ -197,19 +197,19 @@ router.get(
             },
           },
 
-          // Lookup for departureAddress
+          // Lookup for departureSection
           {
             $lookup: {
-              from: "locations",
-              localField: "departureAddress",
+              from: "sections",
+              localField: "departureSection",
               foreignField: "_id",
-              pipeline: [{ $project: { label: 1, description: 1 } }],
-              as: "departureAddressDetails",
+              pipeline: [{ $project: { label: 1, description: 1, chantier: 1 } }],
+              as: "departureSectionDetails",
             },
           },
           {
             $unwind: {
-              path: "$departureAddressDetails",
+              path: "$departureSectionDetails",
               preserveNullAndEmptyArrays: true,
             },
           },

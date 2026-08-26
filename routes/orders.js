@@ -41,8 +41,9 @@ const populateDeliveryArray = [
     select: "name registrationNumber",
   },
   {
-    path: "departureAddress",
-    select: "label description",
+    path: "departureSection",
+    select: "label description chantier",
+    populate: { path: "chantier", select: "label description" },
   },
 ];
 
@@ -110,11 +111,10 @@ router.get(
       ];
     }
 
-    let populate = populateArray;
-    populate.push({
-      path: "destinations",
-      select: "name location",
-    });
+    const populate = [
+      ...populateArray,
+      { path: "destinations", select: "name location" },
+    ];
 
     try {
       const orders = await Order.find(filter).populate(populate);
@@ -138,11 +138,10 @@ router.get(
 
       if (req.user.type === "client") filter.client = req.user._id;
 
-      let populate = populateArray;
-      populate.push({
-        path: "destinations",
-        select: "name location",
-      });
+      const populate = [
+        ...populateArray,
+        { path: "destinations", select: "name location" },
+      ];
 
       const order = await Order.findOne(filter).populate(populate);
 
@@ -218,13 +217,23 @@ router.post(
         });
       }
 
+      // Strip empty extra fields before saving
+      const cleanedItems = (req.body.items || []).map((item) => ({
+        ...item,
+        extra:
+          item.extra?.type && item.extra.type !== ""
+            ? item.extra
+            : undefined,
+      }));
+
       // Create the order
       const orderData = {
         ...req.body,
+        items: cleanedItems,
         _id: id,
         reference,
         status: ORDER_STATUS.INITIATED,
-        createdBy: req.user._id, // Assuming the authenticated user ID is in req.user.id
+        createdBy: req.user._id,
       };
 
       const newOrder = await Order.create(orderData);

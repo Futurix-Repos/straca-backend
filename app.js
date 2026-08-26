@@ -33,6 +33,7 @@ const contractTypeRoutes = require("./routes/contractType");
 const proximityRoutes = require("./routes/proximity");
 const newsLetterRoutes = require("./routes/newsletter");
 const locationRoutes = require("./routes/location");
+const sectionRoutes = require("./routes/sections");
 const productMeasureUnitRoutes = require("./routes/productsMeasureUnits");
 const deliveryRoutes = require("./routes/delivery");
 const addressesRoutes = require("./routes/address");
@@ -74,6 +75,7 @@ app.use("/newsLetter", newsLetterRoutes);
 app.use("/contact", contactRoutes);
 
 app.use("/locations", locationRoutes);
+app.use("/sections", sectionRoutes);
 app.use("/deliveries", deliveryRoutes);
 app.use("/deliveryTransfers", deliveryTransfersRoutes);
 app.use("/addresses", addressesRoutes);

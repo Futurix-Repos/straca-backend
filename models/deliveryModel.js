@@ -8,40 +8,38 @@ const deliverySchema = new Schema(
       required: true,
       unique: true,
     },
-    departureAddress: {
+    startedAt: { type: Date, default: Date.now },
+    departureChantier: {
       type: Schema.Types.ObjectId,
       ref: "Location",
       required: true,
     },
+    departureSection: {
+      type: Schema.Types.ObjectId,
+      ref: "Section",
+    },
     destination: {
       type: Schema.Types.ObjectId,
       ref: "Address",
-      required: true,
       validate: {
         validator: async function (destinationId) {
-          // Check if the destination is in the order's destinations
+          if (!destinationId) return true;
+          if (!this.order) return true;
+
           const Order = mongoose.model("Order");
           const order = await Order.findById(this.order);
+          if (!order) return true;
 
-          if (!order) {
-            throw new Error("Associated order not found");
-          }
-
-          // Check if the destination is in the order's destinations array
-          const isValidDestination = order.destinations.some(
+          return order.destinations.some(
             (dest) => dest.toString() === destinationId.toString(),
           );
-
-          if (!isValidDestination) {
-            throw new Error(
-              "Destination must be one of the destinations in the associated order",
-            );
-          }
-
-          return true;
         },
         message: "Invalid destination for this order",
       },
+    },
+    destinationCarriere: {
+      type: Schema.Types.ObjectId,
+      ref: "Location",
     },
     vehicle: {
       type: Schema.Types.ObjectId,
@@ -51,7 +49,6 @@ const deliverySchema = new Schema(
     order: {
       type: Schema.Types.ObjectId,
       ref: "Order",
-      required: true,
     },
     productMeasureUnit: {
       type: Schema.Types.ObjectId,
@@ -112,6 +109,22 @@ const deliverySchema = new Schema(
       proof: {
         type: String,
       },
+      proofs: {
+        type: [String],
+        default: [],
+      },
+      signature: {
+        type: String,
+      },
+      receiverSignature: {
+        type: String,
+      },
+      clientRepresentativeSignature: {
+        type: String,
+      },
+      receivedAt: {
+        type: Date,
+      },
       validate: {
         type: Boolean,
         default: false,
@@ -126,6 +139,20 @@ const deliverySchema = new Schema(
       type: String,
       enum: ["PENDING", "DELIVERED", "CANCELED", "IN_PROGRESS"],
       default: "PENDING",
+    },
+    adminValidation: {
+      status: {
+        type: String,
+        enum: ["NOT_REQUIRED", "PENDING", "APPROVED", "DISPUTED"],
+        default: "NOT_REQUIRED",
+      },
+      validatedBy: {
+        type: Schema.Types.ObjectId,
+        ref: "User",
+        default: null,
+      },
+      validatedAt: { type: Date, default: null },
+      note: { type: String, trim: true, default: null },
     },
     replacementDriver: {
       type: Schema.Types.ObjectId,
@@ -180,6 +207,26 @@ const deliverySchema = new Schema(
     toObject: { virtuals: true },
   },
 );
+
+deliverySchema.pre("validate", function (next) {
+  const hasOrder = !!this.order;
+  const hasDestination = !!this.destination;
+  const hasCarriere = !!this.destinationCarriere;
+
+  if (hasCarriere && hasDestination) {
+    return next(new Error("Une livraison ne peut pas avoir les deux destinations à la fois"));
+  }
+  if (!hasCarriere && !hasDestination) {
+    return next(new Error("Une destination (adresse ou carrière) est requise"));
+  }
+  if (hasOrder && !hasDestination) {
+    return next(new Error("Une adresse de destination est requise pour une livraison avec commande"));
+  }
+  if (!hasOrder && !hasCarriere) {
+    return next(new Error("Une carrière de destination est requise pour une livraison sans commande"));
+  }
+  next();
+});
 
 deliverySchema.virtual("transfers", {
   ref: "DeliveryTransfer",
