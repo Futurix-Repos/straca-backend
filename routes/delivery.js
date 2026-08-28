@@ -97,6 +97,10 @@ const populateArray = [
     path: "replacementDriver",
     select: "firstName lastName email telephone",
   },
+  {
+    path: "prestataire",
+    select: "name type zone phone",
+  },
 ];
 
 router.get(
@@ -210,6 +214,7 @@ router.post(
         quantity,
         note,
         replacementDriver,
+        prestataire,
         autoStartTracking = true,
       } = req.body;
 
@@ -289,6 +294,7 @@ router.post(
         ...(order && { order }),
         productMeasureUnit,
         ...(replacementDriver && { replacementDriver }),
+        ...(prestataire && { prestataire }),
         sender: {
           user: req.user._id,
           quantity,
