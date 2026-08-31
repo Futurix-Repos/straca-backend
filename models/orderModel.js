@@ -4,7 +4,13 @@ const { ORDER_STATUS } = require("../helpers/constants");
 const extraSchema = {
   type: {
     type: String,
-    enum: ["RISE", "DISCOUNT"],
+    validate: {
+      validator: function (v) {
+        if (!v || v === "") return true;
+        return ["RISE", "DISCOUNT"].includes(v);
+      },
+      message: "Le type doit être RISE ou DISCOUNT",
+    },
   },
   value: {
     type: Number,

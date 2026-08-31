@@ -33,11 +33,14 @@ const contractTypeRoutes = require("./routes/contractType");
 const proximityRoutes = require("./routes/proximity");
 const newsLetterRoutes = require("./routes/newsletter");
 const locationRoutes = require("./routes/location");
+const sectionRoutes = require("./routes/sections");
 const productMeasureUnitRoutes = require("./routes/productsMeasureUnits");
 const deliveryRoutes = require("./routes/delivery");
 const addressesRoutes = require("./routes/address");
 const deliveryTransfersRoutes = require("./routes/deliveryTransfer");
 const contactRoutes = require("./routes/contact");
+const reportsRoutes = require("./routes/reports");
+const prestatairesRoutes = require("./routes/prestataires");
 
 app.use(logger('[:date[web]] ":method :url" :status :res[content-length]'));
 
@@ -74,9 +77,12 @@ app.use("/newsLetter", newsLetterRoutes);
 app.use("/contact", contactRoutes);
 
 app.use("/locations", locationRoutes);
+app.use("/sections", sectionRoutes);
 app.use("/deliveries", deliveryRoutes);
 app.use("/deliveryTransfers", deliveryTransfersRoutes);
 app.use("/addresses", addressesRoutes);
+app.use("/reports", reportsRoutes);
+app.use("/prestataires", prestatairesRoutes);
 
 app.get("/", (req, res) => {
   res.send("Hello NODE API");

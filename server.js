@@ -4,6 +4,7 @@ const cors = require("cors");
 // const { initFirebase } = require('./helpers/firebaseConfig');
 
 const app = require("./app");
+const reportsScheduler = require("./services/reports/scheduler");
 const server = express();
 
 server.use(express.urlencoded({ limit: "10mb", extended: true }));
@@ -32,6 +33,7 @@ mongoose
   .connect(mongoUri)
   .then(() => {
     console.log("===========> connected to MongoDB <===========");
+    reportsScheduler.start();
     const port = process.env.PORT || 3000;
     server.listen(port, () => {
       console.log(`Node API app is running on port ${port}`);

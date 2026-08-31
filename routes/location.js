@@ -1,11 +1,12 @@
 const express = require("express");
 const router = express.Router();
 const Location = require("../models/locationModel");
+const Section = require("../models/sectionModel");
 
 const mongoose = require("mongoose");
 const { authorizeJwt, verifyAccount } = require("../helpers/verifyAccount");
 
-// GET /locations - Get all Locations
+// GET /locations - Get all Locations with their sections
 router.get(
   "/",
   authorizeJwt,
@@ -22,8 +23,21 @@ router.get(
     }
 
     try {
-      const location = await Location.find(filter);
-      res.status(200).json(location);
+      const locations = await Location.find(filter).sort({ label: 1 });
+
+      const locationIds = locations.map((l) => l._id);
+      const sections = await Section.find({
+        chantier: { $in: locationIds },
+      }).sort({ label: 1 });
+
+      const result = locations.map((loc) => ({
+        ...loc.toJSON(),
+        sections: sections
+          .filter((s) => s.chantier.toString() === loc._id.toString())
+          .map((s) => s.toJSON()),
+      }));
+
+      res.status(200).json(result);
     } catch (error) {
       console.error(error.message);
       res.status(500).json({ message: error.message });

@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const Delivery = require("../models/deliveryModel");
 const Order = require("../models/orderModel");
+const Section = require("../models/sectionModel");
 
 const { authorizeJwt, verifyAccount } = require("../helpers/verifyAccount");
 const mongoose = require("mongoose");
@@ -69,12 +70,24 @@ const populateArray = [
     ],
   },
   {
-    path: "departureAddress",
+    path: "departureChantier",
     select: "label description",
+  },
+  {
+    path: "departureSection",
+    select: "label description chantier",
+    populate: {
+      path: "chantier",
+      select: "label description",
+    },
   },
   {
     path: "order",
     select: "reference status description",
+  },
+  {
+    path: "destinationCarriere",
+    select: "label description",
   },
   {
     path: "destination",
@@ -83,6 +96,10 @@ const populateArray = [
   {
     path: "replacementDriver",
     select: "firstName lastName email telephone",
+  },
+  {
+    path: "prestataire",
+    select: "name type zone phone",
   },
 ];
 
@@ -107,6 +124,14 @@ router.get(
 
     if (vehicleId) {
       filter.vehicle = vehicleId;
+    }
+
+    const { chantierId, sectionId } = req.query;
+    if (sectionId) {
+      filter.departureSection = sectionId;
+    } else if (chantierId) {
+      const sections = await Section.find({ chantier: chantierId }).select("_id");
+      filter.departureSection = { $in: sections.map((s) => s._id) };
     }
 
     // Add search filter if provided
@@ -179,16 +204,46 @@ router.post(
   async (req, res) => {
     try {
       const {
-        departureAddress,
+        departureChantier,
+        departureSection,
         destination,
+        destinationCarriere,
         vehicle,
         order,
         productMeasureUnit,
         quantity,
         note,
         replacementDriver,
+        prestataire,
         autoStartTracking = true,
       } = req.body;
+
+      if (!departureChantier) {
+        return res.status(400).json({
+          success: false,
+          message: "Le chantier de départ est requis.",
+        });
+      }
+
+      // Validation : soit (order + destination) soit destinationCarriere
+      if (destinationCarriere && destination) {
+        return res.status(400).json({
+          success: false,
+          message: "Fournissez soit une adresse de destination soit une carrière, pas les deux.",
+        });
+      }
+      if (!destinationCarriere && !destination) {
+        return res.status(400).json({
+          success: false,
+          message: "Une destination est requise (adresse ou carrière).",
+        });
+      }
+      if (order && !destination) {
+        return res.status(400).json({
+          success: false,
+          message: "Une adresse de destination est requise pour une livraison avec commande.",
+        });
+      }
 
       // Check for any deliveries where either sender and receiver hasn't validated
       const pendingDelivery = await Delivery.findOne({
@@ -196,18 +251,9 @@ router.post(
         "sender.validate": false,
         "receiver.validate": false,
       }).populate([
-        {
-          path: "sender.user",
-          select: "firstName lastName",
-        },
-        {
-          path: "receiver.user",
-          select: "firstName lastName",
-        },
-        {
-          path: "order",
-          select: "reference",
-        },
+        { path: "sender.user", select: "firstName lastName" },
+        { path: "receiver.user", select: "firstName lastName" },
+        { path: "order", select: "reference" },
       ]);
 
       if (pendingDelivery) {
@@ -236,18 +282,21 @@ router.post(
         length: 7,
       });
 
-      // Create delivery with sender information
       const delivery = new Delivery({
         _id: newId,
         reference,
-        departureAddress,
-        destination,
+        startedAt: new Date(),
+        departureChantier,
+        ...(departureSection && { departureSection }),
+        ...(destination && { destination }),
+        ...(destinationCarriere && { destinationCarriere }),
         vehicle,
-        order,
+        ...(order && { order }),
         productMeasureUnit,
         ...(replacementDriver && { replacementDriver }),
+        ...(prestataire && { prestataire }),
         sender: {
-          user: req.user._id, // Current authenticated user
+          user: req.user._id,
           quantity,
           note,
           validate: false,
@@ -259,9 +308,11 @@ router.post(
       await delivery.validate();
       const savedDelivery = await delivery.save();
 
-      await Order.findByIdAndUpdate(order, {
-        status: ORDER_STATUS.IN_PROGRESS,
-      });
+      if (order) {
+        await Order.findByIdAndUpdate(order, {
+          status: ORDER_STATUS.IN_PROGRESS,
+        });
+      }
 
       const populatedDelivery = await Delivery.findById(
         savedDelivery._id,
@@ -371,7 +422,11 @@ router.put(
   "/receiver/:deliveryId",
   authorizeJwt,
   verifyAccount([{ name: "delivery", action: "update" }]),
-  upload.single("proof"), // Expect a file named "proof"
+  upload.fields([
+    { name: "proofs", maxCount: 5 },
+    { name: "receiverSignature", maxCount: 1 },
+    { name: "clientRepresentativeSignature", maxCount: 1 },
+  ]),
   async (req, res) => {
     try {
       const { deliveryId } = req.params;
@@ -409,29 +464,51 @@ router.put(
         });
       }
 
-      let proofUrl = delivery.receiver?.proof || null;
-      if (req.file) {
-        // Delete existing proof file if it exists
-        if (proofUrl) {
-          await spaceImageDeleteHelper(proofUrl);
-        }
-        // Upload new proof file to 'proofs' folder
-        proofUrl = await spaceImageUploadHelper(
-          req.file,
-          `deliveries/${deliveryId}/proofs/`,
-        );
+      const proofFiles = req.files?.proofs || [];
+      const receiverSignatureFile = req.files?.receiverSignature?.[0];
+      const clientRepresentativeSignatureFile =
+        req.files?.clientRepresentativeSignature?.[0];
+      if (!proofFiles.length || !receiverSignatureFile || !clientRepresentativeSignatureFile) {
+        return res.status(400).json({
+          success: false,
+          message: "Au moins une photo et les deux signatures sont requises.",
+        });
       }
 
-      // Update the delivery with receiver information
+      const proofUrls = await Promise.all(proofFiles.map((file) =>
+        spaceImageUploadHelper(file, `deliveries/${deliveryId}/proofs/`),
+      ));
+      const receiverSignatureUrl = await spaceImageUploadHelper(
+        receiverSignatureFile,
+        `deliveries/${deliveryId}/receiver-signature/`,
+      );
+      const clientRepresentativeSignatureUrl = await spaceImageUploadHelper(
+        clientRepresentativeSignatureFile,
+        `deliveries/${deliveryId}/client-representative-signature/`,
+      );
+
+      const hasQuantityDifference = Number(delivery.sender.quantity) !== Number(quantity);
+
+      // En cas d'écart, la réception est enregistrée mais reste non validée.
       delivery.receiver = {
         user: req.user._id,
-        proof: proofUrl,
+        proof: proofUrls.first,
+        proofs: proofUrls,
+        receiverSignature: receiverSignatureUrl,
+        clientRepresentativeSignature: clientRepresentativeSignatureUrl,
         quantity,
         note,
-        validate: false,
-        validateBy: null,
+        receivedAt: new Date(),
+        validate: !hasQuantityDifference,
+        validateBy: hasQuantityDifference ? null : req.user._id,
       };
-      delivery.status = "PENDING";
+      delivery.status = hasQuantityDifference ? "PENDING" : "DELIVERED";
+      delivery.adminValidation = {
+        status: hasQuantityDifference ? "PENDING" : "NOT_REQUIRED",
+        validatedBy: null,
+        validatedAt: null,
+        note: null,
+      };
 
       await delivery.validate();
       const updatedDelivery = await delivery.save();
@@ -486,7 +563,7 @@ router.put(
   async (req, res) => {
     try {
       const { deliveryId } = req.params;
-      const { departureAddress, destination, replacementDriver } = req.body;
+      const { departureChantier, departureSection, destination, replacementDriver } = req.body;
 
       // Find the delivery and verify it exists
       const delivery = await Delivery.findById(deliveryId);
@@ -497,7 +574,7 @@ router.put(
         });
       }
 
-      const orderDoc = await Order.findById(order);
+      const orderDoc = await Order.findById(delivery.order);
       if (!orderDoc) {
         return res.status(404).json({
           success: false,
@@ -539,7 +616,8 @@ router.put(
         });
       }
 
-      if (departureAddress) delivery.departureAddress = departureAddress;
+      if (departureChantier) delivery.departureChantier = departureChantier;
+      if (departureSection !== undefined) delivery.departureSection = departureSection || null;
       if (destination) delivery.destination = destination;
       if (replacementDriver) delivery.replacementDriver = replacementDriver;
 
@@ -570,6 +648,42 @@ router.put(
         message: "Error updating delivery",
         error: error.message,
       });
+    }
+  },
+);
+
+router.put(
+  "/admin-validate/:deliveryId",
+  authorizeJwt,
+  verifyAccount([{ name: "delivery", action: "update" }]),
+  async (req, res) => {
+    try {
+      const { decision, note } = req.body;
+      if (!["APPROVED", "DISPUTED"].includes(decision)) {
+        return res.status(400).json({ message: "Décision de validation invalide." });
+      }
+      if (decision === "DISPUTED" && !note?.trim()) {
+        return res.status(400).json({ message: "Un motif est requis pour signaler un écart." });
+      }
+
+      const delivery = await Delivery.findById(req.params.deliveryId);
+      if (!delivery || !delivery.receiver?.user) {
+        return res.status(404).json({ message: "Réception introuvable." });
+      }
+
+      delivery.adminValidation = {
+        status: decision,
+        validatedBy: req.user._id,
+        validatedAt: new Date(),
+        note: note?.trim() || null,
+      };
+      delivery.status = decision === "APPROVED" ? "DELIVERED" : "PENDING";
+      await delivery.save();
+
+      const populatedDelivery = await Delivery.findById(delivery._id).populate(populateArray);
+      res.status(200).json({ success: true, data: populatedDelivery });
+    } catch (error) {
+      res.status(500).json({ message: "Erreur de validation administrative", error: error.message });
     }
   },
 );

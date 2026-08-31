@@ -12,7 +12,9 @@ module.exports.exportDeliveryToPdf = async ({ deliveryId }) => {
   // Fetch delivery with populated fields
   const delivery = await Delivery.findById(deliveryId)
     .populate("order", "reference")
-    .populate("departureAddress", "label")
+    .populate("departureChantier", "label")
+    .populate({ path: "departureSection", select: "label chantier", populate: { path: "chantier", select: "label" } })
+    .populate("destinationCarriere", "label")
     .populate("destination", "name location")
     .populate("vehicle", "registrationNumber")
     .populate("sender.user", "firstName lastName")
@@ -250,16 +252,22 @@ module.exports.exportDeliveryToPdf = async ({ deliveryId }) => {
           [
             { text: "Adresse de départ", style: "tableHeader" },
             {
-              text: checkIfNull(delivery.departureAddress?.label),
+              text: checkIfNull(
+                delivery.departureSection?.label
+                  ? `${delivery.departureChantier?.label || ""} — ${delivery.departureSection?.label || ""}`
+                  : delivery.departureChantier?.label || ""
+              ),
               alignment: "left",
             },
           ],
           [
             { text: "Destination", style: "tableHeader" },
             {
-              text: checkIfNull(
-                `${delivery.destination?.name || ""} (lat: ${delivery.destination?.location?.lat || "-"}, lng: ${delivery.destination?.location?.lng || "-"})`,
-              ),
+              text: delivery.destinationCarriere
+                ? checkIfNull(delivery.destinationCarriere?.label)
+                : checkIfNull(
+                    `${delivery.destination?.name || ""} (lat: ${delivery.destination?.location?.lat || "-"}, lng: ${delivery.destination?.location?.lng || "-"})`,
+                  ),
               alignment: "left",
             },
           ],
