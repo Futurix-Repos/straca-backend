@@ -55,6 +55,11 @@ const deliverySchema = new Schema(
       ref: "ProductMeasureUnit",
       required: true,
     },
+    prestataire: {
+      type: Schema.Types.ObjectId,
+      ref: "Prestataire",
+      default: null,
+    },
     sender: {
       user: {
         type: Schema.Types.ObjectId,

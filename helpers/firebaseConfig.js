@@ -5,7 +5,7 @@ const {
   getDownloadURL,
   uploadBytesResumable,
 } = require("firebase/storage");
-const serviceAccount = require("../flash-chat-3a9a7-firebase-adminsdk-tm1oj-d5e6152562.json");
+// const serviceAccount = require("../flash-chat-3a9a7-firebase-adminsdk-tm1oj-d5e6152562.json");
 
 // Initialize Firebase Admin SDK
 
