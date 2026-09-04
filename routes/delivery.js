@@ -7,13 +7,10 @@ const Section = require("../models/sectionModel");
 const { authorizeJwt, verifyAccount } = require("../helpers/verifyAccount");
 const mongoose = require("mongoose");
 const { generateReference, ORDER_STATUS } = require("../helpers/constants");
-const {
-  spaceImageDeleteHelper,
-  spaceImageUploadHelper,
-} = require("../helpers/spaceImageUploadHelper");
 const multer = require("multer");
 const { exportDeliveryToPdf } = require("../services/delivery");
 const vehicleTrackingService = require("../services/vehicleTracking");
+const { skippedReceiverEvidence } = require("../services/deliveryEvidence");
 const upload = multer({ storage: multer.memoryStorage() });
 
 const populateArray = [
@@ -464,38 +461,15 @@ router.put(
         });
       }
 
-      const proofFiles = req.files?.proofs || [];
-      const receiverSignatureFile = req.files?.receiverSignature?.[0];
-      const clientRepresentativeSignatureFile =
-        req.files?.clientRepresentativeSignature?.[0];
-      if (!proofFiles.length || !receiverSignatureFile || !clientRepresentativeSignatureFile) {
-        return res.status(400).json({
-          success: false,
-          message: "Au moins une photo et les deux signatures sont requises.",
-        });
-      }
-
-      const proofUrls = await Promise.all(proofFiles.map((file) =>
-        spaceImageUploadHelper(file, `deliveries/${deliveryId}/proofs/`),
-      ));
-      const receiverSignatureUrl = await spaceImageUploadHelper(
-        receiverSignatureFile,
-        `deliveries/${deliveryId}/receiver-signature/`,
-      );
-      const clientRepresentativeSignatureUrl = await spaceImageUploadHelper(
-        clientRepresentativeSignatureFile,
-        `deliveries/${deliveryId}/client-representative-signature/`,
-      );
+      // Les fichiers multipart restent acceptés pour préserver le client, mais ne sont plus stockés.
+      const evidence = await skippedReceiverEvidence();
 
       const hasQuantityDifference = Number(delivery.sender.quantity) !== Number(quantity);
 
       // En cas d'écart, la réception est enregistrée mais reste non validée.
       delivery.receiver = {
         user: req.user._id,
-        proof: proofUrls.first,
-        proofs: proofUrls,
-        receiverSignature: receiverSignatureUrl,
-        clientRepresentativeSignature: clientRepresentativeSignatureUrl,
+        ...evidence,
         quantity,
         note,
         receivedAt: new Date(),
