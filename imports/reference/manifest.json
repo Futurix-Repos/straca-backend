@@ -1,0 +1,22 @@
+{
+  "collectionOrder": [
+    "prestataires",
+    "vehicles",
+    "drivers",
+    "vehicleDriverAssignments",
+    "locations"
+  ],
+  "counts": {
+    "prestataires": 50,
+    "vehicles": 100,
+    "drivers": 100,
+    "vehicleDriverAssignments": 54,
+    "unresolvedVehicleDriverAssignments": 46,
+    "locations": 63
+  },
+  "defaultVehicleReferences": {
+    "model": "679ca8fad2726f1975815dcf",
+    "source": "679ca925d2726f1975815dea",
+    "type": "67851a82adf7802231d9278e"
+  }
+}

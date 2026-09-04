@@ -1,0 +1,600 @@
+[
+  {
+    "legacyAssignmentId": 55,
+    "legacyVehicleId": 101,
+    "legacyDriverId": 40,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:07:58.019Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:58.019Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 56,
+    "legacyVehicleId": 104,
+    "legacyDriverId": 41,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:04.112Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:04.112Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 57,
+    "legacyVehicleId": 107,
+    "legacyDriverId": 42,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:07.517Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:07.517Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 58,
+    "legacyVehicleId": 108,
+    "legacyDriverId": 43,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:09.075Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:09.075Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 59,
+    "legacyVehicleId": 109,
+    "legacyDriverId": 44,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:11.139Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:11.139Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 60,
+    "legacyVehicleId": 110,
+    "legacyDriverId": 45,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:12.737Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:12.737Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 61,
+    "legacyVehicleId": 111,
+    "legacyDriverId": 46,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:14.775Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:14.775Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 62,
+    "legacyVehicleId": 112,
+    "legacyDriverId": 47,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:17.048Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:17.048Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 63,
+    "legacyVehicleId": 113,
+    "legacyDriverId": 48,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:19.184Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:19.184Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 64,
+    "legacyVehicleId": 114,
+    "legacyDriverId": 49,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:21.241Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:21.241Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 65,
+    "legacyVehicleId": 115,
+    "legacyDriverId": 50,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:22.677Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:22.677Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 66,
+    "legacyVehicleId": 117,
+    "legacyDriverId": 51,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:24.592Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:24.592Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 67,
+    "legacyVehicleId": 118,
+    "legacyDriverId": 52,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:25.631Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:25.631Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 68,
+    "legacyVehicleId": 119,
+    "legacyDriverId": 36,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:26.507Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:26.507Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 69,
+    "legacyVehicleId": 121,
+    "legacyDriverId": 53,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:28.669Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:28.669Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 70,
+    "legacyVehicleId": 122,
+    "legacyDriverId": 54,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:29.970Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:29.970Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 71,
+    "legacyVehicleId": 125,
+    "legacyDriverId": 55,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:34.194Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:34.194Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 72,
+    "legacyVehicleId": 126,
+    "legacyDriverId": 56,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:35.225Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:35.225Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 73,
+    "legacyVehicleId": 127,
+    "legacyDriverId": 57,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:36.271Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:36.271Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 74,
+    "legacyVehicleId": 128,
+    "legacyDriverId": 58,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:37.857Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:37.857Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 75,
+    "legacyVehicleId": 129,
+    "legacyDriverId": 59,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:38.916Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:38.916Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 76,
+    "legacyVehicleId": 130,
+    "legacyDriverId": 60,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:40.651Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:40.651Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 77,
+    "legacyVehicleId": 132,
+    "legacyDriverId": 61,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:43.668Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:43.668Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 78,
+    "legacyVehicleId": 133,
+    "legacyDriverId": 62,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:45.878Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:45.878Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 79,
+    "legacyVehicleId": 134,
+    "legacyDriverId": 63,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:47.458Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:47.458Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 80,
+    "legacyVehicleId": 136,
+    "legacyDriverId": 9,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:49.706Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:49.706Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 81,
+    "legacyVehicleId": 137,
+    "legacyDriverId": 64,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:52.324Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:52.324Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 82,
+    "legacyVehicleId": 138,
+    "legacyDriverId": 13,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:53.209Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:53.209Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 83,
+    "legacyVehicleId": 139,
+    "legacyDriverId": 65,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:55.356Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:55.356Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 84,
+    "legacyVehicleId": 140,
+    "legacyDriverId": 66,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:56.705Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:56.705Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 85,
+    "legacyVehicleId": 141,
+    "legacyDriverId": 67,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:08:59.025Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:08:59.025Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 86,
+    "legacyVehicleId": 142,
+    "legacyDriverId": 68,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:09:00.448Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:09:00.448Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 87,
+    "legacyVehicleId": 143,
+    "legacyDriverId": 69,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:09:02.521Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:09:02.521Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 88,
+    "legacyVehicleId": 144,
+    "legacyDriverId": 59,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:09:03.865Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:09:03.865Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 89,
+    "legacyVehicleId": 145,
+    "legacyDriverId": 56,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:09:05.179Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:09:05.180Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 90,
+    "legacyVehicleId": 148,
+    "legacyDriverId": 37,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:09:07.363Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:09:07.363Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 91,
+    "legacyVehicleId": 149,
+    "legacyDriverId": 70,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:09:08.405Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:09:08.405Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 92,
+    "legacyVehicleId": 151,
+    "legacyDriverId": 71,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:09:10.177Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:09:10.177Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 93,
+    "legacyVehicleId": 152,
+    "legacyDriverId": 51,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:09:11.379Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:09:11.379Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 94,
+    "legacyVehicleId": 156,
+    "legacyDriverId": 72,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:09:14.581Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:09:14.581Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 95,
+    "legacyVehicleId": 157,
+    "legacyDriverId": 73,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:09:15.597Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:09:15.597Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 96,
+    "legacyVehicleId": 160,
+    "legacyDriverId": 74,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:09:18.394Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:09:18.394Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 97,
+    "legacyVehicleId": 164,
+    "legacyDriverId": 75,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:09:20.840Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:09:20.840Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 98,
+    "legacyVehicleId": 168,
+    "legacyDriverId": 76,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:09:24.425Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:09:24.425Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 99,
+    "legacyVehicleId": 169,
+    "legacyDriverId": 77,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:09:25.882Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:09:25.882Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  },
+  {
+    "legacyAssignmentId": 100,
+    "legacyVehicleId": 170,
+    "legacyDriverId": 78,
+    "driverLinkType": "current",
+    "createdAt": {
+      "$date": "2026-05-06T12:09:27.272Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:09:27.272Z"
+    },
+    "reason": "Véhicule absent de vehicles_rows.csv"
+  }
+]

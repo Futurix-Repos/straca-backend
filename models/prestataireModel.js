@@ -11,9 +11,18 @@ const prestataireSchema = new mongoose.Schema(
     ifu: { type: String, default: null, trim: true },
     rccm: { type: String, default: null, trim: true },
     odooId: { type: Number, default: null },
+    externalIds: { type: mongoose.Schema.Types.Mixed, default: undefined },
     isActive: { type: Boolean, default: true },
   },
   { timestamps: true },
+);
+
+prestataireSchema.index(
+  { "externalIds.odoo": 1 },
+  {
+    unique: true,
+    partialFilterExpression: { "externalIds.odoo": { $exists: true } },
+  },
 );
 
 module.exports = mongoose.model("Prestataire", prestataireSchema);

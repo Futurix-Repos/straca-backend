@@ -1,0 +1,3602 @@
+[
+  {
+    "_id": {
+      "$oid": "720000000000000000000001"
+    },
+    "registrationNumber": "AV7590RB",
+    "plateRaw": "AV7590RB",
+    "plateNormalized": "AV7590RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 1
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "Renault/KE",
+      "modelName": "Renault/KE"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:05:58.945Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:05:58.945Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000002"
+    },
+    "registrationNumber": "AV7753RB",
+    "plateRaw": "AV7753RB",
+    "plateNormalized": "AV7753RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 2
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "Renault/KE",
+      "modelName": "Renault/KE"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:05:59.327Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:05:59.327Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000003"
+    },
+    "registrationNumber": "AV7829RB",
+    "plateRaw": "AV7829RB",
+    "plateNormalized": "AV7829RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 3
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "Renault/KE",
+      "modelName": "Renault/KE"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:05:59.666Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:05:59.666Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000004"
+    },
+    "registrationNumber": "AV7830RB",
+    "plateRaw": "AV7830RB",
+    "plateNormalized": "AV7830RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 4
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "Renault/KE",
+      "modelName": "Renault/KE"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:00.025Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:00.025Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000005"
+    },
+    "registrationNumber": "AV7919RB",
+    "plateRaw": "AV7919RB",
+    "plateNormalized": "AV7919RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 5
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "Renault/KE",
+      "modelName": "Renault/KE"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:00.386Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:00.386Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000006"
+    },
+    "registrationNumber": "AV7928RB",
+    "plateRaw": "AV7928RB",
+    "plateNormalized": "AV7928RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 6
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "Renault/KE",
+      "modelName": "Renault/KE"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:01.136Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:01.136Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000007"
+    },
+    "registrationNumber": "AX3074RB",
+    "plateRaw": "AX3074RB",
+    "plateNormalized": "AX3074RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 7
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "LEGRAS/L",
+      "modelName": "LEGRAS/L"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:01.611Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:01.611Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000008"
+    },
+    "registrationNumber": "AX3075RB",
+    "plateRaw": "AX3075RB",
+    "plateNormalized": "AX3075RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 8
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "LEGRAS/L",
+      "modelName": "LEGRAS/L"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:02.786Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:02.786Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000009"
+    },
+    "registrationNumber": "AX3076RB",
+    "plateRaw": "AX3076RB",
+    "plateNormalized": "AX3076RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 9
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "LEGRAS/L",
+      "modelName": "LEGRAS/L"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:03.128Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:03.128Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000000a"
+    },
+    "registrationNumber": "AX3077RB",
+    "plateRaw": "AX3077RB",
+    "plateNormalized": "AX3077RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 10
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "LEGRAS/L",
+      "modelName": "LEGRAS/L"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:04.918Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:04.918Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000000b"
+    },
+    "registrationNumber": "AX3078RB",
+    "plateRaw": "AX3078RB",
+    "plateNormalized": "AX3078RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 11
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "LEGRAS/L",
+      "modelName": "LEGRAS/L"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:06.038Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:06.038Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000000c"
+    },
+    "registrationNumber": "AX3079RB",
+    "plateRaw": "AX3079RB",
+    "plateNormalized": "AX3079RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 12
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "LEGRAS/L",
+      "modelName": "LEGRAS/L"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:07.580Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:07.580Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000000d"
+    },
+    "registrationNumber": "AZ8537RB",
+    "plateRaw": "AZ8537RB",
+    "plateNormalized": "AZ8537RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 13
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 3,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:09.553Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:09.554Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000000e"
+    },
+    "registrationNumber": "AZ8635RB",
+    "plateRaw": "AZ8635RB",
+    "plateNormalized": "AZ8635RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 14
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 4,
+      "vehicleKind": "MAN/MAN",
+      "modelName": "MAN/MAN"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:10.453Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:10.453Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000000f"
+    },
+    "registrationNumber": "AZ8638RB",
+    "plateRaw": "AZ8638RB",
+    "plateNormalized": "AZ8638RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 15
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:10.851Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:10.851Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000010"
+    },
+    "registrationNumber": "AZ8640RB",
+    "plateRaw": "AZ8640RB",
+    "plateNormalized": "AZ8640RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 16
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 4,
+      "vehicleKind": "MAN/MAN",
+      "modelName": "MAN/MAN"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:12.282Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:12.282Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000011"
+    },
+    "registrationNumber": "AZ8641RB",
+    "plateRaw": "AZ8641RB",
+    "plateNormalized": "AZ8641RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 17
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 3,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:13.863Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:13.863Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000012"
+    },
+    "registrationNumber": "BB7082RB",
+    "plateRaw": "BB7082RB",
+    "plateNormalized": "BB7082RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 18
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 3,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:14.524Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:14.524Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000013"
+    },
+    "registrationNumber": "BB7084RB",
+    "plateRaw": "BB7084RB",
+    "plateNormalized": "BB7084RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 19
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 3,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:15.687Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:15.687Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000014"
+    },
+    "registrationNumber": "BC6487RB",
+    "plateRaw": "BC6487RB",
+    "plateNormalized": "BC6487RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 20
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 3,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:17.324Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:17.324Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000015"
+    },
+    "registrationNumber": "BC6488RB",
+    "plateRaw": "BC6488RB",
+    "plateNormalized": "BC6488RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 21
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 3,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:19.278Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:19.278Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000016"
+    },
+    "registrationNumber": "BF0251D203",
+    "plateRaw": "BF0251D203",
+    "plateNormalized": "BF0251D203",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 22
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "WIELTON/M",
+      "modelName": "WIELTON/M"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:20.670Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:20.670Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000017"
+    },
+    "registrationNumber": "BF0252D203",
+    "plateRaw": "BF0252D203",
+    "plateNormalized": "BF0252D203",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 23
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "WIELTON/M",
+      "modelName": "WIELTON/M"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:21.034Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:21.034Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000018"
+    },
+    "registrationNumber": "BF0256D203",
+    "plateRaw": "BF0256D203",
+    "plateNormalized": "BF0256D203",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 24
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:22.847Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:22.847Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000019"
+    },
+    "registrationNumber": "BF0257D203",
+    "plateRaw": "BF0257D203",
+    "plateNormalized": "BF0257D203",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 25
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:24.038Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:24.038Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000001a"
+    },
+    "registrationNumber": "BF4577E303",
+    "plateRaw": "BF4577E303",
+    "plateNormalized": "BF4577E303",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 26
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "Mercedes/",
+      "modelName": "Mercedes/"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:25.024Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:25.024Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000001b"
+    },
+    "registrationNumber": "BF4578E303",
+    "plateRaw": "BF4578E303",
+    "plateNormalized": "BF4578E303",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 27
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "Mercedes/",
+      "modelName": "Mercedes/"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:26.061Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:26.061Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000001c"
+    },
+    "registrationNumber": "BF4580E303",
+    "plateRaw": "BF4580E303",
+    "plateNormalized": "BF4580E303",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 28
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "Mercedes/",
+      "modelName": "Mercedes/"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:27.458Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:27.458Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000001d"
+    },
+    "registrationNumber": "BF4584E303",
+    "plateRaw": "BF4584E303",
+    "plateNormalized": "BF4584E303",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 29
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "Mercedes/",
+      "modelName": "Mercedes/"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:28.671Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:28.671Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000001e"
+    },
+    "registrationNumber": "BF4587E303",
+    "plateRaw": "BF4587E303",
+    "plateNormalized": "BF4587E303",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 30
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "COMET/CO",
+      "modelName": "COMET/CO"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:30.326Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:30.326Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000001f"
+    },
+    "registrationNumber": "BF4590E303",
+    "plateRaw": "BF4590E303",
+    "plateNormalized": "BF4590E303",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 31
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "Mercedes/",
+      "modelName": "Mercedes/"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:31.299Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:31.299Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000020"
+    },
+    "registrationNumber": "BF4619E303",
+    "plateRaw": "BF4619E303",
+    "plateNormalized": "BF4619E303",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 32
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "COMET/CO",
+      "modelName": "COMET/CO"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:32.386Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:32.386Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000021"
+    },
+    "registrationNumber": "BF4624E303",
+    "plateRaw": "BF4624E303",
+    "plateNormalized": "BF4624E303",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 33
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "COMET/CO",
+      "modelName": "COMET/CO"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:33.665Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:33.665Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000022"
+    },
+    "registrationNumber": "BF4627E303",
+    "plateRaw": "BF4627E303",
+    "plateNormalized": "BF4627E303",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 34
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "COMET/CO",
+      "modelName": "COMET/CO"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:35.054Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:35.054Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000023"
+    },
+    "registrationNumber": "BF4629E303",
+    "plateRaw": "BF4629E303",
+    "plateNormalized": "BF4629E303",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 35
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "COMET/CO",
+      "modelName": "COMET/CO"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:35.378Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:35.378Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000024"
+    },
+    "registrationNumber": "BF5090E703",
+    "plateRaw": "BF5090E703",
+    "plateNormalized": "BF5090E703",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 36
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:36.817Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:36.817Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000025"
+    },
+    "registrationNumber": "BF5093E703",
+    "plateRaw": "BF5093E703",
+    "plateNormalized": "BF5093E703",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 37
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:37.993Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:37.993Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000026"
+    },
+    "registrationNumber": "BF5187E703",
+    "plateRaw": "BF5187E703",
+    "plateNormalized": "BF5187E703",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 38
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "GRUNWAL",
+      "modelName": "GRUNWAL"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:39.693Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:39.693Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000027"
+    },
+    "registrationNumber": "BF5188E703",
+    "plateRaw": "BF5188E703",
+    "plateNormalized": "BF5188E703",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 39
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "GRUNWAL",
+      "modelName": "GRUNWAL"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:40.881Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:40.881Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000028"
+    },
+    "registrationNumber": "BF5192E703",
+    "plateRaw": "BF5192E703",
+    "plateNormalized": "BF5192E703",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 40
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "GRUNWAL",
+      "modelName": "GRUNWAL"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:41.787Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:41.787Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000029"
+    },
+    "registrationNumber": "BF5193E703",
+    "plateRaw": "BF5193E703",
+    "plateNormalized": "BF5193E703",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 41
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:43.093Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:43.093Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000002a"
+    },
+    "registrationNumber": "BG4203RB",
+    "plateRaw": "BG4203RB",
+    "plateNormalized": "BG4203RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 42
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 3,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:43.526Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:43.526Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000002b"
+    },
+    "registrationNumber": "BG4204RB",
+    "plateRaw": "BG4204RB",
+    "plateNormalized": "BG4204RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 43
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 3,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:44.205Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:44.205Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000002c"
+    },
+    "registrationNumber": "BG4205RB",
+    "plateRaw": "BG4205RB",
+    "plateNormalized": "BG4205RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 44
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 3,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:46.117Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:46.117Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000002d"
+    },
+    "registrationNumber": "BG4206RB",
+    "plateRaw": "BG4206RB",
+    "plateNormalized": "BG4206RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 45
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 3,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:47.564Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:47.564Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000002e"
+    },
+    "registrationNumber": "BG4207RB",
+    "plateRaw": "BG4207RB",
+    "plateNormalized": "BG4207RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 46
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 3,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:48.995Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:48.995Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000002f"
+    },
+    "registrationNumber": "BG4209RB",
+    "plateRaw": "BG4209RB",
+    "plateNormalized": "BG4209RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 47
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 5,
+      "vehicleKind": "Toyota/LA",
+      "modelName": "Toyota/LA"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:50.367Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:50.367Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000030"
+    },
+    "registrationNumber": "BG4210RB",
+    "plateRaw": "BG4210RB",
+    "plateNormalized": "BG4210RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 48
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 6,
+      "vehicleKind": "Toyota/LA",
+      "modelName": "Toyota/LA"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:51.381Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:51.381Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000031"
+    },
+    "registrationNumber": "BK2453RB",
+    "plateRaw": "BK2453RB",
+    "plateNormalized": "BK2453RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 49
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 3,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:53.172Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:53.172Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000032"
+    },
+    "registrationNumber": "BK2455RB",
+    "plateRaw": "BK2455RB",
+    "plateNormalized": "BK2455RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 50
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 3,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:54.720Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:54.720Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000033"
+    },
+    "registrationNumber": "BK2456RB",
+    "plateRaw": "BK2456RB",
+    "plateNormalized": "BK2456RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 51
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 3,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:56.307Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:56.307Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000034"
+    },
+    "registrationNumber": "BK2457RB",
+    "plateRaw": "BK2457RB",
+    "plateNormalized": "BK2457RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 52
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 3,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:06:58.414Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:06:58.414Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000035"
+    },
+    "registrationNumber": "BK2462RB",
+    "plateRaw": "BK2462RB",
+    "plateNormalized": "BK2462RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 53
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 5,
+      "vehicleKind": "Toyota/LA",
+      "modelName": "Toyota/LA"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:00.579Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:00.579Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000036"
+    },
+    "registrationNumber": "BK2583RB",
+    "plateRaw": "BK2583RB",
+    "plateNormalized": "BK2583RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 54
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 5,
+      "vehicleKind": "Ford/FORD",
+      "modelName": "Ford/FORD"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:01.769Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:01.769Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000037"
+    },
+    "registrationNumber": "BL8614RB",
+    "plateRaw": "BL8614RB",
+    "plateNormalized": "BL8614RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 55
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 7,
+      "vehicleKind": "FRUEHAUF",
+      "modelName": "FRUEHAUF"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:02.479Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:02.479Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000038"
+    },
+    "registrationNumber": "BL9887RB",
+    "plateRaw": "BL9887RB",
+    "plateNormalized": "BL9887RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 56
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:02.861Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:02.861Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000039"
+    },
+    "registrationNumber": "BL9896RB",
+    "plateRaw": "BL9896RB",
+    "plateNormalized": "BL9896RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 57
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:05.030Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:05.030Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000003a"
+    },
+    "registrationNumber": "BL9971RB",
+    "plateRaw": "BL9971RB",
+    "plateNormalized": "BL9971RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 58
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "MEILLER/M",
+      "modelName": "MEILLER/M"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:06.037Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:06.037Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000003b"
+    },
+    "registrationNumber": "BL9972RB",
+    "plateRaw": "BL9972RB",
+    "plateNormalized": "BL9972RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 59
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "MEILLER/M",
+      "modelName": "MEILLER/M"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:07.524Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:07.524Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000003c"
+    },
+    "registrationNumber": "BM2565RB",
+    "plateRaw": "BM2565RB",
+    "plateNormalized": "BM2565RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 60
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:08.708Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:08.708Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000003d"
+    },
+    "registrationNumber": "BM2566RB",
+    "plateRaw": "BM2566RB",
+    "plateNormalized": "BM2566RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 61
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:09.139Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:09.140Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000003e"
+    },
+    "registrationNumber": "BM2567RB",
+    "plateRaw": "BM2567RB",
+    "plateNormalized": "BM2567RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 62
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "MEILLER/M",
+      "modelName": "MEILLER/M"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:11.265Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:11.265Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000003f"
+    },
+    "registrationNumber": "BM2568RB",
+    "plateRaw": "BM2568RB",
+    "plateNormalized": "BM2568RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 63
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "MEILLER/M",
+      "modelName": "MEILLER/M"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:12.468Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:12.468Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000040"
+    },
+    "registrationNumber": "BM2569RB",
+    "plateRaw": "BM2569RB",
+    "plateNormalized": "BM2569RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 64
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 6,
+      "vehicleKind": "Toyota/PR",
+      "modelName": "Toyota/PR"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:12.973Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:12.973Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000041"
+    },
+    "registrationNumber": "BN0132RB",
+    "plateRaw": "BN0132RB",
+    "plateNormalized": "BN0132RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 65
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 8,
+      "vehicleKind": "Mercedes/",
+      "modelName": "Mercedes/"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:13.314Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:13.314Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000042"
+    },
+    "registrationNumber": "BN0143RB",
+    "plateRaw": "BN0143RB",
+    "plateNormalized": "BN0143RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 66
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "MEILLER/M",
+      "modelName": "MEILLER/M"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:15.015Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:15.015Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000043"
+    },
+    "registrationNumber": "BN0145RB",
+    "plateRaw": "BN0145RB",
+    "plateNormalized": "BN0145RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 67
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "MEILLER/M",
+      "modelName": "MEILLER/M"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:15.346Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:15.346Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000044"
+    },
+    "registrationNumber": "BN0149RB",
+    "plateRaw": "BN0149RB",
+    "plateNormalized": "BN0149RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 68
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:15.712Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:15.712Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000045"
+    },
+    "registrationNumber": "BN0154RB",
+    "plateRaw": "BN0154RB",
+    "plateNormalized": "BN0154RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 69
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "MEILLER/M",
+      "modelName": "MEILLER/M"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:17.159Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:17.160Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000046"
+    },
+    "registrationNumber": "BN0155RB",
+    "plateRaw": "BN0155RB",
+    "plateNormalized": "BN0155RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 70
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "MEILLER/M",
+      "modelName": "MEILLER/M"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:17.560Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:17.560Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000047"
+    },
+    "registrationNumber": "BN0156RB",
+    "plateRaw": "BN0156RB",
+    "plateNormalized": "BN0156RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 71
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:17.982Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:17.982Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000048"
+    },
+    "registrationNumber": "BN0163RB",
+    "plateRaw": "BN0163RB",
+    "plateNormalized": "BN0163RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 72
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:18.870Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:18.870Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000049"
+    },
+    "registrationNumber": "BN0164RB",
+    "plateRaw": "BN0164RB",
+    "plateNormalized": "BN0164RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 73
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:20.389Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:20.389Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000004a"
+    },
+    "registrationNumber": "BN3752RB",
+    "plateRaw": "BN3752RB",
+    "plateNormalized": "BN3752RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 74
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 9,
+      "vehicleKind": "Toyota/CO",
+      "modelName": "Toyota/CO"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:23.750Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:23.750Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000004b"
+    },
+    "registrationNumber": "BN4054RB",
+    "plateRaw": "BN4054RB",
+    "plateNormalized": "BN4054RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 75
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 5,
+      "vehicleKind": "Toyota/HI",
+      "modelName": "Toyota/HI"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:26.099Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:26.099Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000004c"
+    },
+    "registrationNumber": "BN4058RB",
+    "plateRaw": "BN4058RB",
+    "plateNormalized": "BN4058RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 76
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 5,
+      "vehicleKind": "Toyota/HI",
+      "modelName": "Toyota/HI"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:31.870Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:31.870Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000004d"
+    },
+    "registrationNumber": "BN4062RB",
+    "plateRaw": "BN4062RB",
+    "plateNormalized": "BN4062RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 77
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:32.309Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:32.309Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000004e"
+    },
+    "registrationNumber": "BN4069RB",
+    "plateRaw": "BN4069RB",
+    "plateNormalized": "BN4069RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 78
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "WIELTON/M",
+      "modelName": "WIELTON/M"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:33.398Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:33.398Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000004f"
+    },
+    "registrationNumber": "BP4675RB",
+    "plateRaw": "BP4675RB",
+    "plateNormalized": "BP4675RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 79
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 10,
+      "vehicleKind": "SINOMACI",
+      "modelName": "SINOMACI"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:33.849Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:33.849Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000050"
+    },
+    "registrationNumber": "BP5501RB",
+    "plateRaw": "BP5501RB",
+    "plateNormalized": "BP5501RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 80
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 4,
+      "vehicleKind": "SINOTRUK",
+      "modelName": "SINOTRUK"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:34.227Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:34.227Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000051"
+    },
+    "registrationNumber": "BP5504RB",
+    "plateRaw": "BP5504RB",
+    "plateNormalized": "BP5504RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 81
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 4,
+      "vehicleKind": "SINOTRUK",
+      "modelName": "SINOTRUK"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:34.977Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:34.977Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000052"
+    },
+    "registrationNumber": "BP5509RB",
+    "plateRaw": "BP5509RB",
+    "plateNormalized": "BP5509RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 82
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 4,
+      "vehicleKind": "SINOTRUK",
+      "modelName": "SINOTRUK"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:36.428Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:36.428Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000053"
+    },
+    "registrationNumber": "BP5510RB",
+    "plateRaw": "BP5510RB",
+    "plateNormalized": "BP5510RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 83
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 4,
+      "vehicleKind": "SINOTRUK",
+      "modelName": "SINOTRUK"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:40.838Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:40.838Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000054"
+    },
+    "registrationNumber": "BP6532RB",
+    "plateRaw": "BP6532RB",
+    "plateNormalized": "BP6532RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 84
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 11,
+      "vehicleKind": "Renault/DU",
+      "modelName": "Renault/DU"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:44.658Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:44.658Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000055"
+    },
+    "registrationNumber": "BP7223RB",
+    "plateRaw": "BP7223RB",
+    "plateNormalized": "BP7223RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 85
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 11,
+      "vehicleKind": "Renault/DU",
+      "modelName": "Renault/DU"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:45.007Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:45.007Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000056"
+    },
+    "registrationNumber": "BR0844RB",
+    "plateRaw": "BR0844RB",
+    "plateNormalized": "BR0844RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 86
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 9,
+      "vehicleKind": "Toyota/CO",
+      "modelName": "Toyota/CO"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:45.387Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:45.387Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000057"
+    },
+    "registrationNumber": "BR1453RB",
+    "plateRaw": "BR1453RB",
+    "plateNormalized": "BR1453RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 87
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 12,
+      "vehicleKind": "SINOTRUK",
+      "modelName": "SINOTRUK"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:46.647Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:46.647Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000058"
+    },
+    "registrationNumber": "BR1745RB",
+    "plateRaw": "BR1745RB",
+    "plateNormalized": "BR1745RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 88
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "TRAILER/C",
+      "modelName": "TRAILER/C"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:46.967Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:46.967Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000059"
+    },
+    "registrationNumber": "BR1746RB",
+    "plateRaw": "BR1746RB",
+    "plateNormalized": "BR1746RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 89
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "San. ve Tic",
+      "modelName": "San. ve Tic"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:47.342Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:47.342Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000005a"
+    },
+    "registrationNumber": "BR1747RB",
+    "plateRaw": "BR1747RB",
+    "plateNormalized": "BR1747RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 90
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "TRAILER/C",
+      "modelName": "TRAILER/C"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:48.257Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:48.257Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000005b"
+    },
+    "registrationNumber": "BR1748RB",
+    "plateRaw": "BR1748RB",
+    "plateNormalized": "BR1748RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 91
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 2,
+      "vehicleKind": "TRAILER/C",
+      "modelName": "TRAILER/C"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:49.064Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:49.064Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000005c"
+    },
+    "registrationNumber": "BR2470RB",
+    "plateRaw": "BR2470RB",
+    "plateNormalized": "BR2470RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 92
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "SINOTRUK",
+      "modelName": "SINOTRUK"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:49.418Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:49.418Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000005d"
+    },
+    "registrationNumber": "BR2476RB",
+    "plateRaw": "BR2476RB",
+    "plateNormalized": "BR2476RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 93
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "SITRAK/SI",
+      "modelName": "SITRAK/SI"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:49.760Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:49.760Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000005e"
+    },
+    "registrationNumber": "BR2479RB",
+    "plateRaw": "BR2479RB",
+    "plateNormalized": "BR2479RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 94
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "SITRAK/SI",
+      "modelName": "SITRAK/SI"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:51.097Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:51.097Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72000000000000000000005f"
+    },
+    "registrationNumber": "BR2499RB",
+    "plateRaw": "BR2499RB",
+    "plateNormalized": "BR2499RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 95
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 1,
+      "vehicleKind": "SINOTRUK",
+      "modelName": "SINOTRUK"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:51.567Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:51.567Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000060"
+    },
+    "registrationNumber": "BR2981RB",
+    "plateRaw": "BR2981RB",
+    "plateNormalized": "BR2981RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 96
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 13,
+      "vehicleKind": "CATERPILI",
+      "modelName": "CATERPILI"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:51.917Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:51.917Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000061"
+    },
+    "registrationNumber": "BR7414RB",
+    "plateRaw": "BR7414RB",
+    "plateNormalized": "BR7414RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 97
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 6,
+      "vehicleKind": "Jeep/JEEF",
+      "modelName": "Jeep/JEEF"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:52.974Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:52.974Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000062"
+    },
+    "registrationNumber": "BR8204RB",
+    "plateRaw": "BR8204RB",
+    "plateNormalized": "BR8204RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 98
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 3,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:53.326Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:53.326Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000063"
+    },
+    "registrationNumber": "BR8205RB",
+    "plateRaw": "BR8205RB",
+    "plateNormalized": "BR8205RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 99
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 3,
+      "vehicleKind": "MAN/TGS",
+      "modelName": "MAN/TGS"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:54.152Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:54.152Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "720000000000000000000064"
+    },
+    "registrationNumber": "BR9272RB",
+    "plateRaw": "BR9272RB",
+    "plateNormalized": "BR9272RB",
+    "model": {
+      "$oid": "679ca8fad2726f1975815dcf"
+    },
+    "type": {
+      "$oid": "67851a82adf7802231d9278e"
+    },
+    "source": {
+      "$oid": "679ca925d2726f1975815dea"
+    },
+    "prestataire": {
+      "$oid": "710000000000000000000018"
+    },
+    "status": "verified",
+    "externalIds": {
+      "legacyId": 100
+    },
+    "metadata": {
+      "seedSource": "database/seeders/data/vehicules.json",
+      "legacyVehicleCategoryId": 10,
+      "vehicleKind": "SINOMACI",
+      "modelName": "SINOMACI"
+    },
+    "createdAt": {
+      "$date": "2026-05-06T12:07:56.048Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T12:07:56.048Z"
+    }
+  }
+]

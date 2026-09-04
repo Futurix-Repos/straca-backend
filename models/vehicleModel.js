@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const { normalizePlate } = require("../helpers/referenceNormalization");
 
 const vehicleSchema = new mongoose.Schema(
   {
@@ -7,6 +8,16 @@ const vehicleSchema = new mongoose.Schema(
       type: String,
       required: true,
       unique: true,
+      trim: true,
+    },
+    plateRaw: {
+      type: String,
+      trim: true,
+      minlength: 2,
+      maxlength: 30,
+    },
+    plateNormalized: {
+      type: String,
       trim: true,
     },
     tracking: {
@@ -28,6 +39,18 @@ const vehicleSchema = new mongoose.Schema(
       ref: "VehicleSource",
       required: true,
     },
+    prestataire: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Prestataire",
+      default: null,
+    },
+    status: {
+      type: String,
+      enum: ["pending", "verified", "inactive"],
+      default: "verified",
+    },
+    externalIds: { type: mongoose.Schema.Types.Mixed, default: undefined },
+    metadata: { type: mongoose.Schema.Types.Mixed, default: undefined },
     driver: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
@@ -47,6 +70,13 @@ const vehicleSchema = new mongoose.Schema(
 
 vehicleSchema.pre("validate", async function (next) {
   try {
+    const plate = this.plateRaw || this.registrationNumber;
+    if (plate) {
+      this.plateRaw = plate.trim();
+      this.registrationNumber = this.plateRaw;
+      this.plateNormalized = normalizePlate(this.plateRaw);
+    }
+
     // Only proceed with validation if source is provided
     if (this.source) {
       const VehicleSource = mongoose.model("VehicleSource");
@@ -78,6 +108,22 @@ vehicleSchema.pre("validate", async function (next) {
     next(error);
   }
 });
+
+vehicleSchema.index(
+  { plateNormalized: 1 },
+  {
+    unique: true,
+    partialFilterExpression: { plateNormalized: { $type: "string" } },
+  },
+);
+vehicleSchema.index({ prestataire: 1, status: 1, plateNormalized: 1 });
+vehicleSchema.index(
+  { "externalIds.odoo": 1 },
+  {
+    unique: true,
+    partialFilterExpression: { "externalIds.odoo": { $exists: true } },
+  },
+);
 
 vehicleSchema.virtual("deliveries", {
   ref: "Delivery",

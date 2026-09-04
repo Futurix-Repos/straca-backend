@@ -1,0 +1,1199 @@
+[
+  {
+    "_id": {
+      "$oid": "750000000000000000000001"
+    },
+    "label": "Aweni BTP, Bazounkpa2",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 1,
+      "odoo": 1534
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:44.846Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:44.846Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000002"
+    },
+    "label": "Aweni BTP, CARRIERE 13 / CHANTIER - ATHIEME",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 2,
+      "odoo": 2289
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:45.128Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:45.128Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000003"
+    },
+    "label": "Aweni BTP, CARRIERE ATHIEME SALAHOUE",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 3,
+      "odoo": 2221
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:45.510Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:45.510Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000004"
+    },
+    "label": "Aweni BTP, CARRIERE BIAKOU EG2 TANGUIETA",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 4,
+      "odoo": 2227
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:45.888Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:45.888Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000005"
+    },
+    "label": "Aweni BTP, CARRIERE DOGBO (TOTA)",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 5,
+      "odoo": 2224
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:46.171Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:46.171Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000006"
+    },
+    "label": "Aweni BTP, CARRIERE DOGBO LALO",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 6,
+      "odoo": 2225
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:46.451Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:46.451Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000007"
+    },
+    "label": "Aweni BTP, CARRIERE GBEDJI 12 / CHANTIER - ATHIEME",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 7,
+      "odoo": 2291
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:46.730Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:46.730Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000008"
+    },
+    "label": "Aweni BTP, CARRIERE GBEDJI 2 / CHANTIER - ATHIEME",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 8,
+      "odoo": 2293
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:47.074Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:47.074Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000009"
+    },
+    "label": "Aweni BTP, CARRIERE GBEDJI 9A / CHANTIER ATHEME",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 9,
+      "odoo": 2290
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:47.356Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:47.356Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000000a"
+    },
+    "label": "Aweni BTP, CARRIERE KEDJI - CHANTIER ATHIEME",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 10,
+      "odoo": 2292
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:47.635Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:47.635Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000000b"
+    },
+    "label": "Aweni BTP, CARRIERE KPETIENOU EG19 TANGUIETA",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 11,
+      "odoo": 2228
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:47.982Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:47.982Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000000c"
+    },
+    "label": "Aweni BTP, CARRIERE LALO (LOKOGBA)",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 12,
+      "odoo": 2223
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:48.264Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:48.264Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000000d"
+    },
+    "label": "Aweni BTP, CARRIERE OUIDAH",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 13,
+      "odoo": 2218
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:48.543Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:48.543Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000000e"
+    },
+    "label": "Aweni BTP, CARRIERE SOHOUNME 1B / CHANTIER - ATHIEME",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 14,
+      "odoo": 2279
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:48.822Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:48.822Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000000f"
+    },
+    "label": "Aweni BTP, CARRIERE SOHOUNME 2B / CHANTIER - ATHIEME",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 15,
+      "odoo": 2286
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:49.172Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:49.172Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000010"
+    },
+    "label": "Aweni BTP, CARRIERE SOHOUNME 3 / CHANTIER - ATHIEME",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 16,
+      "odoo": 2288
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:49.449Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:49.449Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000011"
+    },
+    "label": "Aweni BTP, CARRIERE SOHOUNME 6C / CHANTIER - ATHIEME",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 17,
+      "odoo": 2287
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:49.726Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:49.726Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000012"
+    },
+    "label": "Aweni BTP, CARRIERE SOMOU ET12 TANGUIETA",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 18,
+      "odoo": 2229
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:50.080Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:50.080Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000013"
+    },
+    "label": "Aweni Distribution",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 19,
+      "odoo": 94
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:50.357Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:50.357Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000014"
+    },
+    "label": "Aweni Distribution, ATHIEME ZOUNGBONOU",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 20,
+      "odoo": 2472
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:50.636Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:50.636Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000015"
+    },
+    "label": "Aweni Distribution, STATION STRACA CALAVI",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 21,
+      "odoo": 2230
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:50.914Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:50.914Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000016"
+    },
+    "label": "Aweni Distribution, Siège",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 22,
+      "odoo": 1535
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:51.270Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:51.270Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000017"
+    },
+    "label": "Aweni Services, Bazounkpa1",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 23,
+      "odoo": 1536
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:51.549Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:51.549Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000018"
+    },
+    "label": "Aweni Services, TEST",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 24,
+      "odoo": 2263
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:51.829Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:51.829Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000019"
+    },
+    "label": "EIFFAGE GC MARINE BENIN",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 25,
+      "odoo": 2278
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:52.177Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:52.177Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000001a"
+    },
+    "label": "EIFFAGE GC MARINE BENIN, PORT DE COTONOU - EGC BENIN",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 26,
+      "odoo": 2358
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:52.457Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:52.458Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000001b"
+    },
+    "label": "FOUDOU",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 27,
+      "odoo": 2235
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:52.741Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:52.741Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000001c"
+    },
+    "label": "SAFEROAD TRANSPORT",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 28,
+      "odoo": 2302
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:53.022Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:53.022Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000001d"
+    },
+    "label": "SOGEA SATOM BENIN , BASE SATOM ATHIEME",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 29,
+      "odoo": 2220
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:53.363Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:53.363Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000001e"
+    },
+    "label": "SOGEA SATOM BENIN , BASE SATOM BIACOU TANGUIETA",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 30,
+      "odoo": 2226
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:53.646Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:53.646Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000001f"
+    },
+    "label": "SOGEA SATOM BENIN , BASE SATOM DOGBO LALO",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 31,
+      "odoo": 2222
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:53.925Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:53.925Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000020"
+    },
+    "label": "SOGEA SATOM BENIN , CARRIERE -",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 32,
+      "odoo": 2366
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:54.275Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:54.275Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000021"
+    },
+    "label": "SOGEA SATOM BENIN , CARRIERE - EG 16 - SAMMANGOU",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 33,
+      "odoo": 2364
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:54.556Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:54.556Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000022"
+    },
+    "label": "SOGEA SATOM BENIN , CARRIERE - EG 17 - SAMMANGOU",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 34,
+      "odoo": 2365
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:54.837Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:54.838Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000023"
+    },
+    "label": "SOGEA SATOM BENIN , CARRIERE - EG10 YINGOU",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 35,
+      "odoo": 2361
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:55.116Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:55.116Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000024"
+    },
+    "label": "SOGEA SATOM BENIN , CARRIERE - EG2 - BIACOU",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 36,
+      "odoo": 2360
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:55.463Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:55.463Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000025"
+    },
+    "label": "SOGEA SATOM BENIN , CARRIERE - ET12 -SOMOU",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 37,
+      "odoo": 2363
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:55.846Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:55.846Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000026"
+    },
+    "label": "SOGEA SATOM BENIN , CARRIERE DE CONCASSAGE - TOUGA",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 38,
+      "odoo": 2362
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:56.128Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:56.128Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000027"
+    },
+    "label": "SOGEA SATOM BENIN , CARRIERE HANANGBO",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 39,
+      "odoo": 2217
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:56.406Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:56.407Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000028"
+    },
+    "label": "SOGEA SATOM BENIN , MDG (Site déchargement concassé)",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 40,
+      "odoo": 2232
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:56.685Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:56.685Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000029"
+    },
+    "label": "SOGEA SATOM BENIN , SATOM ADOUNKO",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 41,
+      "odoo": 2219
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:57.045Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:57.045Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000002a"
+    },
+    "label": "SOGEA SATOM BENIN , VHR CALAVI (Site déchargement concassé)",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 42,
+      "odoo": 2233
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:57.325Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:57.325Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000002b"
+    },
+    "label": "Straca-SA, Bazounkpa2",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 43,
+      "odoo": 2216
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:57.603Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:57.603Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000002c"
+    },
+    "label": "Straca-SA, CARRIERE  GBEHOUE - GRAND POPO",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 44,
+      "odoo": 2461
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:57.943Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:57.943Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000002d"
+    },
+    "label": "Straca-SA, CARRIERE - AGAME / LATERITE",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 45,
+      "odoo": 2369
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:58.227Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:58.227Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000002e"
+    },
+    "label": "Straca-SA, CARRIERE - GBEHOUE / SILTEUX",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 46,
+      "odoo": 2368
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:58.512Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:58.512Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000002f"
+    },
+    "label": "Straca-SA, CARRIERE - SOHOUNME / REMBLAI",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 47,
+      "odoo": 2370
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:58.789Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:58.789Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000030"
+    },
+    "label": "Straca-SA, CARRIERE AGAME 1",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 48,
+      "odoo": 2444
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:59.130Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:59.130Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000031"
+    },
+    "label": "Straca-SA, CARRIERE AGAME 2",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 49,
+      "odoo": 2445
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:59.410Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:59.410Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000032"
+    },
+    "label": "Straca-SA, CARRIERE AGAME 2'",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 50,
+      "odoo": 2446
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:59.689Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:59.689Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000033"
+    },
+    "label": "Straca-SA, CARRIERE DE HOUIN / REMBLAI",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 51,
+      "odoo": 2371
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:49:00.040Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:49:00.040Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000034"
+    },
+    "label": "Straca-SA, CARRIERE GBEDJI '",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 52,
+      "odoo": 2452
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:49:00.321Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:49:00.321Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000035"
+    },
+    "label": "Straca-SA, CARRIERE GBEDJI ''",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 53,
+      "odoo": 2453
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:49:00.600Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:49:00.600Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000036"
+    },
+    "label": "Straca-SA, CARRIERE GBEDJI 2",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 54,
+      "odoo": 2451
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:49:00.879Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:49:00.879Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000037"
+    },
+    "label": "Straca-SA, CARRIERE HOUIN 1",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 55,
+      "odoo": 2447
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:49:01.233Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:49:01.233Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000038"
+    },
+    "label": "Straca-SA, CARRIERE HOUIN 2",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 56,
+      "odoo": 2448
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:49:01.515Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:49:01.515Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "750000000000000000000039"
+    },
+    "label": "Straca-SA, CARRIERE KEDJI",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 57,
+      "odoo": 2454
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:49:01.797Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:49:01.797Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000003a"
+    },
+    "label": "Straca-SA, CARRIERE KINDJI",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 58,
+      "odoo": 2450
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:49:02.138Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:49:02.139Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000003b"
+    },
+    "label": "Straca-SA, CARRIERE KINDJI",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 59,
+      "odoo": 2449
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:49:02.417Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:49:02.417Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000003c"
+    },
+    "label": "Straca-SA, CARRIERE PK 11 + 300",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 60,
+      "odoo": 2456
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:49:02.697Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:49:02.697Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000003d"
+    },
+    "label": "Straca-SA, Direction Générale STRACA BENIN SA",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 61,
+      "odoo": 2359
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:49:02.976Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:49:02.976Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000003e"
+    },
+    "label": "Straca-SA, PK 13 FIN PROJET",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 62,
+      "odoo": 2455
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:49:03.325Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:49:03.325Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "75000000000000000000003f"
+    },
+    "label": "Straca-SA, PREFA STRACA",
+    "description": "Référentiel de site importé.",
+    "code": null,
+    "isActive": true,
+    "externalIds": {
+      "legacyId": 63,
+      "odoo": 2231
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:49:03.604Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:49:03.604Z"
+    }
+  }
+]

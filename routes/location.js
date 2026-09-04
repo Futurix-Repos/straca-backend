@@ -117,6 +117,26 @@ router.put(
   },
 );
 
+router.patch(
+  "/:id",
+  authorizeJwt,
+  verifyAccount([{ name: "location", action: "update" }]),
+  async (req, res) => {
+    try {
+      const location = await Location.findByIdAndUpdate(
+        req.params.id,
+        { $set: req.body },
+        { new: true, runValidators: true },
+      );
+      if (!location) return res.status(404).json({ message: "Site introuvable" });
+      return res.status(200).json(location);
+    } catch (error) {
+      if (error.code === 11000) return res.status(409).json({ message: "Code ou identifiant externe déjà utilisé." });
+      return res.status(400).json({ message: error.message });
+    }
+  },
+);
+
 // DELETE /location/:id - Delete a location by ID
 router.delete(
   "/:id",
@@ -125,7 +145,11 @@ router.delete(
   async (req, res) => {
     try {
       const { id } = req.params;
-      const location = await Location.findByIdAndDelete(id);
+      const location = await Location.findByIdAndUpdate(
+        id,
+        { isActive: false },
+        { new: true, runValidators: true },
+      );
 
       if (!location) {
         return res

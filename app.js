@@ -41,6 +41,8 @@ const deliveryTransfersRoutes = require("./routes/deliveryTransfer");
 const contactRoutes = require("./routes/contact");
 const reportsRoutes = require("./routes/reports");
 const prestatairesRoutes = require("./routes/prestataires");
+const driversRoutes = require("./routes/drivers");
+const vehicleDriverAssignmentsRoutes = require("./routes/vehicleDriverAssignments");
 
 app.use(logger('[:date[web]] ":method :url" :status :res[content-length]'));
 
@@ -83,6 +85,8 @@ app.use("/deliveryTransfers", deliveryTransfersRoutes);
 app.use("/addresses", addressesRoutes);
 app.use("/reports", reportsRoutes);
 app.use("/prestataires", prestatairesRoutes);
+app.use("/drivers", driversRoutes);
+app.use("/vehicle-driver-assignments", vehicleDriverAssignmentsRoutes);
 
 app.get("/", (req, res) => {
   res.send("Hello NODE API");

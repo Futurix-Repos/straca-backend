@@ -1,0 +1,1245 @@
+[
+  {
+    "_id": {
+      "$oid": "710000000000000000000001"
+    },
+    "name": "ATLANTIC BUSINESS",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 2636,
+    "externalIds": {
+      "legacyId": 1,
+      "odoo": 2636
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:39.414Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:39.414Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000002"
+    },
+    "name": "AYA GROUP",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": null,
+    "externalIds": {
+      "legacyId": 2
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:41.002Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:41.002Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000003"
+    },
+    "name": "CMAX",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 2489,
+    "externalIds": {
+      "legacyId": 3,
+      "odoo": 2489
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:43.050Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:43.050Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000004"
+    },
+    "name": "CRES",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 2483,
+    "externalIds": {
+      "legacyId": 4,
+      "odoo": 2483
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:45.374Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:45.374Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000005"
+    },
+    "name": "DINAS COMPANY",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 2486,
+    "externalIds": {
+      "legacyId": 5,
+      "odoo": 2486
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:46.110Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:46.110Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000006"
+    },
+    "name": "FARAL",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 2510,
+    "externalIds": {
+      "legacyId": 6,
+      "odoo": 2510
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:47.446Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:47.446Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000007"
+    },
+    "name": "ISO CONCEPT BTP ET SERVICES SARL",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": null,
+    "externalIds": {
+      "legacyId": 7
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:48.150Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:48.150Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000008"
+    },
+    "name": "JK TRANSPORT",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 2481,
+    "externalIds": {
+      "legacyId": 8,
+      "odoo": 2481
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:48.848Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:48.848Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000009"
+    },
+    "name": "MERVEILLE GROUP DES SIGNES",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 2487,
+    "externalIds": {
+      "legacyId": 9,
+      "odoo": 2487
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:49.539Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:49.539Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71000000000000000000000a"
+    },
+    "name": "NEW LIFE POWER SARL",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1340,
+    "externalIds": {
+      "legacyId": 10,
+      "odoo": 1340
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:50.622Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:50.622Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71000000000000000000000b"
+    },
+    "name": "PAWESGOOD",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1357,
+    "externalIds": {
+      "legacyId": 11,
+      "odoo": 1357
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:51.349Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:51.349Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71000000000000000000000c"
+    },
+    "name": "SAFEROAD",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": null,
+    "externalIds": {
+      "legacyId": 12
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:52.438Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:52.438Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71000000000000000000000d"
+    },
+    "name": "SEMAG SARL",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 2482,
+    "externalIds": {
+      "legacyId": 13,
+      "odoo": 2482
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:53.317Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:53.317Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71000000000000000000000e"
+    },
+    "name": "SIKA TRANSPORT NA GODE ALLAH",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1356,
+    "externalIds": {
+      "legacyId": 14,
+      "odoo": 1356
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:54.457Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:54.457Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71000000000000000000000f"
+    },
+    "name": "WILLS LOGISTICS",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 2485,
+    "externalIds": {
+      "legacyId": 15,
+      "odoo": 2485
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:55.501Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:55.501Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000010"
+    },
+    "name": "TCHEGNON TRANS",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 2490,
+    "externalIds": {
+      "legacyId": 16,
+      "odoo": 2490
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:56.942Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:56.942Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000011"
+    },
+    "name": "IZAI",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": null,
+    "externalIds": {
+      "legacyId": 17
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:57.754Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:57.754Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000012"
+    },
+    "name": "EATIA",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 2488,
+    "externalIds": {
+      "legacyId": 18,
+      "odoo": 2488
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:58.443Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:58.443Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000013"
+    },
+    "name": "CERO BTP SARL",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1359,
+    "externalIds": {
+      "legacyId": 19,
+      "odoo": 1359
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:39:59.578Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:39:59.578Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000014"
+    },
+    "name": "BENIN LOGISTIQUE SERVICE",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": null,
+    "externalIds": {
+      "legacyId": 20
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:40:00.724Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:40:00.724Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000015"
+    },
+    "name": "DOSSMARC-PLUS SARL",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 2484,
+    "externalIds": {
+      "legacyId": 21,
+      "odoo": 2484
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:40:02.762Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:40:02.762Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000016"
+    },
+    "name": "OLATRANS COMPANY",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1339,
+    "externalIds": {
+      "legacyId": 22,
+      "odoo": 1339
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:40:03.820Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:40:03.820Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000017"
+    },
+    "name": "ATT/ BETRADIS SA",
+    "type": "external",
+    "zone": "RDP-RDS-RDN et EIFFAGE PAC",
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": null,
+    "externalIds": {
+      "legacyId": 23
+    },
+    "createdAt": {
+      "$date": "2026-07-08T21:40:04.977Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-08T21:40:04.977Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000018"
+    },
+    "name": "STRACA",
+    "type": "internal",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": null,
+    "externalIds": {
+      "legacyId": 24
+    },
+    "createdAt": {
+      "$date": "2026-08-03T14:34:36.099Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-03T14:34:36.099Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000019"
+    },
+    "name": "ACD SARL",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1355,
+    "externalIds": {
+      "legacyId": 25,
+      "odoo": 1355
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:40.832Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:40.832Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71000000000000000000001a"
+    },
+    "name": "BCG",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1346,
+    "externalIds": {
+      "legacyId": 26,
+      "odoo": 1346
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:40.975Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:40.975Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71000000000000000000001b"
+    },
+    "name": "BHELIX",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1354,
+    "externalIds": {
+      "legacyId": 27,
+      "odoo": 1354
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:41.163Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:41.163Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71000000000000000000001c"
+    },
+    "name": "BOURJON SARL",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1358,
+    "externalIds": {
+      "legacyId": 28,
+      "odoo": 1358
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:41.304Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:41.304Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71000000000000000000001d"
+    },
+    "name": "CJIC BENIN",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1347,
+    "externalIds": {
+      "legacyId": 29,
+      "odoo": 1347
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:41.446Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:41.446Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71000000000000000000001e"
+    },
+    "name": "GROUPE PREMIUM",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1341,
+    "externalIds": {
+      "legacyId": 30,
+      "odoo": 1341
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:41.588Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:41.588Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71000000000000000000001f"
+    },
+    "name": "HEAVYMAT BENIN",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1338,
+    "externalIds": {
+      "legacyId": 31,
+      "odoo": 1338
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:41.732Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:41.732Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000020"
+    },
+    "name": "HITECH-ITB",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1353,
+    "externalIds": {
+      "legacyId": 32,
+      "odoo": 1353
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:41.871Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:41.871Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000021"
+    },
+    "name": "ILBB COMPTESSE",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1344,
+    "externalIds": {
+      "legacyId": 33,
+      "odoo": 1344
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:42.011Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:42.011Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000022"
+    },
+    "name": "KADJIV",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1348,
+    "externalIds": {
+      "legacyId": 34,
+      "odoo": 1348
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:42.213Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:42.213Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000023"
+    },
+    "name": "KELON INTERNATIONAL",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1363,
+    "externalIds": {
+      "legacyId": 35,
+      "odoo": 1363
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:42.353Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:42.353Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000024"
+    },
+    "name": "MACELEC UTA",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1361,
+    "externalIds": {
+      "legacyId": 36,
+      "odoo": 1361
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:42.493Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:42.493Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000025"
+    },
+    "name": "MADINA COURTAGE DC",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1362,
+    "externalIds": {
+      "legacyId": 37,
+      "odoo": 1362
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:42.632Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:42.632Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000026"
+    },
+    "name": "MARVELLOUS SERVICES CO",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1349,
+    "externalIds": {
+      "legacyId": 38,
+      "odoo": 1349
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:42.773Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:42.773Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000027"
+    },
+    "name": "MIDAS AUTO BENIN",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1343,
+    "externalIds": {
+      "legacyId": 39,
+      "odoo": 1343
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:42.912Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:42.912Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000028"
+    },
+    "name": "NEW LIFE POWER",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1340,
+    "externalIds": {
+      "legacyId": 40,
+      "odoo": 1340
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:43.052Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:43.052Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000029"
+    },
+    "name": "NOVOTEL",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1345,
+    "externalIds": {
+      "legacyId": 41,
+      "odoo": 1345
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:43.260Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:43.260Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71000000000000000000002a"
+    },
+    "name": "PROTECA",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1352,
+    "externalIds": {
+      "legacyId": 42,
+      "odoo": 1352
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:43.402Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:43.402Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71000000000000000000002b"
+    },
+    "name": "SIAB",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1350,
+    "externalIds": {
+      "legacyId": 43,
+      "odoo": 1350
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:43.542Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:43.542Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71000000000000000000002c"
+    },
+    "name": "SOGEA SATOM BENIN",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1337,
+    "externalIds": {
+      "legacyId": 44,
+      "odoo": 1337
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:43.682Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:43.682Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71000000000000000000002d"
+    },
+    "name": "SONAMA",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1360,
+    "externalIds": {
+      "legacyId": 45,
+      "odoo": 1360
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:43.821Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:43.821Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71000000000000000000002e"
+    },
+    "name": "STE FOLAKE KENZA",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 2508,
+    "externalIds": {
+      "legacyId": 46,
+      "odoo": 2508
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:43.960Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:43.960Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "71000000000000000000002f"
+    },
+    "name": "YALAU (LG-TP)",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1342,
+    "externalIds": {
+      "legacyId": 47,
+      "odoo": 1342
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:44.099Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:44.099Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000030"
+    },
+    "name": "YUSRAN",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1364,
+    "externalIds": {
+      "legacyId": 48,
+      "odoo": 1364
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:44.320Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:44.320Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000031"
+    },
+    "name": "ZEUS SCI",
+    "type": "external",
+    "zone": null,
+    "ifu": null,
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 1351,
+    "externalIds": {
+      "legacyId": 49,
+      "odoo": 1351
+    },
+    "createdAt": {
+      "$date": "2026-08-31T06:48:44.463Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T06:48:44.463Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "710000000000000000000032"
+    },
+    "name": "SAFEROAD TRANSPORT SAS",
+    "type": "external",
+    "zone": null,
+    "ifu": "32022690371224",
+    "rccm": null,
+    "phone": null,
+    "email": null,
+    "address": null,
+    "isActive": true,
+    "odooId": 2491,
+    "externalIds": {
+      "legacyId": 50,
+      "odoo": 2491
+    },
+    "createdAt": {
+      "$date": "2026-09-02T09:06:12.564Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-02T09:06:12.564Z"
+    }
+  }
+]

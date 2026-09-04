@@ -97,6 +97,26 @@ router.put(
   },
 );
 
+router.patch(
+  "/:id",
+  authorizeJwt,
+  verifyAccount([{ name: "prestataire", action: "update" }]),
+  async (req, res) => {
+    try {
+      const prestataire = await Prestataire.findByIdAndUpdate(
+        req.params.id,
+        { $set: req.body },
+        { new: true, runValidators: true },
+      );
+      if (!prestataire) return res.status(404).json({ message: "Prestataire introuvable" });
+      return res.status(200).json(prestataire);
+    } catch (error) {
+      if (error.code === 11000) return res.status(409).json({ message: "Identifiant externe déjà utilisé." });
+      return res.status(400).json({ message: error.message });
+    }
+  },
+);
+
 // DELETE /prestataires/:id
 router.delete(
   "/:id",
@@ -104,7 +124,11 @@ router.delete(
   verifyAccount([{ name: "prestataire", action: "delete" }]),
   async (req, res) => {
     try {
-      const prestataire = await Prestataire.findByIdAndDelete(req.params.id);
+      const prestataire = await Prestataire.findByIdAndUpdate(
+        req.params.id,
+        { isActive: false },
+        { new: true, runValidators: true },
+      );
       if (!prestataire) {
         return res.status(404).json({ message: "Prestataire introuvable" });
       }
