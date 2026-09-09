@@ -212,8 +212,30 @@ router.post(
         note,
         replacementDriver,
         prestataire,
+        voucherNumber,
         autoStartTracking = true,
       } = req.body;
+
+      // Idempotence : si un client renvoie deux fois la même livraison
+      // (retries offline), on renvoie l'existante au lieu d'en créer une 2e.
+      // Sert aussi de point d'ancrage pour la réception via QR.
+      if (voucherNumber) {
+        const existing = await Delivery.findOne({ voucherNumber }).populate(
+          populateArray,
+        );
+        if (existing) {
+          // Même format que la création "normale" (voir plus bas). Le flag
+          // `alreadyExisted` permet au mobile d'afficher un message clair
+          // à l'utilisateur (ex. « Ce bon existe déjà ») au lieu d'un faux
+          // « Envoi réussi » qui pourrait tromper.
+          return res.status(200).json({
+            success: true,
+            data: existing,
+            tracking: null,
+            alreadyExisted: true,
+          });
+        }
+      }
 
       if (!departureChantier) {
         return res.status(400).json({
@@ -292,6 +314,7 @@ router.post(
         productMeasureUnit,
         ...(replacementDriver && { replacementDriver }),
         ...(prestataire && { prestataire }),
+        ...(voucherNumber && { voucherNumber }),
         sender: {
           user: req.user._id,
           quantity,
@@ -429,12 +452,22 @@ router.put(
       const { deliveryId } = req.params;
       const { quantity, note } = req.body;
 
-      // Find the delivery and verify it exists
-      const delivery = await Delivery.findById(deliveryId);
+      // Accepte soit un _id MongoDB, soit un numéro de bon (saisi par le
+      // livreur et transmis par QR au destinataire). Permet au destinataire
+      // d'envoyer sa réception même si le livreur n'a pas encore synchro
+      // (auquel cas la livraison n'existe pas encore côté serveur → 404
+      // explicite `DELIVERY_NOT_YET_SYNCED` pour retry).
+      const filter = mongoose.isValidObjectId(deliveryId)
+        ? { $or: [{ _id: deliveryId }, { voucherNumber: deliveryId }] }
+        : { voucherNumber: deliveryId };
+      const delivery = await Delivery.findOne(filter);
+
       if (!delivery) {
         return res.status(404).json({
           success: false,
-          message: "Delivery not found",
+          code: "DELIVERY_NOT_YET_SYNCED",
+          message:
+            "Livraison introuvable. Elle n'a peut-être pas encore été synchronisée par le livreur.",
         });
       }
 
