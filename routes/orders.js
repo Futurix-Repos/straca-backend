@@ -87,7 +87,7 @@ const populateArray = [
 router.get(
   "/",
   authorizeJwt,
-  verifyAccount([{ name: "order", action: "read" }]),
+  verifyAccount([{ name: "commande", action: "read" }]),
   async (req, res) => {
     const filter = {};
     const search = req.query.search;
@@ -130,7 +130,7 @@ router.get(
 router.get(
   "/:id",
   authorizeJwt,
-  verifyAccount([{ name: "order", action: "read" }]),
+  verifyAccount([{ name: "commande", action: "read" }]),
   async (req, res) => {
     try {
       const { id } = req.params;
@@ -162,7 +162,7 @@ router.get(
 router.post(
   "/",
   authorizeJwt,
-  verifyAccount([{ name: "order", action: "create" }]),
+  verifyAccount([{ name: "commande", action: "create" }]),
   async (req, res) => {
     try {
       const id = new mongoose.Types.ObjectId();
@@ -276,7 +276,7 @@ router.post(
 router.put(
   "/cancel/:id",
   authorizeJwt,
-  verifyAccount([{ name: "order", action: "update" }]),
+  verifyAccount([{ name: "commande", action: "update" }]),
   async (req, res) => {
     try {
       const { id } = req.params;
@@ -318,7 +318,7 @@ router.put(
 router.put(
   "/:id",
   authorizeJwt,
-  verifyAccount([{ name: "order", action: "update" }]),
+  verifyAccount([{ name: "commande", action: "update" }]),
   async (req, res) => {
     try {
       const orderId = req.params.id;
@@ -447,7 +447,7 @@ router.put(
 router.delete(
   "/:id",
   authorizeJwt,
-  verifyAccount([{ name: "order", action: "delete" }]),
+  verifyAccount([{ name: "commande", action: "delete" }]),
   async (req, res) => {
     try {
       const { id } = req.params;
@@ -468,7 +468,7 @@ router.delete(
 router.post(
   "/pay",
   authorizeJwt,
-  verifyAccount([{ name: "order", action: "create" }]),
+  verifyAccount([{ name: "commande", action: "create" }]),
   async (req, res) => {
     const user = req.user;
     let { amount, network, phoneNumber, orderId } = req.body;

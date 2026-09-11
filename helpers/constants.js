@@ -8,20 +8,28 @@ module.exports.ORDER_STATUS = {
   CANCELED: "CANCELED",
 };
 
-//TODO rewrite permissions
 module.exports.validPermissionNames = [
-  "user",
-  "permission",
-  "employee",
-  "client",
-  "commande",
-  "country",
-  "measureUnit",
-  "productType",
-  "pricing",
-  "product",
-  "transportType",
+  // Admin
+  "user", "role", "permission",
+  // People
+  "employee", "driver", "client",
+  // Operations
+  "commande", "delivery", "deliveryTransfer", "vehicleAssignment",
+  "vehicle", "prestataire", "product", "pricing",
+  // Content & reporting
+  "blog", "job", "section", "report",
+  // Catalog (covers all reference/config data)
+  "catalog",
+  // Legacy names kept for backward compatibility
+  "country", "measureUnit", "productType", "transportType",
 ];
+
+module.exports.ROLES = {
+  SUPER_ADMIN: "super_admin",
+  OPERATIONS: "operations",
+  COMPTABILITE: "comptabilite",
+  LECTEUR: "lecteur",
+};
 
 module.exports.makeid = (length) => {
   var result = "";

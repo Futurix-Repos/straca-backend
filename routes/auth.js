@@ -84,9 +84,10 @@ router.post("/signup", async (req, res) => {
 });
 router.post("/login", async (req, res) => {
   try {
-    const user = await User.findOne({ email: req.body.email }).populate(
-      "permissions",
-    );
+    const user = await User.findOne({ email: req.body.email }).populate({
+      path: "role",
+      populate: { path: "permissions" },
+    });
 
     if (!user) {
       return res.status(400).json({

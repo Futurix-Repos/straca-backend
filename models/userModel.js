@@ -53,12 +53,13 @@ const userSchema = mongoose.Schema(
         /[a-z0-9!#$%'*+/=?^_`{|}~-]+(?:\.[a-z09!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/,
     },
     password: { type: String, required: true },
-    permissions: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Permission",
+    role: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Role",
+      required: function () {
+        return this.type !== "client";
       },
-    ],
+    },
     confirmed: { type: Boolean, default: false },
   },
   {

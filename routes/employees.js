@@ -32,7 +32,9 @@ router.get(
     }
 
     try {
-      const employees = await User.find(filter).select("-password");
+      const employees = await User.find(filter)
+        .select("-password")
+        .populate({ path: "role", select: "code name active" });
       res.status(200).json(employees);
     } catch (error) {
       console.log(error.message);

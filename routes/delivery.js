@@ -10,8 +10,52 @@ const { generateReference, ORDER_STATUS } = require("../helpers/constants");
 const multer = require("multer");
 const { exportDeliveryToPdf } = require("../services/delivery");
 const vehicleTrackingService = require("../services/vehicleTracking");
-const { skippedReceiverEvidence } = require("../services/deliveryEvidence");
+const ReceptionDraft = require("../models/receptionDraftModel");
+const { spaceImageUploadHelper, spaceImageDeleteHelper } = require("../helpers/spaceImageUploadHelper");
+const {
+  receiverEvidenceFromProofs,
+  receivedDeliveryResponse,
+  replayReceptionResponse,
+  validateReceptionRequest,
+} = require("../services/receptionDraftService");
 const upload = multer({ storage: multer.memoryStorage() });
+
+async function reconcileReceptionDraft(delivery) {
+  if (!delivery.voucherNumber) return null;
+
+  const draft = await ReceptionDraft.findOne({
+    voucherNumber: delivery.voucherNumber,
+    status: "pending_sender",
+  });
+  if (!draft) return null;
+
+  const hasQuantityDifference = Number(delivery.sender.quantity) !== Number(draft.quantity);
+  delivery.receiver = {
+    user: draft.receiverEmployeeId,
+    ...receiverEvidenceFromProofs(draft.proofs),
+    clientRequestId: draft.clientRequestId,
+    qrPayloadHash: draft.qrPayloadHash,
+    quantity: draft.quantity,
+    note: draft.note,
+    receivedAt: new Date(),
+    validate: !hasQuantityDifference,
+    validateBy: hasQuantityDifference ? null : draft.receiverEmployeeId,
+  };
+  delivery.status = hasQuantityDifference ? "PENDING" : "DELIVERED";
+  delivery.adminValidation = {
+    status: hasQuantityDifference ? "PENDING" : "NOT_REQUIRED",
+    validatedBy: null,
+    validatedAt: null,
+    note: null,
+  };
+  await delivery.save();
+
+  draft.status = "reconciled";
+  draft.deliveryId = delivery._id;
+  draft.reconciledAt = new Date();
+  await draft.save();
+  return draft;
+}
 
 const populateArray = [
   {
@@ -334,12 +378,14 @@ router.post(
         });
       }
 
+      const reconciledDraft = await reconcileReceptionDraft(savedDelivery);
+
       const populatedDelivery = await Delivery.findById(
         savedDelivery._id,
       ).populate(populateArray);
 
       let trackingResult = null;
-      if (autoStartTracking) {
+      if (autoStartTracking && !reconciledDraft) {
         try {
           trackingResult = await vehicleTrackingService.startDeliveryTracking(
             savedDelivery._id.toString(),
@@ -439,7 +485,7 @@ router.put(
 );
 
 router.put(
-  "/receiver/:deliveryId",
+  "/receiver/:voucherNumber",
   authorizeJwt,
   verifyAccount([{ name: "delivery", action: "update" }]),
   upload.fields([
@@ -449,26 +495,52 @@ router.put(
   ]),
   async (req, res) => {
     try {
-      const { deliveryId } = req.params;
-      const { quantity, note } = req.body;
+      const { voucherNumber } = req.params;
+      const { quantity, note = "", qrPayload, qrPayloadHash, clientRequestId } = req.body;
+      const proofFiles = req.files?.proofs || [];
 
-      // Accepte soit un _id MongoDB, soit un numéro de bon (saisi par le
-      // livreur et transmis par QR au destinataire). Permet au destinataire
-      // d'envoyer sa réception même si le livreur n'a pas encore synchro
-      // (auquel cas la livraison n'existe pas encore côté serveur → 404
-      // explicite `DELIVERY_NOT_YET_SYNCED` pour retry).
-      const filter = mongoose.isValidObjectId(deliveryId)
-        ? { $or: [{ _id: deliveryId }, { voucherNumber: deliveryId }] }
-        : { voucherNumber: deliveryId };
-      const delivery = await Delivery.findOne(filter);
+      const delivery = mongoose.isValidObjectId(voucherNumber)
+        ? await Delivery.findById(voucherNumber)
+        : await Delivery.findOne({ voucherNumber });
 
-      if (!delivery) {
-        return res.status(404).json({
-          success: false,
-          code: "DELIVERY_NOT_YET_SYNCED",
-          message:
-            "Livraison introuvable. Elle n'a peut-être pas encore été synchronisée par le livreur.",
+      const existingDraft = await ReceptionDraft.findOne({ clientRequestId });
+      if (existingDraft) {
+        if (existingDraft.voucherNumber !== voucherNumber) {
+          return res.status(409).json({ success: false, message: "clientRequestId est déjà associé à un autre bon." });
+        }
+        const replay = replayReceptionResponse(existingDraft);
+        return res.status(replay.statusCode).json({ data: replay.body });
+      }
+
+      const previousDelivery = await Delivery.findOne({ "receiver.clientRequestId": clientRequestId });
+      if (previousDelivery) {
+        if (previousDelivery.voucherNumber !== voucherNumber) {
+          return res.status(409).json({ success: false, message: "clientRequestId est déjà associé à un autre bon." });
+        }
+        return res.status(200).json({ data: receivedDeliveryResponse(previousDelivery) });
+      }
+
+      const requestValidation = validateReceptionRequest({
+        quantity,
+        qrPayload,
+        qrPayloadHash,
+        clientRequestId,
+        proofCount: proofFiles.length,
+        requireQrPayload: !delivery,
+      });
+      if (!requestValidation.valid) {
+        console.warn("Invalid receiver reception payload", {
+          voucherNumber,
+          validationMessage: requestValidation.message,
+          bodyKeys: Object.keys(req.body),
+          qrPayloadType: typeof qrPayload,
+          qrPayloadLength: typeof qrPayload === "string" ? qrPayload.length : null,
+          qrPayload,
+          qrPayloadHash,
+          clientRequestId,
+          proofCount: proofFiles.length,
         });
+        return res.status(400).json({ success: false, message: requestValidation.message });
       }
 
       if (delivery?.canceled?.isCanceled) {
@@ -479,31 +551,63 @@ router.put(
         });
       }
 
-      // Verify delivery status is PENDING
-      if (delivery.status !== "IN_PROGRESS") {
+      if (delivery && delivery.status !== "IN_PROGRESS") {
         return res.status(400).json({
           success: false,
           message: "Delivery cannot be modified in its current status",
         });
       }
 
-      if (delivery.sender.user.toString() === req.user._id.toString()) {
+      if (delivery && delivery.sender.user.toString() === req.user._id.toString()) {
         return res.status(400).json({
           success: false,
           message: "Sender and Receiver can be the same",
         });
       }
 
-      // Les fichiers multipart restent acceptés pour préserver le client, mais ne sont plus stockés.
-      const evidence = await skippedReceiverEvidence();
+      const containerId = delivery?._id || new mongoose.Types.ObjectId();
+      const proofUrls = await Promise.all(
+        proofFiles.map((file) =>
+          spaceImageUploadHelper(file, `deliveries/${containerId}/proofs/`),
+        ),
+      );
+
+      if (!delivery) {
+        try {
+          const draft = await ReceptionDraft.create({
+            _id: containerId,
+            voucherNumber,
+            qrPayload,
+            qrPayloadHash,
+            receiverEmployeeId: req.user._id,
+            quantity: Number(quantity),
+            note,
+            proofs: proofUrls,
+            clientRequestId,
+          });
+          return res.status(202).json({ data: replayReceptionResponse(draft).body });
+        } catch (error) {
+          if (error?.code === 11000) {
+            await Promise.all(proofUrls.map((url) => spaceImageDeleteHelper(url).catch(() => {})));
+            const draft = await ReceptionDraft.findOne({ clientRequestId });
+            if (draft) {
+              const replay = replayReceptionResponse(draft);
+              return res.status(replay.statusCode).json({ data: replay.body });
+            }
+          }
+          throw error;
+        }
+      }
 
       const hasQuantityDifference = Number(delivery.sender.quantity) !== Number(quantity);
 
       // En cas d'écart, la réception est enregistrée mais reste non validée.
       delivery.receiver = {
         user: req.user._id,
-        ...evidence,
-        quantity,
+        ...receiverEvidenceFromProofs(proofUrls),
+        clientRequestId,
+        qrPayloadHash,
+        quantity: Number(quantity),
         note,
         receivedAt: new Date(),
         validate: !hasQuantityDifference,
@@ -523,7 +627,7 @@ router.put(
       let trackingResult = null;
       try {
         trackingResult =
-          await vehicleTrackingService.stopDeliveryTracking(deliveryId);
+          await vehicleTrackingService.stopDeliveryTracking(delivery._id.toString());
         console.log(
           `🏁 Tracking stopped for completed delivery ${delivery.reference}`,
         );
@@ -534,14 +638,8 @@ router.put(
         );
       }
 
-      const populatedDelivery = await Delivery.findById(
-        updatedDelivery._id,
-      ).populate(populateArray);
-
       res.status(200).json({
-        success: true,
-        data: populatedDelivery,
-        tracking: trackingResult,
+        data: receivedDeliveryResponse(updatedDelivery),
       });
     } catch (error) {
       console.error("Error in updateDeliveryByReceiver:", error);
@@ -776,13 +874,13 @@ router.delete(
   async (req, res) => {
     try {
       const { id } = req.params;
-      const deletedOrder = await Order.findByIdAndDelete(id);
-      if (!deletedOrder) {
+      const deletedDelivery = await Delivery.findByIdAndDelete(id);
+      if (!deletedDelivery) {
         return res
           .status(404)
-          .json({ message: `Cannot find any Commande with ID ${id}` });
+          .json({ message: `Cannot find any Delivery with ID ${id}` });
       }
-      res.status(200).json(deletedOrder);
+      res.status(200).json(deletedDelivery);
     } catch (error) {
       console.log(error.message);
       res.status(500).json({ message: error.message });

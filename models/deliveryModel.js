@@ -142,6 +142,15 @@ const deliverySchema = new Schema(
       clientRepresentativeSignature: {
         type: String,
       },
+      clientRequestId: {
+        type: String,
+        trim: true,
+        sparse: true,
+      },
+      qrPayloadHash: {
+        type: String,
+        trim: true,
+      },
       receivedAt: {
         type: Date,
       },
@@ -253,6 +262,11 @@ deliverySchema.virtual("transfers", {
   localField: "_id",
   foreignField: "delivery",
 });
+
+deliverySchema.index(
+  { "receiver.clientRequestId": 1 },
+  { unique: true, sparse: true },
+);
 
 const Delivery = mongoose.model("Delivery", deliverySchema);
 
