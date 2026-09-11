@@ -8,6 +8,21 @@ const deliverySchema = new Schema(
       required: true,
       unique: true,
     },
+    /// Numéro de bon de livraison saisi par le livreur — permet la
+    /// réconciliation avec les bons papier terrain. Sert aussi d'identifiant
+    /// idempotent pour la création offline et de clé de résolution pour la
+    /// réception via QR (le réceptionniste pointe vers le voyage via ce
+    /// numéro, y compris avant sa synchronisation par le livreur).
+    /// `sparse` : seuls les documents portant réellement la valeur sont
+    /// indexés, pour ne pas contraindre les livraisons créées sans bon.
+    voucherNumber: {
+      type: String,
+      index: true,
+      unique: true,
+      sparse: true,
+      trim: true,
+      default: null,
+    },
     startedAt: { type: Date, default: Date.now },
     departureChantier: {
       type: Schema.Types.ObjectId,
