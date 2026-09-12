@@ -505,7 +505,14 @@ router.put(
 
       const existingDraft = await ReceptionDraft.findOne({ clientRequestId });
       if (existingDraft) {
-        if (existingDraft.voucherNumber !== voucherNumber) {
+        // When voucherNumber param is actually a delivery ObjectId, compare via the resolved delivery
+        const sameDelivery =
+          existingDraft.voucherNumber === voucherNumber ||
+          (delivery && (
+            existingDraft.voucherNumber === delivery.voucherNumber ||
+            existingDraft.deliveryId?.toString() === delivery._id.toString()
+          ));
+        if (!sameDelivery) {
           return res.status(409).json({ success: false, message: "clientRequestId est déjà associé à un autre bon." });
         }
         const replay = replayReceptionResponse(existingDraft);
@@ -514,7 +521,11 @@ router.put(
 
       const previousDelivery = await Delivery.findOne({ "receiver.clientRequestId": clientRequestId });
       if (previousDelivery) {
-        if (previousDelivery.voucherNumber !== voucherNumber) {
+        // When voucherNumber param is actually a delivery ObjectId, compare via the resolved delivery
+        const sameDelivery =
+          previousDelivery.voucherNumber === voucherNumber ||
+          (delivery && previousDelivery._id.toString() === delivery._id.toString());
+        if (!sameDelivery) {
           return res.status(409).json({ success: false, message: "clientRequestId est déjà associé à un autre bon." });
         }
         return res.status(200).json({ data: receivedDeliveryResponse(previousDelivery) });
