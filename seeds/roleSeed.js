@@ -93,6 +93,29 @@ const ROLE_DEFINITIONS = [
       { name: "catalog", action: "read" },
     ],
   },
+  {
+    code: ROLES.POINTEUR,
+    name: "Pointeur",
+    description: "Accès mobile : création et réception de livraisons sur le terrain",
+    isSystem: true,
+    permissions: [
+      // Chantiers & sections (liste déroulante dans l'app)
+      { name: "location", action: "read" },
+      // Livraisons — lecture + création (expéditeur) + mise à jour (récepteur)
+      { name: "delivery", action: "read" },
+      { name: "delivery", action: "create" },
+      { name: "delivery", action: "update" },
+      // Véhicules (liste + vérification disponibilité)
+      { name: "vehicle", action: "read" },
+      // Commandes (lecture pour associer à une livraison)
+      { name: "commande", action: "read" },
+      // Employés (profil /me + liste collègues)
+      { name: "employee", action: "read" },
+      // Prestataires & produits (formulaire livraison)
+      { name: "prestataire", action: "read" },
+      { name: "productMeasureUnit", action: "read" },
+    ],
+  },
 ];
 
 const ensurePermission = async (name, action) => {

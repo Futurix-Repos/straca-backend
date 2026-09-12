@@ -5,6 +5,7 @@ const ProductMeasureUnit = require("../models/productMeasureUnitModel");
 const Transaction = require("../models/transactionModel");
 const mongoose = require("mongoose");
 const { authorizeJwt, verifyAccount } = require("../helpers/verifyAccount");
+const { paginationFromQuery } = require("../services/vehicleReference");
 const User = require("../models/userModel"); // Import the Pricing model
 const qosService = require("../helpers/qosHelper");
 const cron = require("node-cron");
@@ -30,17 +31,20 @@ router.get(
     }
 
     try {
-      const products = await Product.find(filter).populate([
-        {
-          path: "measureUnits",
-          populate: {
-            path: "measureUnit",
-          },
-        },
-        {
-          path: "productType",
-        },
-      ]);
+      const populate = [
+        { path: "measureUnits", populate: { path: "measureUnit" } },
+        { path: "productType" },
+      ];
+      const query = Product.find(filter).populate(populate);
+      if (req.query.page || req.query.perPage) {
+        const { limit, page, skip } = paginationFromQuery(req.query);
+        const [items, total] = await Promise.all([
+          query.skip(skip).limit(limit),
+          Product.countDocuments(filter),
+        ]);
+        return res.status(200).json({ items, page, perPage: limit, total });
+      }
+      const products = await query;
       res.status(200).json(products);
     } catch (error) {
       console.error(error.message);

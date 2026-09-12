@@ -55,12 +55,12 @@ function validateReceptionRequest({
   return { valid: true };
 }
 
-function receiverEvidenceFromProofs(proofs) {
+function receiverEvidenceFromProofs(proofs, receiverSignature = "", clientRepresentativeSignature = "") {
   return {
     proof: proofs[0],
     proofs,
-    receiverSignature: "",
-    clientRepresentativeSignature: "",
+    receiverSignature: receiverSignature || "",
+    clientRepresentativeSignature: clientRepresentativeSignature || "",
   };
 }
 

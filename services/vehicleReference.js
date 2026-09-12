@@ -17,7 +17,7 @@ function prepareVehiclePayload(body = {}) {
 
 function paginationFromQuery(query = {}) {
   const page = Math.max(Number.parseInt(query.page, 10) || 1, 1);
-  const limit = Math.min(Math.max(Number.parseInt(query.perPage, 10) || 25, 1), 100);
+  const limit = Math.min(Math.max(Number.parseInt(query.perPage ?? query.itemsPerPage, 10) || 25, 1), 100);
 
   return { page, limit, skip: (page - 1) * limit };
 }

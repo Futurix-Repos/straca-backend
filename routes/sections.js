@@ -3,6 +3,7 @@ const router = express.Router();
 const mongoose = require("mongoose");
 const Section = require("../models/sectionModel");
 const { authorizeJwt, verifyAccount } = require("../helpers/verifyAccount");
+const { paginationFromQuery } = require("../services/vehicleReference");
 
 // GET /sections?chantierId=xxx&search=yyy
 router.get(
@@ -23,10 +24,16 @@ router.get(
         ];
       }
 
-      const sections = await Section.find(filter)
-        .populate("chantier", "label description")
-        .sort({ label: 1 });
-
+      const query = Section.find(filter).populate("chantier", "label description").sort({ label: 1 });
+      if (req.query.page || req.query.perPage) {
+        const { limit, page, skip } = paginationFromQuery(req.query);
+        const [items, total] = await Promise.all([
+          query.skip(skip).limit(limit),
+          Section.countDocuments(filter),
+        ]);
+        return res.status(200).json({ items, page, perPage: limit, total });
+      }
+      const sections = await query;
       res.status(200).json(sections);
     } catch (error) {
       res.status(500).json({ message: error.message });

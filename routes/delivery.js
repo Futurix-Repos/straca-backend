@@ -33,7 +33,7 @@ async function reconcileReceptionDraft(delivery) {
   const hasQuantityDifference = Number(delivery.sender.quantity) !== Number(draft.quantity);
   delivery.receiver = {
     user: draft.receiverEmployeeId,
-    ...receiverEvidenceFromProofs(draft.proofs),
+    ...receiverEvidenceFromProofs(draft.proofs, draft.receiverSignature, draft.clientRepresentativeSignature),
     clientRequestId: draft.clientRequestId,
     qrPayloadHash: draft.qrPayloadHash,
     quantity: draft.quantity,
@@ -117,6 +117,14 @@ const populateArray = [
   },
   {
     path: "departureSection",
+    select: "label description chantier",
+    populate: {
+      path: "chantier",
+      select: "label description",
+    },
+  },
+  {
+    path: "destinationSection",
     select: "label description chantier",
     populate: {
       path: "chantier",
@@ -254,6 +262,7 @@ router.post(
         departureSection,
         destination,
         destinationCarriere,
+        destinationSection,
         vehicle,
         order,
         productMeasureUnit,
@@ -358,6 +367,7 @@ router.post(
         ...(departureSection && { departureSection }),
         ...(destination && { destination }),
         ...(destinationCarriere && { destinationCarriere }),
+        ...(destinationSection && { destinationSection }),
         vehicle,
         ...(order && { order }),
         productMeasureUnit,
@@ -503,6 +513,8 @@ router.put(
       const { voucherNumber } = req.params;
       const { quantity, note = "", qrPayload, qrPayloadHash, clientRequestId } = req.body;
       const proofFiles = req.files?.proofs || [];
+      const receiverSignatureFile = req.files?.receiverSignature?.[0] || null;
+      const clientRepSignatureFile = req.files?.clientRepresentativeSignature?.[0] || null;
 
       const delivery = mongoose.isValidObjectId(voucherNumber)
         ? await Delivery.findById(voucherNumber)
@@ -582,11 +594,19 @@ router.put(
       }
 
       const containerId = delivery?._id || new mongoose.Types.ObjectId();
-      const proofUrls = await Promise.all(
-        proofFiles.map((file) =>
-          spaceImageUploadHelper(file, `deliveries/${containerId}/proofs/`),
+      const [proofUrls, receiverSignatureUrl, clientRepSignatureUrl] = await Promise.all([
+        Promise.all(
+          proofFiles.map((file) =>
+            spaceImageUploadHelper(file, `deliveries/${containerId}/proofs/`),
+          ),
         ),
-      );
+        receiverSignatureFile
+          ? spaceImageUploadHelper(receiverSignatureFile, `deliveries/${containerId}/signatures/`)
+          : Promise.resolve(""),
+        clientRepSignatureFile
+          ? spaceImageUploadHelper(clientRepSignatureFile, `deliveries/${containerId}/signatures/`)
+          : Promise.resolve(""),
+      ]);
 
       if (!delivery) {
         try {
@@ -599,6 +619,8 @@ router.put(
             quantity: Number(quantity),
             note,
             proofs: proofUrls,
+            receiverSignature: receiverSignatureUrl,
+            clientRepresentativeSignature: clientRepSignatureUrl,
             clientRequestId,
           });
           return res.status(202).json({ data: replayReceptionResponse(draft).body });
@@ -620,7 +642,7 @@ router.put(
       // En cas d'écart, la réception est enregistrée mais reste non validée.
       delivery.receiver = {
         user: req.user._id,
-        ...receiverEvidenceFromProofs(proofUrls),
+        ...receiverEvidenceFromProofs(proofUrls, receiverSignatureUrl, clientRepSignatureUrl),
         clientRequestId,
         qrPayloadHash,
         quantity: Number(quantity),

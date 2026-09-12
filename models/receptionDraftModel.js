@@ -13,6 +13,8 @@ const receptionDraftSchema = new mongoose.Schema(
     quantity: { type: Number, required: true },
     note: { type: String, default: "", trim: true },
     proofs: { type: [String], required: true, validate: [(proofs) => proofs.length >= 1 && proofs.length <= 5, "Entre 1 et 5 preuves sont requises."] },
+    receiverSignature: { type: String, default: "" },
+    clientRepresentativeSignature: { type: String, default: "" },
     clientRequestId: { type: String, required: true, unique: true, trim: true },
     status: {
       type: String,

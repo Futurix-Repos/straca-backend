@@ -29,6 +29,7 @@ module.exports.ROLES = {
   OPERATIONS: "operations",
   COMPTABILITE: "comptabilite",
   LECTEUR: "lecteur",
+  POINTEUR: "pointeur",
 };
 
 module.exports.makeid = (length) => {

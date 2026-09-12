@@ -33,6 +33,10 @@ const deliverySchema = new Schema(
       type: Schema.Types.ObjectId,
       ref: "Section",
     },
+    destinationSection: {
+      type: Schema.Types.ObjectId,
+      ref: "Section",
+    },
     destination: {
       type: Schema.Types.ObjectId,
       ref: "Address",

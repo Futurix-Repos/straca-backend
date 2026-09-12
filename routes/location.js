@@ -5,6 +5,7 @@ const Section = require("../models/sectionModel");
 
 const mongoose = require("mongoose");
 const { authorizeJwt, verifyAccount } = require("../helpers/verifyAccount");
+const { paginationFromQuery } = require("../services/vehicleReference");
 
 // GET /locations - Get all Locations with their sections
 router.get(
@@ -23,20 +24,32 @@ router.get(
     }
 
     try {
+      if (req.query.page || req.query.perPage) {
+        const { limit, page, skip } = paginationFromQuery(req.query);
+        const [locations, total] = await Promise.all([
+          Location.find(filter).sort({ label: 1 }).skip(skip).limit(limit),
+          Location.countDocuments(filter),
+        ]);
+        const locationIds = locations.map((l) => l._id);
+        const sections = await Section.find({ chantier: { $in: locationIds } }).sort({ label: 1 });
+        const items = locations.map((loc) => ({
+          ...loc.toJSON(),
+          sections: sections
+            .filter((s) => s.chantier.toString() === loc._id.toString())
+            .map((s) => s.toJSON()),
+        }));
+        return res.status(200).json({ items, page, perPage: limit, total });
+      }
+
       const locations = await Location.find(filter).sort({ label: 1 });
-
       const locationIds = locations.map((l) => l._id);
-      const sections = await Section.find({
-        chantier: { $in: locationIds },
-      }).sort({ label: 1 });
-
+      const sections = await Section.find({ chantier: { $in: locationIds } }).sort({ label: 1 });
       const result = locations.map((loc) => ({
         ...loc.toJSON(),
         sections: sections
           .filter((s) => s.chantier.toString() === loc._id.toString())
           .map((s) => s.toJSON()),
       }));
-
       res.status(200).json(result);
     } catch (error) {
       console.error(error.message);
