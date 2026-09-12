@@ -11,6 +11,7 @@ const axiosInstance = axios.create({
   headers: {
     "Content-Type": "application/json",
   },
+  timeout: 10000,
 });
 
 const wialonServices = {
@@ -20,6 +21,7 @@ const wialonServices = {
       const response = await axios.post(
         `${WIALON_API_URL}?svc=token/login&params={"token":"${WIALON_TOKEN}"}`,
         {},
+        { timeout: 10000 },
       );
 
       if (response.data && response.data.eid) {
@@ -45,17 +47,15 @@ const wialonServices = {
 
     // Make the request with the current session ID
     const url = `${WIALON_API_URL}?svc=${service}&params=${JSON.stringify(params)}&sid=${sessionId}`;
-    const response = await axios.post(url, {});
+    const response = await axios.post(url, {}, { timeout: 10000 });
 
     // Check if the response indicates an expired session
     if (response.data && response.data.error === 1) {
       console.log("Session expired, logging in again...");
-      // Login again to get a new session ID
       await wialonServices.login();
 
-      // Retry the request with the new session ID
       const retryUrl = `${WIALON_API_URL}?svc=${service}&params=${JSON.stringify(params)}&sid=${sessionId}`;
-      const retryResponse = await axios.post(retryUrl, {});
+      const retryResponse = await axios.post(retryUrl, {}, { timeout: 10000 });
       return retryResponse.data;
     }
 

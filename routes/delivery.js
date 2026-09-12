@@ -7,6 +7,7 @@ const Section = require("../models/sectionModel");
 const { authorizeJwt, verifyAccount } = require("../helpers/verifyAccount");
 const mongoose = require("mongoose");
 const { generateReference, ORDER_STATUS } = require("../helpers/constants");
+const { paginationFromQuery } = require("../services/vehicleReference");
 const multer = require("multer");
 const { exportDeliveryToPdf } = require("../services/delivery");
 const vehicleTrackingService = require("../services/vehicleTracking");
@@ -186,12 +187,16 @@ router.get(
     }
 
     try {
-      let populate = populateArray;
-
-      const deliveries = await Delivery.find(filter)
-        .populate(populate)
-        .sort({ createdAt: -1 });
-
+      const query = Delivery.find(filter).populate(populateArray).sort({ createdAt: -1 });
+      if (req.query.page || req.query.perPage) {
+        const { limit, page, skip } = paginationFromQuery(req.query);
+        const [items, total] = await Promise.all([
+          query.skip(skip).limit(limit),
+          Delivery.countDocuments(filter),
+        ]);
+        return res.status(200).json({ items, page, perPage: limit, total });
+      }
+      const deliveries = await query;
       res.status(200).json(deliveries);
     } catch (error) {
       console.log(error.message);

@@ -12,6 +12,7 @@ const Transaction = require("../models/transactionModel");
 const qosService = require("../helpers/qosHelper");
 const cron = require("node-cron");
 const { generateReference, ORDER_STATUS } = require("../helpers/constants");
+const { paginationFromQuery } = require("../services/vehicleReference");
 
 const populateDeliveryArray = [
   {
@@ -117,8 +118,16 @@ router.get(
     ];
 
     try {
-      const orders = await Order.find(filter).populate(populate);
-
+      const query = Order.find(filter).populate(populate).sort({ createdAt: -1 });
+      if (req.query.page || req.query.perPage) {
+        const { limit, page, skip } = paginationFromQuery(req.query);
+        const [items, total] = await Promise.all([
+          query.skip(skip).limit(limit),
+          Order.countDocuments(filter),
+        ]);
+        return res.status(200).json({ items, page, perPage: limit, total });
+      }
+      const orders = await query;
       res.status(200).json(orders);
     } catch (error) {
       console.log(error.message);

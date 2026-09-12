@@ -6,6 +6,7 @@ const bcrypt = require('bcryptjs');
 const mongoose = require("mongoose");
 const Order = require("../models/orderModel");
 const Delivery = require("../models/deliveryModel");
+const { paginationFromQuery } = require("../services/vehicleReference");
 
 router.get(
   "/",
@@ -32,9 +33,19 @@ router.get(
     }
 
     try {
-      const employees = await User.find(filter)
+      const query = User.find(filter)
         .select("-password")
-        .populate({ path: "role", select: "code name active" });
+        .populate({ path: "role", select: "code name active" })
+        .sort({ createdAt: -1 });
+      if (req.query.page || req.query.perPage) {
+        const { limit, page, skip } = paginationFromQuery(req.query);
+        const [items, total] = await Promise.all([
+          query.skip(skip).limit(limit),
+          User.countDocuments(filter),
+        ]);
+        return res.status(200).json({ items, page, perPage: limit, total });
+      }
+      const employees = await query;
       res.status(200).json(employees);
     } catch (error) {
       console.log(error.message);

@@ -17,6 +17,8 @@ class VehicleTrackingService {
       "Content-Type": "text/plain",
     };
 
+    this.axiosConfig = { timeout: 10000 }; // 10s max per request
+
     // Stocker les intervals de tracking actifs
     this.activeTrackings = new Map();
 
@@ -31,10 +33,8 @@ class VehicleTrackingService {
         `${this.influxConfig.host}/api/v3/configure/database`,
         { db: this.influxConfig.database },
         {
-          headers: {
-            ...this.headers,
-            "Content-Type": "application/json",
-          },
+          headers: { ...this.headers, "Content-Type": "application/json" },
+          ...this.axiosConfig,
         },
       );
       console.log(`✅ InfluxDB database '${this.influxConfig.database}' ready`);
@@ -62,9 +62,10 @@ class VehicleTrackingService {
         throw new Error(`Vehicle ${vehicleId} has no tracking ID`);
       }
 
+      // flags: 1 (basic) | 256 (position) | 1024 (sensors/params) | 8192 (sensor values)
       const dataPos = await wialonServices.searchItemById({
         itemId: vehicle.tracking.id,
-        flags: 4294967295,
+        flags: 9473,
       });
 
       if (dataPos.error) {
@@ -137,7 +138,7 @@ class VehicleTrackingService {
       await axios.post(
         `${this.influxConfig.host}/api/v3/write_lp?db=${this.influxConfig.database}`,
         lineProtocol,
-        { headers: this.headers },
+        { headers: this.headers, ...this.axiosConfig },
       );
 
       console.log(
@@ -263,10 +264,8 @@ class VehicleTrackingService {
         `${this.influxConfig.host}/api/v3/query_sql`,
         query,
         {
-          headers: {
-            ...this.headers,
-            "Content-Type": "application/json",
-          },
+          headers: { ...this.headers, "Content-Type": "application/json" },
+          ...this.axiosConfig,
         },
       );
 

@@ -11,6 +11,7 @@ const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const Delivery = require("../models/deliveryModel");
 const Order = require("../models/orderModel");
+const { paginationFromQuery } = require("../services/vehicleReference");
 
 router.get(
   "/",
@@ -31,7 +32,16 @@ router.get(
     }
 
     try {
-      const clients = await User.find(filter).select("-password");
+      const query = User.find(filter).select("-password").sort({ createdAt: -1 });
+      if (req.query.page || req.query.perPage) {
+        const { limit, page, skip } = paginationFromQuery(req.query);
+        const [items, total] = await Promise.all([
+          query.skip(skip).limit(limit),
+          User.countDocuments(filter),
+        ]);
+        return res.status(200).json({ items, page, perPage: limit, total });
+      }
+      const clients = await query;
       res.status(200).json(clients);
     } catch (error) {
       console.log(error.message);
