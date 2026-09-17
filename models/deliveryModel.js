@@ -189,10 +189,10 @@ const deliverySchema = new Schema(
     },
     replacementDriver: {
       type: Schema.Types.ObjectId,
-      ref: "User",
+      ref: "Driver",
       validate: {
-        validator: async function (userId) {
-          if (!userId) return true;
+        validator: async function (driverId) {
+          if (!driverId) return true;
 
           const Vehicle = mongoose.model("Vehicle");
           const vehicle = await Vehicle.findById(this.vehicle).populate({
@@ -208,12 +208,12 @@ const deliverySchema = new Schema(
             return false;
           }
 
-          const User = mongoose.model("User");
-          const user = await User.findById(userId);
-          return user && (user.type === "admin" || user.type === "employee");
+          const Driver = mongoose.model("Driver");
+          const driver = await Driver.findById(driverId);
+          return !!driver;
         },
         message:
-          "Replacement driver can only be set for non-external vehicles and must be an admin or employee",
+          "Le chauffeur de remplacement ne peut être défini que pour un véhicule non externe et doit exister dans le référentiel chauffeurs.",
       },
     },
     canceled: {
