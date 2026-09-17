@@ -6,16 +6,17 @@
     "product": {
       "$oid": "aaa9ecdebee9c82abc1b913c"
     },
+    "productKey": "SABLE LAGUNAIRE",
     "measureUnit": {
       "$oid": "67890ad91242e9fe7c4d8c5b"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -25,16 +26,17 @@
     "product": {
       "$oid": "8d36d53aa3264f8610e5b021"
     },
+    "productKey": "SILTEUX",
     "measureUnit": {
       "$oid": "67890ad91242e9fe7c4d8c5b"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -44,16 +46,17 @@
     "product": {
       "$oid": "5c191d8a643f284c8fb56716"
     },
+    "productKey": "CONCASSE",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -63,16 +66,17 @@
     "product": {
       "$oid": "4ebe7c537f329e034865555c"
     },
+    "productKey": "BOUE",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -82,16 +86,17 @@
     "product": {
       "$oid": "993d006a09abe4a79f1f54a9"
     },
+    "productKey": "SABLE MARIN",
     "measureUnit": {
       "$oid": "67890ad91242e9fe7c4d8c5b"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -101,16 +106,17 @@
     "product": {
       "$oid": "5d62b2a180810621f1c57c46"
     },
+    "productKey": "LATERITE",
     "measureUnit": {
       "$oid": "67890ad91242e9fe7c4d8c5b"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -120,16 +126,17 @@
     "product": {
       "$oid": "caa609a8d84401a311a9646b"
     },
+    "productKey": "TERRE DE BARRE",
     "measureUnit": {
       "$oid": "67890ad91242e9fe7c4d8c5b"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -139,16 +146,17 @@
     "product": {
       "$oid": "a1d7f12ae557b93652a1188e"
     },
+    "productKey": "ENROBE",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -158,16 +166,17 @@
     "product": {
       "$oid": "4db3e699aecce3c6a2e48602"
     },
+    "productKey": "BITUME",
     "measureUnit": {
       "$oid": "67890ad91242e9fe7c4d8c5b"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -177,16 +186,17 @@
     "product": {
       "$oid": "64073397f3de7d57717d894f"
     },
+    "productKey": "CIMENT",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -196,16 +206,17 @@
     "product": {
       "$oid": "ed2ac38fa8353d7ee3c7b24f"
     },
+    "productKey": "FER",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -215,16 +226,17 @@
     "product": {
       "$oid": "4cea2153c415b6759a3b561d"
     },
+    "productKey": "PIPELINE",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -234,16 +246,17 @@
     "product": {
       "$oid": "5d064b7120ca76847daeb812"
     },
+    "productKey": "CHARBON",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -253,16 +266,17 @@
     "product": {
       "$oid": "510759b26c75ae6b6d5ddf04"
     },
+    "productKey": "CLINKER",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -272,16 +286,17 @@
     "product": {
       "$oid": "726a20e86a01e36781d16d88"
     },
+    "productKey": "CONCASSE 0/4",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -291,16 +306,17 @@
     "product": {
       "$oid": "17f57d617e848274b9d02f80"
     },
+    "productKey": "CONCASSE 10/14",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -310,16 +326,17 @@
     "product": {
       "$oid": "bbbbfe54f477d3f9ea244dcd"
     },
+    "productKey": "CONCASSE 5/15",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -329,16 +346,17 @@
     "product": {
       "$oid": "783286a2ef072ce9f3f954ca"
     },
+    "productKey": "CONCASSE 15/25",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -348,16 +366,17 @@
     "product": {
       "$oid": "3a337497fd92d196c4175814"
     },
+    "productKey": "CONCASSE 0/1000",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -367,16 +386,17 @@
     "product": {
       "$oid": "64e0e6b98244fd3c82a25a2e"
     },
+    "productKey": "CONCASSE 400/800",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -386,16 +406,17 @@
     "product": {
       "$oid": "99e2299df9218e64c274937e"
     },
+    "productKey": "CONCASSE 4/10",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -405,16 +426,17 @@
     "product": {
       "$oid": "08f9c9db58a1f045433bda45"
     },
+    "productKey": "CONCASSE 30/60",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -424,16 +446,17 @@
     "product": {
       "$oid": "a25dd866d4a636aff2a4eeae"
     },
+    "productKey": "CONCASSE 0/31,5",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -443,16 +466,17 @@
     "product": {
       "$oid": "3cdb4ae7bbb5a956ed17f2d0"
     },
+    "productKey": "CONCASSE 100/250",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -462,16 +486,17 @@
     "product": {
       "$oid": "94335cd4672fc4aeeca3b6ef"
     },
+    "productKey": "CONCASSE 0/20",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -481,16 +506,17 @@
     "product": {
       "$oid": "c98bf7dac60dc9c85de1726d"
     },
+    "productKey": "CONCASSE 0/250",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -500,16 +526,17 @@
     "product": {
       "$oid": "3f198fd2459de53a7ac77c12"
     },
+    "productKey": "CONCASSE 0/120",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -519,16 +546,17 @@
     "product": {
       "$oid": "4840adb717c376b0f3d5a7cb"
     },
+    "productKey": "CONCASSE 80/125",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -538,16 +566,17 @@
     "product": {
       "$oid": "1fc12865c0e368579b5fdc06"
     },
+    "productKey": "CONCASSE 400/600",
     "measureUnit": {
       "$oid": "67890afd1242e9fe7c4d8c73"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -557,16 +586,17 @@
     "product": {
       "$oid": "4bf670be4f7af1452516537a"
     },
+    "productKey": "SABLE DE REMBLAIS",
     "measureUnit": {
       "$oid": "67890ad91242e9fe7c4d8c5b"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -576,16 +606,17 @@
     "product": {
       "$oid": "03bf9548ed668cb9ef7c5e33"
     },
+    "productKey": "GRAVAS BETON",
     "measureUnit": {
       "$oid": "67890ad91242e9fe7c4d8c5b"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -595,16 +626,17 @@
     "product": {
       "$oid": "4d1b717e9e55e838c86b1ae8"
     },
+    "productKey": "LATERITE SABLE DE REMBLAIS",
     "measureUnit": {
       "$oid": "67890ad91242e9fe7c4d8c5b"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -614,16 +646,17 @@
     "product": {
       "$oid": "d2c6fa3835786d3f441605e3"
     },
+    "productKey": "DEBLAIS",
     "measureUnit": {
       "$oid": "67890ad91242e9fe7c4d8c5b"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -633,16 +666,17 @@
     "product": {
       "$oid": "904f2c42f4d5f7d3d71878e4"
     },
+    "productKey": "SABLE DE REMBLAIS-SILTEUX",
     "measureUnit": {
       "$oid": "67890ad91242e9fe7c4d8c5b"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -652,16 +686,17 @@
     "product": {
       "$oid": "3857c6b939ba30e44d3409c3"
     },
+    "productKey": "STERILE",
     "measureUnit": {
       "$oid": "67890ad91242e9fe7c4d8c5b"
     },
     "amount": 0,
     "isDefault": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   }
 ]

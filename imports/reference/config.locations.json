@@ -8,10 +8,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -23,10 +23,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -38,10 +38,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -53,10 +53,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -68,10 +68,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -83,10 +83,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -98,10 +98,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -113,10 +113,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -128,10 +128,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -143,10 +143,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -158,10 +158,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -173,10 +173,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -188,10 +188,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -203,10 +203,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -218,10 +218,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -233,10 +233,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -248,10 +248,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -263,10 +263,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -278,10 +278,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -293,10 +293,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -308,10 +308,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -323,10 +323,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -338,10 +338,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -353,10 +353,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -368,10 +368,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -383,10 +383,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -398,10 +398,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -413,10 +413,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -428,10 +428,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -443,10 +443,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -458,10 +458,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -473,10 +473,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -488,10 +488,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -503,10 +503,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -518,10 +518,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -533,10 +533,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -548,10 +548,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -563,10 +563,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -578,10 +578,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -593,10 +593,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -608,10 +608,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -623,10 +623,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -638,10 +638,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -653,10 +653,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -668,10 +668,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -683,10 +683,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -698,10 +698,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -713,10 +713,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -728,10 +728,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -743,10 +743,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -758,10 +758,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -773,10 +773,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -788,10 +788,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -803,10 +803,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -818,10 +818,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -833,10 +833,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -848,10 +848,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -863,10 +863,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -878,10 +878,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -893,10 +893,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -908,10 +908,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -923,10 +923,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -938,10 +938,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -953,10 +953,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -968,10 +968,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -983,10 +983,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -998,10 +998,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1013,10 +1013,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1028,10 +1028,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1043,10 +1043,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1058,10 +1058,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1073,10 +1073,10 @@
     "type": "destination",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1088,10 +1088,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1103,10 +1103,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1118,10 +1118,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1133,10 +1133,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1148,10 +1148,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1163,10 +1163,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1178,10 +1178,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1193,10 +1193,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1208,10 +1208,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1223,10 +1223,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1238,10 +1238,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1253,10 +1253,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1268,10 +1268,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1283,10 +1283,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1298,10 +1298,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1313,10 +1313,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -1328,10 +1328,10 @@
     "type": "expedition",
     "isActive": true,
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   }
 ]

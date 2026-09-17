@@ -212,6 +212,7 @@ function buildProducts(sheets) {
     return {
       _id: oid(detId("pmu", `${p._id.$oid}:${unitId}`)),
       product: p._id,
+      productKey: p._key, // résolu vers l'_id réel du produit par l'importeur
       measureUnit: oid(unitId),
       amount: 0,
       isDefault: true,
