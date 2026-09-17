@@ -1,0 +1,74 @@
+[
+  {
+    "_id": {
+      "$oid": "64168817eb90a37a5085179a"
+    },
+    "price": 4000,
+    "transportType": {
+      "$oid": "5cc3dbc9f6112c0df42f2b4a"
+    },
+    "typeColis": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "unit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "quantity": 1,
+    "status": "active",
+    "description": "TDL 10 ROUES",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "de881d91a90ffd923ba5d85f"
+    },
+    "price": 5000,
+    "transportType": {
+      "$oid": "73b5a471af81b6bf6f1cb5fe"
+    },
+    "typeColis": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "unit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "quantity": 1,
+    "status": "active",
+    "description": "TDL 12 ROUES",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ae41b4d1837735d93a00a5a1"
+    },
+    "price": 350,
+    "transportType": {
+      "$oid": "5cc3dbc9f6112c0df42f2b4a"
+    },
+    "typeColis": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "unit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "quantity": 1,
+    "status": "active",
+    "description": "TAXE MINIERE",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  }
+]

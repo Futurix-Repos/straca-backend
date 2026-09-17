@@ -1,0 +1,325 @@
+[
+  {
+    "_id": {
+      "$oid": "13ef02ff367f6a8a869e9250"
+    },
+    "label": "MDG LOT 1",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "0b6b2382823ea2df59b2d6c6"
+    },
+    "chantierLabel": "MDG",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "588c61762f546e74b1f535f1"
+    },
+    "label": "MDG LOT 2",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "0b6b2382823ea2df59b2d6c6"
+    },
+    "chantierLabel": "MDG",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a30b5fb819567dd995482cc4"
+    },
+    "label": "MDG LOT 5",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "0b6b2382823ea2df59b2d6c6"
+    },
+    "chantierLabel": "MDG",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5710815838e0ccaec2343a68"
+    },
+    "label": "BRETELLE C PK 2",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "77634817258c29d5882cef8c"
+    },
+    "chantierLabel": "BRETELLE C",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c07ce00ccf2e344e3d1d0325"
+    },
+    "label": "BRETELLE C PK 0",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "77634817258c29d5882cef8c"
+    },
+    "chantierLabel": "BRETELLE C",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "25a1969a759d0ad288e7a3f2"
+    },
+    "label": "BRETELLE C PK3",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "77634817258c29d5882cef8c"
+    },
+    "chantierLabel": "BRETELLE C",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "cc658a506f0c0cfff06f0e7d"
+    },
+    "label": "BRETELLE C PK4",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "77634817258c29d5882cef8c"
+    },
+    "chantierLabel": "BRETELLE C",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7fe00288d8bbca9e7113bb51"
+    },
+    "label": "BRETELLE C PK7",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "77634817258c29d5882cef8c"
+    },
+    "chantierLabel": "BRETELLE C",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "104eebcf24e545533b1ee00f"
+    },
+    "label": "BRETELLE C PK13 DJONDJI",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "77634817258c29d5882cef8c"
+    },
+    "chantierLabel": "BRETELLE C",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f13b32717e0cccc11f616cb7"
+    },
+    "label": "BRETELLE C PK12 DJONDJI",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "77634817258c29d5882cef8c"
+    },
+    "chantierLabel": "BRETELLE C",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4c10cb643ace1f55e6ddd9d0"
+    },
+    "label": "BRETELLE C PK5",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "77634817258c29d5882cef8c"
+    },
+    "chantierLabel": "BRETELLE C",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a6da570e1dd6eb28fa2cd08c"
+    },
+    "label": "BRETELLE C PK10 DJONDJI",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "77634817258c29d5882cef8c"
+    },
+    "chantierLabel": "BRETELLE C",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "37a36142b16b060045e50764"
+    },
+    "label": "BRETELLE C PK11 DJONDJI",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "77634817258c29d5882cef8c"
+    },
+    "chantierLabel": "BRETELLE C",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "968e4129a1ee756d275ad66e"
+    },
+    "label": "BRETELLE C PK8",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "77634817258c29d5882cef8c"
+    },
+    "chantierLabel": "BRETELLE C",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "929af5aae6d2c85b786f22b0"
+    },
+    "label": "BRETELLE C PK9",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "77634817258c29d5882cef8c"
+    },
+    "chantierLabel": "BRETELLE C",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "79f2d29bdab5a561d6f5057d"
+    },
+    "label": "BRETELLE C PK2 OUIDAH",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "77634817258c29d5882cef8c"
+    },
+    "chantierLabel": "BRETELLE C",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "da9f9c97c424011eb63e4a78"
+    },
+    "label": "ADJAHA-ATHIEME OA4",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "f8e5f5f929750007f2c9b19c"
+    },
+    "chantierLabel": "ADJAHA-ATHIEME",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "601c93c7c76f07d81c62ed25"
+    },
+    "label": "ADJAHA-ATHIEME OA7",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "f8e5f5f929750007f2c9b19c"
+    },
+    "chantierLabel": "ADJAHA-ATHIEME",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b00504e271df746783f29cf2"
+    },
+    "label": "ADJAHA-ATHIEME OA3",
+    "description": "Sous-point importé.",
+    "chantier": {
+      "$oid": "f8e5f5f929750007f2c9b19c"
+    },
+    "chantierLabel": "ADJAHA-ATHIEME",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  }
+]

@@ -1,0 +1,562 @@
+[
+  {
+    "_id": {
+      "$oid": "aaa9ecdebee9c82abc1b913c"
+    },
+    "name": "SABLE_LAGUNAIRE",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8d36d53aa3264f8610e5b021"
+    },
+    "name": "SILTEUX",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5c191d8a643f284c8fb56716"
+    },
+    "name": "CONCASSE",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4ebe7c537f329e034865555c"
+    },
+    "name": "BOUE",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "993d006a09abe4a79f1f54a9"
+    },
+    "name": "SABLE_MARIN",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5d62b2a180810621f1c57c46"
+    },
+    "name": "LATERITE",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "caa609a8d84401a311a9646b"
+    },
+    "name": "TERRE_DE_BARRE",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a1d7f12ae557b93652a1188e"
+    },
+    "name": "ENROBE",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4db3e699aecce3c6a2e48602"
+    },
+    "name": "BITUME",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64073397f3de7d57717d894f"
+    },
+    "name": "CIMENT",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ed2ac38fa8353d7ee3c7b24f"
+    },
+    "name": "FER",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4cea2153c415b6759a3b561d"
+    },
+    "name": "PIPELINE",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5d064b7120ca76847daeb812"
+    },
+    "name": "CHARBON",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "510759b26c75ae6b6d5ddf04"
+    },
+    "name": "CLINKER",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "726a20e86a01e36781d16d88"
+    },
+    "name": "CONCASSE 0/4",
+    "description": "Produit importé (concassé).",
+    "productType": {
+      "$oid": "679cabe3d2726f19758160ce"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "17f57d617e848274b9d02f80"
+    },
+    "name": "CONCASSE 10/14",
+    "description": "Produit importé (concassé).",
+    "productType": {
+      "$oid": "679cabe3d2726f19758160ce"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "bbbbfe54f477d3f9ea244dcd"
+    },
+    "name": "CONCASSE 5/15",
+    "description": "Produit importé (concassé).",
+    "productType": {
+      "$oid": "679cabe3d2726f19758160ce"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "783286a2ef072ce9f3f954ca"
+    },
+    "name": "CONCASSE 15/25",
+    "description": "Produit importé (concassé).",
+    "productType": {
+      "$oid": "679cabe3d2726f19758160ce"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3a337497fd92d196c4175814"
+    },
+    "name": "CONCASSE 0/1000",
+    "description": "Produit importé (concassé).",
+    "productType": {
+      "$oid": "679cabe3d2726f19758160ce"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64e0e6b98244fd3c82a25a2e"
+    },
+    "name": "CONCASSE 400/800",
+    "description": "Produit importé (concassé).",
+    "productType": {
+      "$oid": "679cabe3d2726f19758160ce"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "99e2299df9218e64c274937e"
+    },
+    "name": "CONCASSE 4/10",
+    "description": "Produit importé (concassé).",
+    "productType": {
+      "$oid": "679cabe3d2726f19758160ce"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "08f9c9db58a1f045433bda45"
+    },
+    "name": "CONCASSE 30/60",
+    "description": "Produit importé (concassé).",
+    "productType": {
+      "$oid": "679cabe3d2726f19758160ce"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a25dd866d4a636aff2a4eeae"
+    },
+    "name": "CONCASSE 0/31,5",
+    "description": "Produit importé (concassé).",
+    "productType": {
+      "$oid": "679cabe3d2726f19758160ce"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3cdb4ae7bbb5a956ed17f2d0"
+    },
+    "name": "CONCASSE 100/250",
+    "description": "Produit importé (concassé).",
+    "productType": {
+      "$oid": "679cabe3d2726f19758160ce"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "94335cd4672fc4aeeca3b6ef"
+    },
+    "name": "CONCASSE 0/20",
+    "description": "Produit importé (concassé).",
+    "productType": {
+      "$oid": "679cabe3d2726f19758160ce"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c98bf7dac60dc9c85de1726d"
+    },
+    "name": "CONCASSE 0/250",
+    "description": "Produit importé (concassé).",
+    "productType": {
+      "$oid": "679cabe3d2726f19758160ce"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3f198fd2459de53a7ac77c12"
+    },
+    "name": "CONCASSE 0/120",
+    "description": "Produit importé (concassé).",
+    "productType": {
+      "$oid": "679cabe3d2726f19758160ce"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4840adb717c376b0f3d5a7cb"
+    },
+    "name": "CONCASSE 80/125",
+    "description": "Produit importé (concassé).",
+    "productType": {
+      "$oid": "679cabe3d2726f19758160ce"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1fc12865c0e368579b5fdc06"
+    },
+    "name": "CONCASSE 400/600",
+    "description": "Produit importé (concassé).",
+    "productType": {
+      "$oid": "679cabe3d2726f19758160ce"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4bf670be4f7af1452516537a"
+    },
+    "name": "SABLE DE REMBLAIS",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "03bf9548ed668cb9ef7c5e33"
+    },
+    "name": "GRAVAS BETON",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4d1b717e9e55e838c86b1ae8"
+    },
+    "name": "LATERITE SABLE DE REMBLAIS",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d2c6fa3835786d3f441605e3"
+    },
+    "name": "DEBLAIS",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "904f2c42f4d5f7d3d71878e4"
+    },
+    "name": "SABLE DE REMBLAIS-SILTEUX",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3857c6b939ba30e44d3409c3"
+    },
+    "name": "STERILE",
+    "description": "Produit importé (standard).",
+    "productType": {
+      "$oid": "678624dbb4352dbb8c35061b"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  }
+]

@@ -1,0 +1,667 @@
+[
+  {
+    "_id": {
+      "$oid": "3046d5da119f8a4150874c43"
+    },
+    "product": {
+      "$oid": "aaa9ecdebee9c82abc1b913c"
+    },
+    "measureUnit": {
+      "$oid": "67890ad91242e9fe7c4d8c5b"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "17d8a7cc5912bb990bcf83a5"
+    },
+    "product": {
+      "$oid": "8d36d53aa3264f8610e5b021"
+    },
+    "measureUnit": {
+      "$oid": "67890ad91242e9fe7c4d8c5b"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e0054363750301190b95cd4a"
+    },
+    "product": {
+      "$oid": "5c191d8a643f284c8fb56716"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b485bba44c4e9638fc9a6467"
+    },
+    "product": {
+      "$oid": "4ebe7c537f329e034865555c"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ab0dd8564365521a304ac712"
+    },
+    "product": {
+      "$oid": "993d006a09abe4a79f1f54a9"
+    },
+    "measureUnit": {
+      "$oid": "67890ad91242e9fe7c4d8c5b"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "af3caa1bfe943373ad5a80f8"
+    },
+    "product": {
+      "$oid": "5d62b2a180810621f1c57c46"
+    },
+    "measureUnit": {
+      "$oid": "67890ad91242e9fe7c4d8c5b"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "24569f1690eb77204998e527"
+    },
+    "product": {
+      "$oid": "caa609a8d84401a311a9646b"
+    },
+    "measureUnit": {
+      "$oid": "67890ad91242e9fe7c4d8c5b"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f52946c0c101974e6d12da13"
+    },
+    "product": {
+      "$oid": "a1d7f12ae557b93652a1188e"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "79f8560c3f5ad225a12a3170"
+    },
+    "product": {
+      "$oid": "4db3e699aecce3c6a2e48602"
+    },
+    "measureUnit": {
+      "$oid": "67890ad91242e9fe7c4d8c5b"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2deaf838d9c6da7efc76208c"
+    },
+    "product": {
+      "$oid": "64073397f3de7d57717d894f"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ffb1084cdd9b2f1314dae41d"
+    },
+    "product": {
+      "$oid": "ed2ac38fa8353d7ee3c7b24f"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "63cd73fbb80d1dd70c26e9bf"
+    },
+    "product": {
+      "$oid": "4cea2153c415b6759a3b561d"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f0c25d393ce543aaf81955d3"
+    },
+    "product": {
+      "$oid": "5d064b7120ca76847daeb812"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4656672d6359f46c35986a7d"
+    },
+    "product": {
+      "$oid": "510759b26c75ae6b6d5ddf04"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "bafec2d211b13462310022f4"
+    },
+    "product": {
+      "$oid": "726a20e86a01e36781d16d88"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0f5143460a04fbf359fca248"
+    },
+    "product": {
+      "$oid": "17f57d617e848274b9d02f80"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "dbd72b9b55ff63197a7d223a"
+    },
+    "product": {
+      "$oid": "bbbbfe54f477d3f9ea244dcd"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "adf6476b94cc8580e266673f"
+    },
+    "product": {
+      "$oid": "783286a2ef072ce9f3f954ca"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1cf810fd10a1e8c9b0176f57"
+    },
+    "product": {
+      "$oid": "3a337497fd92d196c4175814"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d90d5a91f0384d4de53b82c7"
+    },
+    "product": {
+      "$oid": "64e0e6b98244fd3c82a25a2e"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f988fb093941bd3ea0ae77d1"
+    },
+    "product": {
+      "$oid": "99e2299df9218e64c274937e"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "da320ac84b73192a45337091"
+    },
+    "product": {
+      "$oid": "08f9c9db58a1f045433bda45"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "748149ce85a9e06bd7fc942b"
+    },
+    "product": {
+      "$oid": "a25dd866d4a636aff2a4eeae"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e6c8dd17490d0772314fc560"
+    },
+    "product": {
+      "$oid": "3cdb4ae7bbb5a956ed17f2d0"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "35ce1afdba45a797d83ee439"
+    },
+    "product": {
+      "$oid": "94335cd4672fc4aeeca3b6ef"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e9160abcd152b84d4f991eee"
+    },
+    "product": {
+      "$oid": "c98bf7dac60dc9c85de1726d"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "af7088584e61d42db47f7f5d"
+    },
+    "product": {
+      "$oid": "3f198fd2459de53a7ac77c12"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "76a4ee755425798c83511e9c"
+    },
+    "product": {
+      "$oid": "4840adb717c376b0f3d5a7cb"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "dcc4ecf7d1025977540d63e1"
+    },
+    "product": {
+      "$oid": "1fc12865c0e368579b5fdc06"
+    },
+    "measureUnit": {
+      "$oid": "67890afd1242e9fe7c4d8c73"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7358633b3d83478a7c1f9528"
+    },
+    "product": {
+      "$oid": "4bf670be4f7af1452516537a"
+    },
+    "measureUnit": {
+      "$oid": "67890ad91242e9fe7c4d8c5b"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "89b2d8a63d2cacc411207f5c"
+    },
+    "product": {
+      "$oid": "03bf9548ed668cb9ef7c5e33"
+    },
+    "measureUnit": {
+      "$oid": "67890ad91242e9fe7c4d8c5b"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9a835ed456763822f6ca1d07"
+    },
+    "product": {
+      "$oid": "4d1b717e9e55e838c86b1ae8"
+    },
+    "measureUnit": {
+      "$oid": "67890ad91242e9fe7c4d8c5b"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e16a9ec6f2bd92c499ad5115"
+    },
+    "product": {
+      "$oid": "d2c6fa3835786d3f441605e3"
+    },
+    "measureUnit": {
+      "$oid": "67890ad91242e9fe7c4d8c5b"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "868865101bb7fc93271f5225"
+    },
+    "product": {
+      "$oid": "904f2c42f4d5f7d3d71878e4"
+    },
+    "measureUnit": {
+      "$oid": "67890ad91242e9fe7c4d8c5b"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e3cb8ed27b6a0499d8289d61"
+    },
+    "product": {
+      "$oid": "3857c6b939ba30e44d3409c3"
+    },
+    "measureUnit": {
+      "$oid": "67890ad91242e9fe7c4d8c5b"
+    },
+    "amount": 0,
+    "isDefault": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  }
+]

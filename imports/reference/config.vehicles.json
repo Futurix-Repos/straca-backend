@@ -1,0 +1,4990 @@
+[
+  {
+    "_id": {
+      "$oid": "0911832005aa396bdee98326"
+    },
+    "registrationNumber": "AJ 1837 RB",
+    "plateRaw": "AJ 1837 RB",
+    "plateNormalized": "AJ1837RB",
+    "model": {
+      "$oid": "07848a5570c041a3a1c1c10d"
+    },
+    "type": {
+      "$oid": "0fa541135274be507b4c8114"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "KERAS",
+      "config": "SEMI 6E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9a79c7bff20db76384f5a51c"
+    },
+    "registrationNumber": "AJ 8848 RB",
+    "plateRaw": "AJ 8848 RB",
+    "plateNormalized": "AJ8848RB",
+    "model": {
+      "$oid": "7e966ca5e6344cc89aa3e32f"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "KERAS",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "697b764de9d1271ee9b2dcc9"
+    },
+    "registrationNumber": "AT 5663 RB",
+    "plateRaw": "AT 5663 RB",
+    "plateNormalized": "AT5663RB",
+    "model": {
+      "$oid": "eac440cb1241a31ce97513e3"
+    },
+    "type": {
+      "$oid": "b1326b7bcc8b4e4411e7c38f"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "RENAULT",
+      "config": "SEMI 5E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "57da4b40407853542e2e9fb5"
+    },
+    "registrationNumber": "AV 7590 RB",
+    "plateRaw": "AV 7590 RB",
+    "plateNormalized": "AV7590RB",
+    "model": {
+      "$oid": "07848a5570c041a3a1c1c10d"
+    },
+    "type": {
+      "$oid": "0fa541135274be507b4c8114"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "KERAS",
+      "config": "SEMI 6E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "45fb54ed229fbe7cde12e698"
+    },
+    "registrationNumber": "AV 7753 RB",
+    "plateRaw": "AV 7753 RB",
+    "plateNormalized": "AV7753RB",
+    "model": {
+      "$oid": "07848a5570c041a3a1c1c10d"
+    },
+    "type": {
+      "$oid": "0fa541135274be507b4c8114"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "KERAS",
+      "config": "SEMI 6E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3a7df3c57e955c90e01994ab"
+    },
+    "registrationNumber": "AV 7829 RB",
+    "plateRaw": "AV 7829 RB",
+    "plateNormalized": "AV7829RB",
+    "model": {
+      "$oid": "07848a5570c041a3a1c1c10d"
+    },
+    "type": {
+      "$oid": "0fa541135274be507b4c8114"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "KERAS",
+      "config": "SEMI 6E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "284d81cf32b8e8c1ab136400"
+    },
+    "registrationNumber": "AV 7830 RB",
+    "plateRaw": "AV 7830 RB",
+    "plateNormalized": "AV7830RB",
+    "model": {
+      "$oid": "07848a5570c041a3a1c1c10d"
+    },
+    "type": {
+      "$oid": "0fa541135274be507b4c8114"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "KERAS",
+      "config": "SEMI 6E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9b3dda9cfb81723de6de79c0"
+    },
+    "registrationNumber": "AV 7919 RB",
+    "plateRaw": "AV 7919 RB",
+    "plateNormalized": "AV7919RB",
+    "model": {
+      "$oid": "07848a5570c041a3a1c1c10d"
+    },
+    "type": {
+      "$oid": "0fa541135274be507b4c8114"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "KERAS",
+      "config": "SEMI 6E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "fde913cd2f29796d00bab994"
+    },
+    "registrationNumber": "AV 7928 RB",
+    "plateRaw": "AV 7928 RB",
+    "plateNormalized": "AV7928RB",
+    "model": {
+      "$oid": "07848a5570c041a3a1c1c10d"
+    },
+    "type": {
+      "$oid": "0fa541135274be507b4c8114"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "KERAS",
+      "config": "SEMI 6E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "abcc43111422fd5fe7f1d831"
+    },
+    "registrationNumber": "AX 0325 RB",
+    "plateRaw": "AX 0325 RB",
+    "plateNormalized": "AX0325RB",
+    "model": {
+      "$oid": "28287f15d84cdb16273b2106"
+    },
+    "type": {
+      "$oid": "0fa541135274be507b4c8114"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "SEMI 6E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2cb3e092b7d270cbc8c62bf6"
+    },
+    "registrationNumber": "AX 0560 RB",
+    "plateRaw": "AX 0560 RB",
+    "plateNormalized": "AX0560RB",
+    "model": {
+      "$oid": "28287f15d84cdb16273b2106"
+    },
+    "type": {
+      "$oid": "0fa541135274be507b4c8114"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "SEMI 6E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "51feb723fa6bbba8c84d28f1"
+    },
+    "registrationNumber": "AZ 8537 RB",
+    "plateRaw": "AZ 8537 RB",
+    "plateNormalized": "AZ8537RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "20c31a9efb2ae79b1f767349"
+    },
+    "registrationNumber": "AZ 8635 RB",
+    "plateRaw": "AZ 8635 RB",
+    "plateNormalized": "AZ8635RB",
+    "model": {
+      "$oid": "12ec74c912be54d3999486af"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b422f8e168bfa1b455a6cf56"
+    },
+    "registrationNumber": "AZ 8636 RB",
+    "plateRaw": "AZ 8636 RB",
+    "plateNormalized": "AZ8636RB",
+    "model": {
+      "$oid": "07ada84bc87a825e10d92493"
+    },
+    "type": {
+      "$oid": "0fa541135274be507b4c8114"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 6E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "07245d59a78d734ad80431b6"
+    },
+    "registrationNumber": "AZ 8638 RB",
+    "plateRaw": "AZ 8638 RB",
+    "plateNormalized": "AZ8638RB",
+    "model": {
+      "$oid": "07ada84bc87a825e10d92493"
+    },
+    "type": {
+      "$oid": "0fa541135274be507b4c8114"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 6E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "344d0ba2f7b3e8f3767bd8d9"
+    },
+    "registrationNumber": "AZ 8640 RB",
+    "plateRaw": "AZ 8640 RB",
+    "plateNormalized": "AZ8640RB",
+    "model": {
+      "$oid": "12ec74c912be54d3999486af"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "04c54d3a9a8da52437c91104"
+    },
+    "registrationNumber": "AZ 8641 RB",
+    "plateRaw": "AZ 8641 RB",
+    "plateNormalized": "AZ8641RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ca4ce92d059a1c7054f32d46"
+    },
+    "registrationNumber": "BB 7082 RB",
+    "plateRaw": "BB 7082 RB",
+    "plateNormalized": "BB7082RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "41195a117d2943159abca397"
+    },
+    "registrationNumber": "BB 7084 RB",
+    "plateRaw": "BB 7084 RB",
+    "plateNormalized": "BB7084RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "dab32b14fe5f8d9b91697d7f"
+    },
+    "registrationNumber": "BC 6487 RB",
+    "plateRaw": "BC 6487 RB",
+    "plateNormalized": "BC6487RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0f3abf7777b580303045644a"
+    },
+    "registrationNumber": "BC 6488 RB",
+    "plateRaw": "BC 6488 RB",
+    "plateNormalized": "BC6488RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "546d4e11153c0fb944fe0b3c"
+    },
+    "registrationNumber": "BF 0256 D203",
+    "plateRaw": "BF 0256 D203",
+    "plateNormalized": "BF0256D203",
+    "model": {
+      "$oid": "dbd67fa99c1e7bd795f36dc1"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "d47d3706e33d982587bd9d39"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6692b22c4a16d99c2bcb6ac7"
+    },
+    "registrationNumber": "BF 0257 D203",
+    "plateRaw": "BF 0257 D203",
+    "plateNormalized": "BF0257D203",
+    "model": {
+      "$oid": "dbd67fa99c1e7bd795f36dc1"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "d47d3706e33d982587bd9d39"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ccb3f1c96680dfa15c0e74e9"
+    },
+    "registrationNumber": "BF 4577 E303",
+    "plateRaw": "BF 4577 E303",
+    "plateNormalized": "BF4577E303",
+    "model": {
+      "$oid": "5e8afb610a26518231e6af22"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "d47d3706e33d982587bd9d39"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6fffe378fa7d0b0b1d58f55a"
+    },
+    "registrationNumber": "BF 4578 E303",
+    "plateRaw": "BF 4578 E303",
+    "plateNormalized": "BF4578E303",
+    "model": {
+      "$oid": "5e8afb610a26518231e6af22"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "d47d3706e33d982587bd9d39"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2ea61d00d16e07d3aa876836"
+    },
+    "registrationNumber": "BF 4580 E303",
+    "plateRaw": "BF 4580 E303",
+    "plateNormalized": "BF4580E303",
+    "model": {
+      "$oid": "5e8afb610a26518231e6af22"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "d47d3706e33d982587bd9d39"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d69d73419decc43868ebaa2c"
+    },
+    "registrationNumber": "BF 4584 E303",
+    "plateRaw": "BF 4584 E303",
+    "plateNormalized": "BF4584E303",
+    "model": {
+      "$oid": "5e8afb610a26518231e6af22"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "d47d3706e33d982587bd9d39"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7c79c7219b39e1141c6f75e8"
+    },
+    "registrationNumber": "BF 4590 E303",
+    "plateRaw": "BF 4590 E303",
+    "plateNormalized": "BF4590E303",
+    "model": {
+      "$oid": "5e8afb610a26518231e6af22"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "d47d3706e33d982587bd9d39"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "91c9a7de114d6369b05284e0"
+    },
+    "registrationNumber": "BF 5090 E703",
+    "plateRaw": "BF 5090 E703",
+    "plateNormalized": "BF5090E703",
+    "model": {
+      "$oid": "07ada84bc87a825e10d92493"
+    },
+    "type": {
+      "$oid": "0fa541135274be507b4c8114"
+    },
+    "source": {
+      "$oid": "d47d3706e33d982587bd9d39"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 6E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "29ae57d8bfa711bb5f290776"
+    },
+    "registrationNumber": "BF 5093 E703",
+    "plateRaw": "BF 5093 E703",
+    "plateNormalized": "BF5093E703",
+    "model": {
+      "$oid": "07ada84bc87a825e10d92493"
+    },
+    "type": {
+      "$oid": "0fa541135274be507b4c8114"
+    },
+    "source": {
+      "$oid": "d47d3706e33d982587bd9d39"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 6E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "250472e4991c962bfb68c9c9"
+    },
+    "registrationNumber": "BF 5193 E703",
+    "plateRaw": "BF 5193 E703",
+    "plateNormalized": "BF5193E703",
+    "model": {
+      "$oid": "07ada84bc87a825e10d92493"
+    },
+    "type": {
+      "$oid": "0fa541135274be507b4c8114"
+    },
+    "source": {
+      "$oid": "d47d3706e33d982587bd9d39"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 6E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2544090c06510a25a8473484"
+    },
+    "registrationNumber": "BG 4203 RB",
+    "plateRaw": "BG 4203 RB",
+    "plateNormalized": "BG4203RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "112b88825f22a44282f4826d"
+    },
+    "registrationNumber": "BG 4204 RB",
+    "plateRaw": "BG 4204 RB",
+    "plateNormalized": "BG4204RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "281ef56271ef82db793fb032"
+    },
+    "registrationNumber": "BG 4205 RB",
+    "plateRaw": "BG 4205 RB",
+    "plateNormalized": "BG4205RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f49f27bf9aba6829abd8db1f"
+    },
+    "registrationNumber": "BG 4206 RB",
+    "plateRaw": "BG 4206 RB",
+    "plateNormalized": "BG4206RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e626a15014b41c658c654a7"
+    },
+    "registrationNumber": "BG 4207 RB",
+    "plateRaw": "BG 4207 RB",
+    "plateNormalized": "BG4207RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "14bc62ca3a9582252ce41261"
+    },
+    "registrationNumber": "BK 2453 RB",
+    "plateRaw": "BK 2453 RB",
+    "plateNormalized": "BK2453RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0b4b5a9c719514894ad9811c"
+    },
+    "registrationNumber": "BK 2455 RB",
+    "plateRaw": "BK 2455 RB",
+    "plateNormalized": "BK2455RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "25025b9dac3f6ac8c6d1d3a5"
+    },
+    "registrationNumber": "BK 2456 RB",
+    "plateRaw": "BK 2456 RB",
+    "plateNormalized": "BK2456RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "afbb09831ed638c18014d998"
+    },
+    "registrationNumber": "BK 2457 RB",
+    "plateRaw": "BK 2457 RB",
+    "plateNormalized": "BK2457RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5d07adaa5fdf1931775a6962"
+    },
+    "registrationNumber": "BL 9887 RB",
+    "plateRaw": "BL 9887 RB",
+    "plateNormalized": "BL9887RB",
+    "model": {
+      "$oid": "161b189fddac37b55cf8ba3f"
+    },
+    "type": {
+      "$oid": "b1326b7bcc8b4e4411e7c38f"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 5E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4b42ffe19e6d4e692d128ffb"
+    },
+    "registrationNumber": "BL 9896 RB",
+    "plateRaw": "BL 9896 RB",
+    "plateNormalized": "BL9896RB",
+    "model": {
+      "$oid": "161b189fddac37b55cf8ba3f"
+    },
+    "type": {
+      "$oid": "b1326b7bcc8b4e4411e7c38f"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 5E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "cf76c386383303e090dd10b3"
+    },
+    "registrationNumber": "BM 2565 RB",
+    "plateRaw": "BM 2565 RB",
+    "plateNormalized": "BM2565RB",
+    "model": {
+      "$oid": "161b189fddac37b55cf8ba3f"
+    },
+    "type": {
+      "$oid": "b1326b7bcc8b4e4411e7c38f"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 5E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "be1a122a3fb1bac4cdbd1c88"
+    },
+    "registrationNumber": "BM 2566 RB",
+    "plateRaw": "BM 2566 RB",
+    "plateNormalized": "BM2566RB",
+    "model": {
+      "$oid": "161b189fddac37b55cf8ba3f"
+    },
+    "type": {
+      "$oid": "b1326b7bcc8b4e4411e7c38f"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 5E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e34d62c8979bcbc06058f316"
+    },
+    "registrationNumber": "BN 0149 RB",
+    "plateRaw": "BN 0149 RB",
+    "plateNormalized": "BN0149RB",
+    "model": {
+      "$oid": "161b189fddac37b55cf8ba3f"
+    },
+    "type": {
+      "$oid": "b1326b7bcc8b4e4411e7c38f"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 5E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a758bfc15e56270f3c7c85f4"
+    },
+    "registrationNumber": "BN 0156 RB",
+    "plateRaw": "BN 0156 RB",
+    "plateNormalized": "BN0156RB",
+    "model": {
+      "$oid": "161b189fddac37b55cf8ba3f"
+    },
+    "type": {
+      "$oid": "b1326b7bcc8b4e4411e7c38f"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 5E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b6fc107210b940343a4331ea"
+    },
+    "registrationNumber": "BN 0163 RB",
+    "plateRaw": "BN 0163 RB",
+    "plateNormalized": "BN0163RB",
+    "model": {
+      "$oid": "161b189fddac37b55cf8ba3f"
+    },
+    "type": {
+      "$oid": "b1326b7bcc8b4e4411e7c38f"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 5E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6226638c0e97d2e75b72df03"
+    },
+    "registrationNumber": "BN 0164 RB",
+    "plateRaw": "BN 0164 RB",
+    "plateNormalized": "BN0164RB",
+    "model": {
+      "$oid": "161b189fddac37b55cf8ba3f"
+    },
+    "type": {
+      "$oid": "b1326b7bcc8b4e4411e7c38f"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 5E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a207ce9a2e7874dc35e38eb1"
+    },
+    "registrationNumber": "BN 4062 RB",
+    "plateRaw": "BN 4062 RB",
+    "plateNormalized": "BN4062RB",
+    "model": {
+      "$oid": "dbd67fa99c1e7bd795f36dc1"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "41a829a90875ae76af44525d"
+    },
+    "registrationNumber": "BP 5501 RB",
+    "plateRaw": "BP 5501 RB",
+    "plateNormalized": "BP5501RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3d2aabea30b7f5865ce866b2"
+    },
+    "registrationNumber": "BP 5504 RB",
+    "plateRaw": "BP 5504 RB",
+    "plateNormalized": "BP5504RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6d400253b499631648aa7202"
+    },
+    "registrationNumber": "BP 5509 RB",
+    "plateRaw": "BP 5509 RB",
+    "plateNormalized": "BP5509RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "338fcef1c334d5df33522a62"
+    },
+    "registrationNumber": "BP 5510 RB",
+    "plateRaw": "BP 5510 RB",
+    "plateNormalized": "BP5510RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3f8082aaf5cf4b173109b17a"
+    },
+    "registrationNumber": "BR 2470 RB",
+    "plateRaw": "BR 2470 RB",
+    "plateNormalized": "BR2470RB",
+    "model": {
+      "$oid": "9e4c18127efa0118197f0d35"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "045a80ed8ada40a591894b1f"
+    },
+    "registrationNumber": "BR 2476 RB",
+    "plateRaw": "BR 2476 RB",
+    "plateNormalized": "BR2476RB",
+    "model": {
+      "$oid": "9e4c18127efa0118197f0d35"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3c24e386d32970ac90700584"
+    },
+    "registrationNumber": "BR 2479 RB",
+    "plateRaw": "BR 2479 RB",
+    "plateNormalized": "BR2479RB",
+    "model": {
+      "$oid": "9e4c18127efa0118197f0d35"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7ff601ec8c1e12acd8c26de9"
+    },
+    "registrationNumber": "BR 2499 RB",
+    "plateRaw": "BR 2499 RB",
+    "plateNormalized": "BR2499RB",
+    "model": {
+      "$oid": "9e4c18127efa0118197f0d35"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "360a7bb6bd7470da24bae663"
+    },
+    "registrationNumber": "BR 8204 RB",
+    "plateRaw": "BR 8204 RB",
+    "plateNormalized": "BR8204RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "efdd25dc8e48df124b052c3b"
+    },
+    "registrationNumber": "BR 8205 RB",
+    "plateRaw": "BR 8205 RB",
+    "plateNormalized": "BR8205RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f9b5873df1b4e3c36d811dad"
+    },
+    "registrationNumber": "BR 9849 RB",
+    "plateRaw": "BR 9849 RB",
+    "plateNormalized": "BR9849RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0bf805af22beac35a3221f1e"
+    },
+    "registrationNumber": "BR 9850 RB",
+    "plateRaw": "BR 9850 RB",
+    "plateNormalized": "BR9850RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "78f586cb18824a27c3c0f9c0"
+    },
+    "registrationNumber": "BR 9851 RB",
+    "plateRaw": "BR 9851 RB",
+    "plateNormalized": "BR9851RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "50cf9e7cd79ae45cd37a065c"
+    },
+    "registrationNumber": "BR 9852 RB",
+    "plateRaw": "BR 9852 RB",
+    "plateNormalized": "BR9852RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "87e6f836435dc572c01f8ea8"
+    },
+    "registrationNumber": "BR 9853 RB",
+    "plateRaw": "BR 9853 RB",
+    "plateNormalized": "BR9853RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e7b3ddff269f8bcddeee0279"
+    },
+    "registrationNumber": "BR 9854 RB",
+    "plateRaw": "BR 9854 RB",
+    "plateNormalized": "BR9854RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a51d5faf168f263f6336b1a3"
+    },
+    "registrationNumber": "BR 9855 RB",
+    "plateRaw": "BR 9855 RB",
+    "plateNormalized": "BR9855RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4fae5b8f94e3903b6f300b36"
+    },
+    "registrationNumber": "BR 9856 RB",
+    "plateRaw": "BR 9856 RB",
+    "plateNormalized": "BR9856RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ef381c8ee46f2496eb1b8fef"
+    },
+    "registrationNumber": "BR 9857 RB",
+    "plateRaw": "BR 9857 RB",
+    "plateNormalized": "BR9857RB",
+    "model": {
+      "$oid": "bb0957c200fc8160f723dbe5"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6c3e07a99badc0084fb3e236"
+    },
+    "registrationNumber": "BR 9858 RB",
+    "plateRaw": "BR 9858 RB",
+    "plateNormalized": "BR9858RB",
+    "model": {
+      "$oid": "bb0957c200fc8160f723dbe5"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "17de18cdaf4a6e4c9c60d530"
+    },
+    "registrationNumber": "BS 0840 RB",
+    "plateRaw": "BS 0840 RB",
+    "plateNormalized": "BS0840RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "77adec22df4d8a7150250326"
+    },
+    "registrationNumber": "BS 0841 RB",
+    "plateRaw": "BS 0841 RB",
+    "plateNormalized": "BS0841RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7bf11b5666a33983d1d9ed6e"
+    },
+    "registrationNumber": "BS 0842 RB",
+    "plateRaw": "BS 0842 RB",
+    "plateNormalized": "BS0842RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0d7ac90e050b1f043afbb77c"
+    },
+    "registrationNumber": "BS 0843 RB",
+    "plateRaw": "BS 0843 RB",
+    "plateNormalized": "BS0843RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6311bab8a1f381e0ae039f5c"
+    },
+    "registrationNumber": "BS 6692 RB",
+    "plateRaw": "BS 6692 RB",
+    "plateNormalized": "BS6692RB",
+    "model": {
+      "$oid": "09a06c0ab61763a6393e0bad"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9ba218cbd5830ff8c19ce910"
+    },
+    "registrationNumber": "BS 6693 RB",
+    "plateRaw": "BS 6693 RB",
+    "plateNormalized": "BS6693RB",
+    "model": {
+      "$oid": "09a06c0ab61763a6393e0bad"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a7df2329e860281982c6780d"
+    },
+    "registrationNumber": "BS 6694 RB",
+    "plateRaw": "BS 6694 RB",
+    "plateNormalized": "BS6694RB",
+    "model": {
+      "$oid": "09a06c0ab61763a6393e0bad"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "62689f035e0f025aac473ec4"
+    },
+    "registrationNumber": "BS 6695 RB",
+    "plateRaw": "BS 6695 RB",
+    "plateNormalized": "BS6695RB",
+    "model": {
+      "$oid": "09a06c0ab61763a6393e0bad"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4927a69280d8c1505c7c1f1d"
+    },
+    "registrationNumber": "BS 6817 RB",
+    "plateRaw": "BS 6817 RB",
+    "plateNormalized": "BS6817RB",
+    "model": {
+      "$oid": "d19c56f9310c68e42a13da83"
+    },
+    "type": {
+      "$oid": "0a431f87305d89362e01b5d6"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "PLATEAU"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f6ae6e0ed356de322ceae0cf"
+    },
+    "registrationNumber": "BT 0307 RB",
+    "plateRaw": "BT 0307 RB",
+    "plateNormalized": "BT0307RB",
+    "model": {
+      "$oid": "09a06c0ab61763a6393e0bad"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f3d1fb37364ec7945ca5e973"
+    },
+    "registrationNumber": "BT 0310 RB",
+    "plateRaw": "BT 0310 RB",
+    "plateNormalized": "BT0310RB",
+    "model": {
+      "$oid": "09a06c0ab61763a6393e0bad"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1da25eaf8699b25f36607f03"
+    },
+    "registrationNumber": "BT 0311 RB",
+    "plateRaw": "BT 0311 RB",
+    "plateNormalized": "BT0311RB",
+    "model": {
+      "$oid": "09a06c0ab61763a6393e0bad"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "73ef982865a7ba8b709df8a0"
+    },
+    "registrationNumber": "BT 1985 RB",
+    "plateRaw": "BT 1985 RB",
+    "plateNormalized": "BT1985RB",
+    "model": {
+      "$oid": "dbd67fa99c1e7bd795f36dc1"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "97ccfe4b386e636017d591b2"
+    },
+    "registrationNumber": "BT 2792 RB",
+    "plateRaw": "BT 2792 RB",
+    "plateNormalized": "BT2792RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2ac3177644d11da8630ffc71"
+    },
+    "registrationNumber": "BT 2795 RB",
+    "plateRaw": "BT 2795 RB",
+    "plateNormalized": "BT2795RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ed9dd3351f09ebd23cf075ae"
+    },
+    "registrationNumber": "BT 2797 RB",
+    "plateRaw": "BT 2797 RB",
+    "plateNormalized": "BT2797RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "cb9f23ea556001723273d927"
+    },
+    "registrationNumber": "BT 2799 RB",
+    "plateRaw": "BT 2799 RB",
+    "plateNormalized": "BT2799RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "48d9f8169c4a590c622f6243"
+    },
+    "registrationNumber": "BT 2801 RB",
+    "plateRaw": "BT 2801 RB",
+    "plateNormalized": "BT2801RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "93a6efcb8d06d9a2ebd5693b"
+    },
+    "registrationNumber": "BT 4369 RB",
+    "plateRaw": "BT 4369 RB",
+    "plateNormalized": "BT4369RB",
+    "model": {
+      "$oid": "dbd67fa99c1e7bd795f36dc1"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9543b08fb55ca6db36684ab1"
+    },
+    "registrationNumber": "BU 0206 RB",
+    "plateRaw": "BU 0206 RB",
+    "plateNormalized": "BU0206RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "df67ec53b12f85317501a160"
+    },
+    "registrationNumber": "BU 0215 RB",
+    "plateRaw": "BU 0215 RB",
+    "plateNormalized": "BU0215RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b1f99443c7ab8155a554ccfb"
+    },
+    "registrationNumber": "BU 0216 RB",
+    "plateRaw": "BU 0216 RB",
+    "plateNormalized": "BU0216RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "91490c45ee981f383a56d35d"
+    },
+    "registrationNumber": "BU 1048 RB",
+    "plateRaw": "BU 1048 RB",
+    "plateNormalized": "BU1048RB",
+    "model": {
+      "$oid": "339ecd42ccbb2502d4b735b4"
+    },
+    "type": {
+      "$oid": "0a431f87305d89362e01b5d6"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "DONGFENG",
+      "config": "PLATEAU"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1e25a436ad25edfc750187a0"
+    },
+    "registrationNumber": "BU 1049 RB",
+    "plateRaw": "BU 1049 RB",
+    "plateNormalized": "BU1049RB",
+    "model": {
+      "$oid": "339ecd42ccbb2502d4b735b4"
+    },
+    "type": {
+      "$oid": "0a431f87305d89362e01b5d6"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "DONGFENG",
+      "config": "PLATEAU"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2c3d7308dad9186103f5f7f7"
+    },
+    "registrationNumber": "BU 2317 RB",
+    "plateRaw": "BU 2317 RB",
+    "plateNormalized": "BU2317RB",
+    "model": {
+      "$oid": "09a06c0ab61763a6393e0bad"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f913880308c8a50be19847b1"
+    },
+    "registrationNumber": "BU 2319 RB",
+    "plateRaw": "BU 2319 RB",
+    "plateNormalized": "BU2319RB",
+    "model": {
+      "$oid": "09a06c0ab61763a6393e0bad"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "77ec4b161883566327b74c3b"
+    },
+    "registrationNumber": "BU 4255 RB",
+    "plateRaw": "BU 4255 RB",
+    "plateNormalized": "BU4255RB",
+    "model": {
+      "$oid": "5e8afb610a26518231e6af22"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9ea3661c8804936b431e3912"
+    },
+    "registrationNumber": "BU 4710 RB",
+    "plateRaw": "BU 4710 RB",
+    "plateNormalized": "BU4710RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7ed0f83bf420a07c675ef1f2"
+    },
+    "registrationNumber": "BU 4711 RB",
+    "plateRaw": "BU 4711 RB",
+    "plateNormalized": "BU4711RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "795e702de2c655e64fff9620"
+    },
+    "registrationNumber": "BU 4712 RB",
+    "plateRaw": "BU 4712 RB",
+    "plateNormalized": "BU4712RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e595782a5517d69f09fc3d08"
+    },
+    "registrationNumber": "BU 5697 RB",
+    "plateRaw": "BU 5697 RB",
+    "plateNormalized": "BU5697RB",
+    "model": {
+      "$oid": "09a06c0ab61763a6393e0bad"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "488e42338be1df49c749e087"
+    },
+    "registrationNumber": "BU 5698 RB",
+    "plateRaw": "BU 5698 RB",
+    "plateNormalized": "BU5698RB",
+    "model": {
+      "$oid": "09a06c0ab61763a6393e0bad"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d209f85db58e9a17ffc3e84f"
+    },
+    "registrationNumber": "BU 8581 RB",
+    "plateRaw": "BU 8581 RB",
+    "plateNormalized": "BU8581RB",
+    "model": {
+      "$oid": "0ca0e4526c9db8e2d5992e14"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "VOLVO",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "593ed639679a727c154ab8b0"
+    },
+    "registrationNumber": "BU 8583 RB",
+    "plateRaw": "BU 8583 RB",
+    "plateNormalized": "BU8583RB",
+    "model": {
+      "$oid": "0ca0e4526c9db8e2d5992e14"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "VOLVO",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2fa8f7df20fbe01e0bcae4ab"
+    },
+    "registrationNumber": "BU 9047 RB",
+    "plateRaw": "BU 9047 RB",
+    "plateNormalized": "BU9047RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b5d33091be2abfd4177c21d1"
+    },
+    "registrationNumber": "BU 9057 RB",
+    "plateRaw": "BU 9057 RB",
+    "plateNormalized": "BU9057RB",
+    "model": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1d6c5da5ff9852eb07f6cf03"
+    },
+    "registrationNumber": "BV 3955 RB",
+    "plateRaw": "BV 3955 RB",
+    "plateNormalized": "BV3955RB",
+    "model": {
+      "$oid": "09a06c0ab61763a6393e0bad"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "eb24667c58c5e29e9a66c274"
+    },
+    "registrationNumber": "BV 3958 RB",
+    "plateRaw": "BV 3958 RB",
+    "plateNormalized": "BV3958RB",
+    "model": {
+      "$oid": "09a06c0ab61763a6393e0bad"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "748a96a198e2c1e4f19ab352"
+    },
+    "registrationNumber": "BV 3959 RB",
+    "plateRaw": "BV 3959 RB",
+    "plateNormalized": "BV3959RB",
+    "model": {
+      "$oid": "09a06c0ab61763a6393e0bad"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8cda062c1d3fc95f219777f5"
+    },
+    "registrationNumber": "BV 4574 RB",
+    "plateRaw": "BV 4574 RB",
+    "plateNormalized": "BV4574RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0afba247c289d89d2bcb2929"
+    },
+    "registrationNumber": "BV 4577 RB",
+    "plateRaw": "BV 4577 RB",
+    "plateNormalized": "BV4577RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d5138b96d78bafbd584e92d9"
+    },
+    "registrationNumber": "BV 4578 RB",
+    "plateRaw": "BV 4578 RB",
+    "plateNormalized": "BV4578RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "eb5aa58d57f3e098b74b8237"
+    },
+    "registrationNumber": "BV 4580 RB",
+    "plateRaw": "BV 4580 RB",
+    "plateNormalized": "BV4580RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e02831dd0e9eb1606d214274"
+    },
+    "registrationNumber": "BV 4582 RB",
+    "plateRaw": "BV 4582 RB",
+    "plateNormalized": "BV4582RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e695a152cb7b5acb3856616"
+    },
+    "registrationNumber": "BV 4584 RB",
+    "plateRaw": "BV 4584 RB",
+    "plateNormalized": "BV4584RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "fea79cad979a87d001873251"
+    },
+    "registrationNumber": "BV 4585 RB",
+    "plateRaw": "BV 4585 RB",
+    "plateNormalized": "BV4585RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5d85cd4249ec4c49d5d85f68"
+    },
+    "registrationNumber": "BV 4587 RB",
+    "plateRaw": "BV 4587 RB",
+    "plateNormalized": "BV4587RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "06afe42fb3f869f5c12680cc"
+    },
+    "registrationNumber": "BV 4589 RB",
+    "plateRaw": "BV 4589 RB",
+    "plateNormalized": "BV4589RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3193ebc68e6cd4f5e8ffb679"
+    },
+    "registrationNumber": "BV 4591 RB",
+    "plateRaw": "BV 4591 RB",
+    "plateNormalized": "BV4591RB",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9cb98ed889d277b92a9ed94e"
+    },
+    "registrationNumber": "BV 6557 RB",
+    "plateRaw": "BV 6557 RB",
+    "plateNormalized": "BV6557RB",
+    "model": {
+      "$oid": "161b189fddac37b55cf8ba3f"
+    },
+    "type": {
+      "$oid": "b1326b7bcc8b4e4411e7c38f"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 5E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64d573c3fda77688ac16a98a"
+    },
+    "registrationNumber": "BV 6558 RB",
+    "plateRaw": "BV 6558 RB",
+    "plateNormalized": "BV6558RB",
+    "model": {
+      "$oid": "161b189fddac37b55cf8ba3f"
+    },
+    "type": {
+      "$oid": "b1326b7bcc8b4e4411e7c38f"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 5E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "bc19ccbaa962e00a3c6d3e2d"
+    },
+    "registrationNumber": "BV 6561 RB",
+    "plateRaw": "BV 6561 RB",
+    "plateNormalized": "BV6561RB",
+    "model": {
+      "$oid": "161b189fddac37b55cf8ba3f"
+    },
+    "type": {
+      "$oid": "b1326b7bcc8b4e4411e7c38f"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 5E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "01955b1db1de4dde16b08124"
+    },
+    "registrationNumber": "BV 6564 RB",
+    "plateRaw": "BV 6564 RB",
+    "plateNormalized": "BV6564RB",
+    "model": {
+      "$oid": "161b189fddac37b55cf8ba3f"
+    },
+    "type": {
+      "$oid": "b1326b7bcc8b4e4411e7c38f"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 5E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66f2786e2d06df4b1b45697e"
+    },
+    "registrationNumber": "BV 6566 RB",
+    "plateRaw": "BV 6566 RB",
+    "plateNormalized": "BV6566RB",
+    "model": {
+      "$oid": "161b189fddac37b55cf8ba3f"
+    },
+    "type": {
+      "$oid": "b1326b7bcc8b4e4411e7c38f"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 5E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "867d66a1d82df2d80e28de5b"
+    },
+    "registrationNumber": "BY 1781 RB",
+    "plateRaw": "BY 1781 RB",
+    "plateNormalized": "BY1781RB",
+    "model": {
+      "$oid": "161b189fddac37b55cf8ba3f"
+    },
+    "type": {
+      "$oid": "b1326b7bcc8b4e4411e7c38f"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 5E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2ae724666ae48a245560795f"
+    },
+    "registrationNumber": "BY 1786 RB",
+    "plateRaw": "BY 1786 RB",
+    "plateNormalized": "BY1786RB",
+    "model": {
+      "$oid": "161b189fddac37b55cf8ba3f"
+    },
+    "type": {
+      "$oid": "b1326b7bcc8b4e4411e7c38f"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "SEMI 5E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2c0271fec0ae0e7f52a69235"
+    },
+    "registrationNumber": "CA 2219 RB",
+    "plateRaw": "CA 2219 RB",
+    "plateNormalized": "CA2219RB",
+    "model": {
+      "$oid": "12ec74c912be54d3999486af"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9f910346536765848dd87a28"
+    },
+    "registrationNumber": "CA 2242 RB",
+    "plateRaw": "CA 2242 RB",
+    "plateNormalized": "CA2242RB",
+    "model": {
+      "$oid": "12ec74c912be54d3999486af"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6e6a9dce54908a700eb88bb0"
+    },
+    "registrationNumber": "CA 2244 RB",
+    "plateRaw": "CA 2244 RB",
+    "plateNormalized": "CA2244RB",
+    "model": {
+      "$oid": "12ec74c912be54d3999486af"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "26a52daabfa98c0af1a1699c"
+    },
+    "registrationNumber": "CA 2284 RB",
+    "plateRaw": "CA 2284 RB",
+    "plateNormalized": "CA2284RB",
+    "model": {
+      "$oid": "12ec74c912be54d3999486af"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MAN",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9c87aa408bd1ca88904e2b6e"
+    },
+    "registrationNumber": "CA 7495 RB",
+    "plateRaw": "CA 7495 RB",
+    "plateNormalized": "CA7495RB",
+    "model": {
+      "$oid": "cce825dc91861079c8dba053"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES AROCS 8X8",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "923c3864ac73942342648fdb"
+    },
+    "registrationNumber": "CA 7498 RB",
+    "plateRaw": "CA 7498 RB",
+    "plateNormalized": "CA7498RB",
+    "model": {
+      "$oid": "cce825dc91861079c8dba053"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES AROCS 8X8",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8980f6d56d9d8d7f39f81d00"
+    },
+    "registrationNumber": "CA 7514 RB",
+    "plateRaw": "CA 7514 RB",
+    "plateNormalized": "CA7514RB",
+    "model": {
+      "$oid": "cce825dc91861079c8dba053"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES AROCS 8X8",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "912690285019c9dbfa81a24e"
+    },
+    "registrationNumber": "CA 7515 RB",
+    "plateRaw": "CA 7515 RB",
+    "plateNormalized": "CA7515RB",
+    "model": {
+      "$oid": "cce825dc91861079c8dba053"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES AROCS 8X8",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e0c3449b0b180914b7d23499"
+    },
+    "registrationNumber": "TG 0925 BE",
+    "plateRaw": "TG 0925 BE",
+    "plateNormalized": "TG0925BE",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "59b86dd867222261c2f3ee1a"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "175e574f10bbac03a339dd60"
+    },
+    "registrationNumber": "TG 0926 BE",
+    "plateRaw": "TG 0926 BE",
+    "plateNormalized": "TG0926BE",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "59b86dd867222261c2f3ee1a"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "cd5712bc7a882c76dd992e47"
+    },
+    "registrationNumber": "TG 6657 BE",
+    "plateRaw": "TG 6657 BE",
+    "plateNormalized": "TG6657BE",
+    "model": {
+      "$oid": "9e4c18127efa0118197f0d35"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "59b86dd867222261c2f3ee1a"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b6fac3a63b0cde7af711c038"
+    },
+    "registrationNumber": "TG 6658 BE",
+    "plateRaw": "TG 6658 BE",
+    "plateNormalized": "TG6658BE",
+    "model": {
+      "$oid": "d7375beaa99c79c260c3bee1"
+    },
+    "type": {
+      "$oid": "0a431f87305d89362e01b5d6"
+    },
+    "source": {
+      "$oid": "59b86dd867222261c2f3ee1a"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "PLATEAU"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5c1ecb69b5be460a1f2d5a9d"
+    },
+    "registrationNumber": "TG 7783 BF",
+    "plateRaw": "TG 7783 BF",
+    "plateNormalized": "TG7783BF",
+    "model": {
+      "$oid": "5e8afb610a26518231e6af22"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "59b86dd867222261c2f3ee1a"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3e0328ba793a01eb4c80f704"
+    },
+    "registrationNumber": "TG 7784 BF",
+    "plateRaw": "TG 7784 BF",
+    "plateNormalized": "TG7784BF",
+    "model": {
+      "$oid": "5e8afb610a26518231e6af22"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "59b86dd867222261c2f3ee1a"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f5286ffcc937b5a94f86f288"
+    },
+    "registrationNumber": "TG 7786 BF",
+    "plateRaw": "TG 7786 BF",
+    "plateNormalized": "TG7786BF",
+    "model": {
+      "$oid": "5e8afb610a26518231e6af22"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "59b86dd867222261c2f3ee1a"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6458b25e749dbfe75150c18a"
+    },
+    "registrationNumber": "TG 7788 BF",
+    "plateRaw": "TG 7788 BF",
+    "plateNormalized": "TG7788BF",
+    "model": {
+      "$oid": "5e8afb610a26518231e6af22"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "59b86dd867222261c2f3ee1a"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "846a557a982cc9dd1840ad9e"
+    },
+    "registrationNumber": "TG 7789 BF",
+    "plateRaw": "TG 7789 BF",
+    "plateNormalized": "TG7789BF",
+    "model": {
+      "$oid": "5e8afb610a26518231e6af22"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "59b86dd867222261c2f3ee1a"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "MERCEDES",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "38ea56ca0c3fa42e063ff208"
+    },
+    "registrationNumber": "TG 8086 BD",
+    "plateRaw": "TG 8086 BD",
+    "plateNormalized": "TG8086BD",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "59b86dd867222261c2f3ee1a"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8ae25218e9f0f0fe1cbf48a8"
+    },
+    "registrationNumber": "TG 8087 BD",
+    "plateRaw": "TG 8087 BD",
+    "plateNormalized": "TG8087BD",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "59b86dd867222261c2f3ee1a"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e224cb44587a88ff692894fe"
+    },
+    "registrationNumber": "TG 8091 BD",
+    "plateRaw": "TG 8091 BD",
+    "plateNormalized": "TG8091BD",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "59b86dd867222261c2f3ee1a"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8323fe9467f5f53f08602d8c"
+    },
+    "registrationNumber": "TG 8092 BD",
+    "plateRaw": "TG 8092 BD",
+    "plateNormalized": "TG8092BD",
+    "model": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "59b86dd867222261c2f3ee1a"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3af872713bb3248da3a71649"
+    },
+    "registrationNumber": "TG 8117 BD",
+    "plateRaw": "TG 8117 BD",
+    "plateNormalized": "TG8117BD",
+    "model": {
+      "$oid": "d7375beaa99c79c260c3bee1"
+    },
+    "type": {
+      "$oid": "0a431f87305d89362e01b5d6"
+    },
+    "source": {
+      "$oid": "59b86dd867222261c2f3ee1a"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SINOTRUCK",
+      "config": "PLATEAU"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0a5358d4aa2374bf08373384"
+    },
+    "registrationNumber": "CG 9228 RB",
+    "plateRaw": "CG 9228 RB",
+    "plateNormalized": "CG9228RB",
+    "model": {
+      "$oid": "ca5a99be97e42bb80a9cc4cb"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "FAW",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "09383e4558e24bc30038c042"
+    },
+    "registrationNumber": "CG 9213 RB",
+    "plateRaw": "CG 9213 RB",
+    "plateNormalized": "CG9213RB",
+    "model": {
+      "$oid": "ca5a99be97e42bb80a9cc4cb"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "FAW",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7df621d947f6e828406e0b5c"
+    },
+    "registrationNumber": "CG 9212 RB",
+    "plateRaw": "CG 9212 RB",
+    "plateNormalized": "CG9212RB",
+    "model": {
+      "$oid": "ca5a99be97e42bb80a9cc4cb"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "FAW",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "bfb5e9d956834255a1ca601c"
+    },
+    "registrationNumber": "CG 9221 RB",
+    "plateRaw": "CG 9221 RB",
+    "plateNormalized": "CG9221RB",
+    "model": {
+      "$oid": "44ff6a31bc80e060c83a14de"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "FAW",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "514e1b9f5013615be885f41e"
+    },
+    "registrationNumber": "CG 9224 RB",
+    "plateRaw": "CG 9224 RB",
+    "plateNormalized": "CG9224RB",
+    "model": {
+      "$oid": "ca5a99be97e42bb80a9cc4cb"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "FAW",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "02b2c6e63284795202d79d10"
+    },
+    "registrationNumber": "CG 9214 RB",
+    "plateRaw": "CG 9214 RB",
+    "plateNormalized": "CG9214RB",
+    "model": {
+      "$oid": "ca5a99be97e42bb80a9cc4cb"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "FAW",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d01fbe8de3b0f3d52063299a"
+    },
+    "registrationNumber": "CG 9824 RB",
+    "plateRaw": "CG 9824 RB",
+    "plateNormalized": "CG9824RB",
+    "model": {
+      "$oid": "ca5a99be97e42bb80a9cc4cb"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "FAW",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "deb47f935c5b973418790779"
+    },
+    "registrationNumber": "CG 1114 RB",
+    "plateRaw": "CG 1114 RB",
+    "plateNormalized": "CG1114RB",
+    "model": {
+      "$oid": "b0b0ee4ab7214837829a849a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "d74dfc6149cceb10cf3817af"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "INCONNU",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64b309e7c5de96eeb7668983"
+    },
+    "registrationNumber": "CG 9819 RB",
+    "plateRaw": "CG 9819 RB",
+    "plateNormalized": "CG9819RB",
+    "model": {
+      "$oid": "44ff6a31bc80e060c83a14de"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "FAW",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "411545969e64770c6b3a17f5"
+    },
+    "registrationNumber": "CJ 4998 RB",
+    "plateRaw": "CJ 4998 RB",
+    "plateNormalized": "CJ4998RB",
+    "model": {
+      "$oid": "d54c6dec4b7a48f6beb64455"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SITRAK",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e043268730eaf1ae34831fd8"
+    },
+    "registrationNumber": "CJ 4990 RB",
+    "plateRaw": "CJ 4990 RB",
+    "plateNormalized": "CJ4990RB",
+    "model": {
+      "$oid": "d54c6dec4b7a48f6beb64455"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SITRAK",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2257b2d0da25a709a53b9c26"
+    },
+    "registrationNumber": "CK 3955 RB",
+    "plateRaw": "CK 3955 RB",
+    "plateNormalized": "CK3955RB",
+    "model": {
+      "$oid": "a200500978defe47b3e3057a"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "HOWO",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "dabfbdc760b9dd29d681ec05"
+    },
+    "registrationNumber": "CK 3954 RB",
+    "plateRaw": "CK 3954 RB",
+    "plateNormalized": "CK3954RB",
+    "model": {
+      "$oid": "a200500978defe47b3e3057a"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "HOWO",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1459be2e4b7cf5038567e473"
+    },
+    "registrationNumber": "CK 3956 RB",
+    "plateRaw": "CK 3956 RB",
+    "plateNormalized": "CK3956RB",
+    "model": {
+      "$oid": "a200500978defe47b3e3057a"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "HOWO",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c22fd809723f43fd76664483"
+    },
+    "registrationNumber": "CK 3957 RB",
+    "plateRaw": "CK 3957 RB",
+    "plateNormalized": "CK3957RB",
+    "model": {
+      "$oid": "a200500978defe47b3e3057a"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "HOWO",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "55e4f9a7d06fa49a6ece65f0"
+    },
+    "registrationNumber": "CK 3958 RB",
+    "plateRaw": "CK 3958 RB",
+    "plateNormalized": "CK3958RB",
+    "model": {
+      "$oid": "a200500978defe47b3e3057a"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "HOWO",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "df1b5ee5c714fd3d6c56c03a"
+    },
+    "registrationNumber": "CK 3959 RB",
+    "plateRaw": "CK 3959 RB",
+    "plateNormalized": "CK3959RB",
+    "model": {
+      "$oid": "e801de63bd49dd3a16f105e5"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "HOWO",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "fbee1025b2d5539baefbb05d"
+    },
+    "registrationNumber": "CK 3960 RB",
+    "plateRaw": "CK 3960 RB",
+    "plateNormalized": "CK3960RB",
+    "model": {
+      "$oid": "e801de63bd49dd3a16f105e5"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "HOWO",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9472265d08ad90cb39d2592e"
+    },
+    "registrationNumber": "CK 3961 RB",
+    "plateRaw": "CK 3961 RB",
+    "plateNormalized": "CK3961RB",
+    "model": {
+      "$oid": "e801de63bd49dd3a16f105e5"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "HOWO",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c11ece482398d0afae98f042"
+    },
+    "registrationNumber": "CK 3962 RB",
+    "plateRaw": "CK 3962 RB",
+    "plateNormalized": "CK3962RB",
+    "model": {
+      "$oid": "e801de63bd49dd3a16f105e5"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "HOWO",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d6477af654e98e3c1b22b803"
+    },
+    "registrationNumber": "CK 3963 RB",
+    "plateRaw": "CK 3963 RB",
+    "plateNormalized": "CK3963RB",
+    "model": {
+      "$oid": "e801de63bd49dd3a16f105e5"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "HOWO",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ea29b7d08a7711f894f9fe41"
+    },
+    "registrationNumber": "CK 3970 RB",
+    "plateRaw": "CK 3970 RB",
+    "plateNormalized": "CK3970RB",
+    "model": {
+      "$oid": "ea33cfc0fa2413103a42bdb4"
+    },
+    "type": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "HOWO",
+      "config": "SEMI 7E"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "16f7aa9fc9dd4814fffd7152"
+    },
+    "registrationNumber": "CJ 4992 RB",
+    "plateRaw": "CJ 4992 RB",
+    "plateNormalized": "CJ4992RB",
+    "model": {
+      "$oid": "781dbe03b2e189ea9bc029b9"
+    },
+    "type": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SITRAK",
+      "config": "10 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "97473833bff7618281047717"
+    },
+    "registrationNumber": "CJ 4991 RB",
+    "plateRaw": "CJ 4991 RB",
+    "plateNormalized": "CJ4991RB",
+    "model": {
+      "$oid": "2fa9a8bbb032d6ca40092a88"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "SITRAK",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f254d21e61a31b39c9dded91"
+    },
+    "registrationNumber": "CA 7495 BR",
+    "plateRaw": "CA 7495 BR",
+    "plateNormalized": "CA7495BR",
+    "model": {
+      "$oid": "b0b0ee4ab7214837829a849a"
+    },
+    "type": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "source": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "status": "verified",
+    "metadata": {
+      "seedSource": "buildConfigSeeds",
+      "marque": "INCONNU",
+      "config": "12 ROUES"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  }
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "_id": {
+      "$oid": "79e12571f108a518181ca18a"
+    },
+    "label": "KERAS",
+    "description": "Marque KERAS.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0a6ba79575a4a640e640bc55"
+    },
+    "label": "RENAULT",
+    "description": "Marque RENAULT.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "12c54a48a9f37144eee848de"
+    },
+    "label": "MERCEDES",
+    "description": "Marque MERCEDES.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "270df19459d335e549e98935"
+    },
+    "label": "MAN",
+    "description": "Marque MAN.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d77ea41b5f025cf667338427"
+    },
+    "label": "SINOTRUCK",
+    "description": "Marque SINOTRUCK.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c1e2a3d2fbecaad40e011f65"
+    },
+    "label": "DONGFENG",
+    "description": "Marque DONGFENG.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9ac91c4fbdac6fb20559ddd3"
+    },
+    "label": "VOLVO",
+    "description": "Marque VOLVO.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8fc1b1e160b2871227e1f982"
+    },
+    "label": "MERCEDES AROCS 8X8",
+    "description": "Marque MERCEDES AROCS 8X8.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "56b4837b14663a7ce82ed632"
+    },
+    "label": "FAW",
+    "description": "Marque FAW.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f5280bacf1ec74cf3b4a1c35"
+    },
+    "label": "INCONNU",
+    "description": "Marque INCONNU.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "21a1f4811d91968fab21e397"
+    },
+    "label": "SITRAK",
+    "description": "Marque SITRAK.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4df5228f41607867ab3babc1"
+    },
+    "label": "HOWO",
+    "description": "Marque HOWO.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  }
+]

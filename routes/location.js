@@ -15,6 +15,16 @@ router.get(
   async (req, res) => {
     const filter = {};
     const search = req.query.search;
+    const { type } = req.query;
+
+    if (type) {
+      if (!["expedition", "destination"].includes(type)) {
+        return res
+          .status(400)
+          .json({ message: "type doit être 'expedition' ou 'destination'." });
+      }
+      filter.type = type;
+    }
 
     if (search) {
       filter.$or = [

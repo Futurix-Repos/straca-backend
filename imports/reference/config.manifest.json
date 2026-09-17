@@ -1,0 +1,41 @@
+{
+  "collectionOrder": [
+    "vehicleBrands",
+    "vehicleTypes",
+    "vehicleSources",
+    "vehicleModels",
+    "transportTypes",
+    "products",
+    "productMeasureUnits",
+    "locations",
+    "sections",
+    "drivers",
+    "vehicles",
+    "pricing"
+  ],
+  "counts": {
+    "vehicleBrands": 12,
+    "vehicleTypes": 8,
+    "vehicleSources": 5,
+    "vehicleModels": 28,
+    "transportTypes": 2,
+    "products": 35,
+    "productMeasureUnits": 35,
+    "locations": 89,
+    "sections": 19,
+    "drivers": 346,
+    "vehicles": 172,
+    "pricing": 3
+  },
+  "conflicts": 14,
+  "references": {
+    "productType": {
+      "standard": "678624dbb4352dbb8c35061b",
+      "concasse": "679cabe3d2726f19758160ce"
+    },
+    "measureUnit": {
+      "tonnes": "67890afd1242e9fe7c4d8c73",
+      "m3": "67890ad91242e9fe7c4d8c5b"
+    }
+  }
+}

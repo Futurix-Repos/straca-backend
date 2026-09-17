@@ -1,0 +1,106 @@
+[
+  {
+    "_id": {
+      "$oid": "bb62aaf41ee34691bbbaeeb2"
+    },
+    "label": "10 ROUES",
+    "description": "Configuration 10 ROUES.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "713a042cae365a995861c70e"
+    },
+    "label": "12 ROUES",
+    "description": "Configuration 12 ROUES.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b1326b7bcc8b4e4411e7c38f"
+    },
+    "label": "SEMI 5E",
+    "description": "Configuration SEMI 5E.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0fa541135274be507b4c8114"
+    },
+    "label": "SEMI 6E",
+    "description": "Configuration SEMI 6E.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f0982e607275b3811173259a"
+    },
+    "label": "SEMI 7E",
+    "description": "Configuration SEMI 7E.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4d18ca65151f704fc6384ee8"
+    },
+    "label": "SEMI 4E",
+    "description": "Configuration SEMI 4E.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "015543751075483a90b57b6b"
+    },
+    "label": "SEMI 3E",
+    "description": "Configuration SEMI 3E.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0a431f87305d89362e01b5d6"
+    },
+    "label": "PLATEAU",
+    "description": "Configuration PLATEAU.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  }
+]

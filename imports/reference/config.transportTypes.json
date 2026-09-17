@@ -1,0 +1,28 @@
+[
+  {
+    "_id": {
+      "$oid": "5cc3dbc9f6112c0df42f2b4a"
+    },
+    "label": "10 ROUES",
+    "description": "Transport 10 ROUES.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "73b5a471af81b6bf6f1cb5fe"
+    },
+    "label": "12 ROUES",
+    "description": "Transport 12 ROUES.",
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  }
+]

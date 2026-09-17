@@ -1,0 +1,137 @@
+{
+  "generatedAt": "2026-09-17T06:56:38.491Z",
+  "notes": [
+    "ProductMeasureUnit.amount=0 : aucun prix produit dans les Excel, à compléter.",
+    "Sous-point sans parent identifiable, traité en Location : \"PK 11\"",
+    "Sous-point sans parent identifiable, traité en Location : \"PK 10\"",
+    "Sous-point sans parent identifiable, traité en Location : \"PK 17\"",
+    "Sous-point sans parent identifiable, traité en Location : \"PK 09\"",
+    "Sous-point sans parent identifiable, traité en Location : \"PK 02\"",
+    "Sous-point sans parent identifiable, traité en Location : \"PK 08\"",
+    "Sous-point sans parent identifiable, traité en Location : \"PK 16\"",
+    "Sous-point sans parent identifiable, traité en Location : \"PK 12\"",
+    "Pricing : valeurs par défaut (typeColis=STANDARD, unit=TONNES, qty=1). TAXE MINIERE rattachée à 10 ROUES par défaut."
+  ],
+  "counts": {
+    "vehicleBrands": 12,
+    "vehicleTypes": 8,
+    "vehicleSources": 5,
+    "vehicleModels": 28,
+    "transportTypes": 2,
+    "products": 35,
+    "productMeasureUnits": 35,
+    "locations": 89,
+    "sections": 19,
+    "drivers": 346,
+    "vehicles": 172,
+    "pricing": 3
+  },
+  "conflicts": [
+    {
+      "kind": "driver",
+      "key": "BODJRENOU ROMEO",
+      "kept": "BODJRENOU ROMÉO",
+      "variant": "BODJRENOU ROMEO"
+    },
+    {
+      "kind": "driver",
+      "key": "DOVONON HERVE",
+      "kept": "DOVONON HERVÉ",
+      "variant": "DOVONON HERVE"
+    },
+    {
+      "kind": "vehicle",
+      "plate": "CK3970RB",
+      "field": "config",
+      "kept": "SEMI 7E",
+      "ignored": "SEMI 6E"
+    },
+    {
+      "kind": "vehicle",
+      "plate": "BS6817RB",
+      "field": "config",
+      "kept": "PLATEAU",
+      "ignored": "SEMI 7E"
+    },
+    {
+      "kind": "vehicle",
+      "plate": "BU1048RB",
+      "field": "config",
+      "kept": "PLATEAU",
+      "ignored": "SEMI 7E"
+    },
+    {
+      "kind": "vehicle",
+      "plate": "BU1049RB",
+      "field": "config",
+      "kept": "PLATEAU",
+      "ignored": "SEMI 7E"
+    },
+    {
+      "kind": "vehicle",
+      "plate": "CG9212RB",
+      "field": "config",
+      "kept": "10 ROUES",
+      "ignored": "12 ROUES"
+    },
+    {
+      "kind": "vehicle",
+      "plate": "CG9214RB",
+      "field": "config",
+      "kept": "10 ROUES",
+      "ignored": "12 ROUES"
+    },
+    {
+      "kind": "vehicle",
+      "plate": "CJ4990RB",
+      "field": "marque",
+      "kept": "SITRAK",
+      "ignored": "SITRAC"
+    },
+    {
+      "kind": "vehicle",
+      "plate": "CJ4998RB",
+      "field": "marque",
+      "kept": "SITRAK",
+      "ignored": "SITRAC"
+    },
+    {
+      "kind": "vehicle",
+      "plate": "TG6658BE",
+      "field": "config",
+      "kept": "PLATEAU",
+      "ignored": "SEMI 7E"
+    },
+    {
+      "kind": "vehicle",
+      "plate": "TG8117BD",
+      "field": "config",
+      "kept": "PLATEAU",
+      "ignored": "SEMI 7E"
+    },
+    {
+      "kind": "vehicle-incomplete",
+      "plate": "CG1114RB",
+      "marque": null,
+      "config": "12 ROUES",
+      "source": "SATOM BENIN",
+      "applied": {
+        "marque": "INCONNU",
+        "config": "12 ROUES",
+        "source": "SATOM BENIN"
+      }
+    },
+    {
+      "kind": "vehicle-incomplete",
+      "plate": "CA7495BR",
+      "marque": null,
+      "config": "12 ROUES",
+      "source": null,
+      "applied": {
+        "marque": "INCONNU",
+        "config": "12 ROUES",
+        "source": "STRACA BENIN"
+      }
+    }
+  ]
+}

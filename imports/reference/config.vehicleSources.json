@@ -1,0 +1,72 @@
+[
+  {
+    "_id": {
+      "$oid": "dfe40aec018178b37bc82d19"
+    },
+    "label": "STRACA BENIN",
+    "description": "Source STRACA BENIN.",
+    "isExternal": false,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "59b86dd867222261c2f3ee1a"
+    },
+    "label": "STRACA TOGO",
+    "description": "Source STRACA TOGO.",
+    "isExternal": false,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d47d3706e33d982587bd9d39"
+    },
+    "label": "STRACA BURKINA",
+    "description": "Source STRACA BURKINA.",
+    "isExternal": false,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "077a0d5e6ee80fbad27bd03a"
+    },
+    "label": "CAMION PRIVE",
+    "description": "Source CAMION PRIVE.",
+    "isExternal": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d74dfc6149cceb10cf3817af"
+    },
+    "label": "SATOM BENIN",
+    "description": "Source SATOM BENIN.",
+    "isExternal": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  }
+]

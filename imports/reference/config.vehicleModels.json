@@ -1,0 +1,450 @@
+[
+  {
+    "_id": {
+      "$oid": "07848a5570c041a3a1c1c10d"
+    },
+    "label": "KERAS SEMI 6E",
+    "description": "Modèle KERAS SEMI 6E.",
+    "brand": {
+      "$oid": "79e12571f108a518181ca18a"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7e966ca5e6344cc89aa3e32f"
+    },
+    "label": "KERAS SEMI 7E",
+    "description": "Modèle KERAS SEMI 7E.",
+    "brand": {
+      "$oid": "79e12571f108a518181ca18a"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "eac440cb1241a31ce97513e3"
+    },
+    "label": "RENAULT SEMI 5E",
+    "description": "Modèle RENAULT SEMI 5E.",
+    "brand": {
+      "$oid": "0a6ba79575a4a640e640bc55"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "28287f15d84cdb16273b2106"
+    },
+    "label": "MERCEDES SEMI 6E",
+    "description": "Modèle MERCEDES SEMI 6E.",
+    "brand": {
+      "$oid": "12c54a48a9f37144eee848de"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d0804fa96810c72eba03378a"
+    },
+    "label": "MAN 12 ROUES",
+    "description": "Modèle MAN 12 ROUES.",
+    "brand": {
+      "$oid": "270df19459d335e549e98935"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "12ec74c912be54d3999486af"
+    },
+    "label": "MAN 10 ROUES",
+    "description": "Modèle MAN 10 ROUES.",
+    "brand": {
+      "$oid": "270df19459d335e549e98935"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "07ada84bc87a825e10d92493"
+    },
+    "label": "MAN SEMI 6E",
+    "description": "Modèle MAN SEMI 6E.",
+    "brand": {
+      "$oid": "270df19459d335e549e98935"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "dbd67fa99c1e7bd795f36dc1"
+    },
+    "label": "MAN SEMI 7E",
+    "description": "Modèle MAN SEMI 7E.",
+    "brand": {
+      "$oid": "270df19459d335e549e98935"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8afb610a26518231e6af22"
+    },
+    "label": "MERCEDES SEMI 7E",
+    "description": "Modèle MERCEDES SEMI 7E.",
+    "brand": {
+      "$oid": "12c54a48a9f37144eee848de"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "161b189fddac37b55cf8ba3f"
+    },
+    "label": "MAN SEMI 5E",
+    "description": "Modèle MAN SEMI 5E.",
+    "brand": {
+      "$oid": "270df19459d335e549e98935"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7d103d05c4f2e0ec1e0e065d"
+    },
+    "label": "SINOTRUCK 10 ROUES",
+    "description": "Modèle SINOTRUCK 10 ROUES.",
+    "brand": {
+      "$oid": "d77ea41b5f025cf667338427"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9e4c18127efa0118197f0d35"
+    },
+    "label": "SINOTRUCK SEMI 7E",
+    "description": "Modèle SINOTRUCK SEMI 7E.",
+    "brand": {
+      "$oid": "d77ea41b5f025cf667338427"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "bb0957c200fc8160f723dbe5"
+    },
+    "label": "SINOTRUCK 12 ROUES",
+    "description": "Modèle SINOTRUCK 12 ROUES.",
+    "brand": {
+      "$oid": "d77ea41b5f025cf667338427"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "09a06c0ab61763a6393e0bad"
+    },
+    "label": "MERCEDES 12 ROUES",
+    "description": "Modèle MERCEDES 12 ROUES.",
+    "brand": {
+      "$oid": "12c54a48a9f37144eee848de"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d19c56f9310c68e42a13da83"
+    },
+    "label": "MAN PLATEAU",
+    "description": "Modèle MAN PLATEAU.",
+    "brand": {
+      "$oid": "270df19459d335e549e98935"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "339ecd42ccbb2502d4b735b4"
+    },
+    "label": "DONGFENG PLATEAU",
+    "description": "Modèle DONGFENG PLATEAU.",
+    "brand": {
+      "$oid": "c1e2a3d2fbecaad40e011f65"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0ca0e4526c9db8e2d5992e14"
+    },
+    "label": "VOLVO 12 ROUES",
+    "description": "Modèle VOLVO 12 ROUES.",
+    "brand": {
+      "$oid": "9ac91c4fbdac6fb20559ddd3"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "cce825dc91861079c8dba053"
+    },
+    "label": "MERCEDES AROCS 8X8 12 ROUES",
+    "description": "Modèle MERCEDES AROCS 8X8 12 ROUES.",
+    "brand": {
+      "$oid": "8fc1b1e160b2871227e1f982"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d7375beaa99c79c260c3bee1"
+    },
+    "label": "SINOTRUCK PLATEAU",
+    "description": "Modèle SINOTRUCK PLATEAU.",
+    "brand": {
+      "$oid": "d77ea41b5f025cf667338427"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ca5a99be97e42bb80a9cc4cb"
+    },
+    "label": "FAW 10 ROUES",
+    "description": "Modèle FAW 10 ROUES.",
+    "brand": {
+      "$oid": "56b4837b14663a7ce82ed632"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "44ff6a31bc80e060c83a14de"
+    },
+    "label": "FAW 12 ROUES",
+    "description": "Modèle FAW 12 ROUES.",
+    "brand": {
+      "$oid": "56b4837b14663a7ce82ed632"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b0b0ee4ab7214837829a849a"
+    },
+    "label": "INCONNU 12 ROUES",
+    "description": "Modèle INCONNU 12 ROUES.",
+    "brand": {
+      "$oid": "f5280bacf1ec74cf3b4a1c35"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d54c6dec4b7a48f6beb64455"
+    },
+    "label": "SITRAK SEMI 7E",
+    "description": "Modèle SITRAK SEMI 7E.",
+    "brand": {
+      "$oid": "21a1f4811d91968fab21e397"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a200500978defe47b3e3057a"
+    },
+    "label": "HOWO 10 ROUES",
+    "description": "Modèle HOWO 10 ROUES.",
+    "brand": {
+      "$oid": "4df5228f41607867ab3babc1"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e801de63bd49dd3a16f105e5"
+    },
+    "label": "HOWO 12 ROUES",
+    "description": "Modèle HOWO 12 ROUES.",
+    "brand": {
+      "$oid": "4df5228f41607867ab3babc1"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ea33cfc0fa2413103a42bdb4"
+    },
+    "label": "HOWO SEMI 7E",
+    "description": "Modèle HOWO SEMI 7E.",
+    "brand": {
+      "$oid": "4df5228f41607867ab3babc1"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "781dbe03b2e189ea9bc029b9"
+    },
+    "label": "SITRAK 10 ROUES",
+    "description": "Modèle SITRAK 10 ROUES.",
+    "brand": {
+      "$oid": "21a1f4811d91968fab21e397"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2fa9a8bbb032d6ca40092a88"
+    },
+    "label": "SITRAK 12 ROUES",
+    "description": "Modèle SITRAK 12 ROUES.",
+    "brand": {
+      "$oid": "21a1f4811d91968fab21e397"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  }
+]

@@ -1,0 +1,1337 @@
+[
+  {
+    "_id": {
+      "$oid": "f42656bfff0b4676c6fab6ec"
+    },
+    "label": "PAPC",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a8285571bafef87024eb7102"
+    },
+    "label": "TOGBIN",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "47383e6907bc3bec2e1d9f89"
+    },
+    "label": "OUESSE",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ba75d41c6999196c06e70fa4"
+    },
+    "label": "BRETELLE C DJONDJI",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "77634817258c29d5882cef8c"
+    },
+    "label": "BRETELLE C",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c450769f0f40e59df1f2c961"
+    },
+    "label": "AVLEKETE",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c3563a26d4a987535aa9cdf8"
+    },
+    "label": "RDE-RDP",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "bbf75399f0e8e7f38e6ac5b9"
+    },
+    "label": "ADOUNKO",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "cfd94e74d8d47b8236d667a9"
+    },
+    "label": "ADOUNKO NORD",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "141447e93d667bad13680d33"
+    },
+    "label": "GAKPE",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f81cee2a9f95d687dfe7fd0d"
+    },
+    "label": "CORNICHE",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b77a9aa54426b30d3de4aaff"
+    },
+    "label": "GER_OUEDO",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b95451d0b357651ac2a357ed"
+    },
+    "label": "MINEX PAHOU",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3162c71ebcb2891aa76fe580"
+    },
+    "label": "MINEX PAPC",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "61e332c6316dc13c7c3cd19c"
+    },
+    "label": "MINEX GETRAN",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "14289ce0c8601e8a836d8ed2"
+    },
+    "label": "RAZEL AGLA",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8410b9e5d0aebc25a1d92622"
+    },
+    "label": "RAZEL AKPAKPA",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2d581a789a042b63e236bb94"
+    },
+    "label": "AEP VEDOKO",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "916de89d68ab1322e4b980f2"
+    },
+    "label": "VHR",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c785af019eb8ddf29f31d804"
+    },
+    "label": "BRETELLE A",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "497a5e9aef6024dbab016647"
+    },
+    "label": "AGONSSOUDJA-ADOUNKO",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a1e7fa310b0598364356d497"
+    },
+    "label": "YAMADJAKO",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1b6cddc7ced91a16f2818939"
+    },
+    "label": "MAYARICK",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3fd631f86db52f40683e8f8d"
+    },
+    "label": "AGONSSOUDJA-OUIDAH",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a899de0b6395698949b94ecd"
+    },
+    "label": "HANNANGBO",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1d3f8475abe1b76ee086212f"
+    },
+    "label": "OUIDAH",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "db36a32417774d896fc54971"
+    },
+    "label": "VHR CALAVI",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3067f760ee8174da6bb54850"
+    },
+    "label": "KANDI",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5bc82228261bebae83aef422"
+    },
+    "label": "CALAVI TOGBA",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "13559b5baa398b2557c5a7d2"
+    },
+    "label": "ADK GIRATOIRE",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "22469f395ccffdcca3265c6a"
+    },
+    "label": "BRETELLE C CASA DEL PAPA",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7ba9f94e090ca2c3428ac51d"
+    },
+    "label": "RDE/OUIDAH",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5f491d6bb3e9965558a668a9"
+    },
+    "label": "DOGBO",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4aaee34b63178b23d73407f0"
+    },
+    "label": "DJONDJI",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "86872939c064ddbc7bcb0191"
+    },
+    "label": "COCOCODJI",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6cfcbfad66c6bd4a5a49fc61"
+    },
+    "label": "LALO",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "605a61a09b6938c3db3507db"
+    },
+    "label": "DOGBO-LALO",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "62a28a79d9fa2ec7e027ee82"
+    },
+    "label": "KARTING ADOUNKO",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5548db775e39184cc292ad17"
+    },
+    "label": "PAC",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "79020d85e05d698ade8a3f2a"
+    },
+    "label": "BAZOUNKPA GARAGE",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "694b3def363bf75989442b15"
+    },
+    "label": "CARRIERE TOGBIN",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3fe85e6d855b3490278cb327"
+    },
+    "label": "PEAGE AVLEKETE",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2ea9a96d70a14e43745b1001"
+    },
+    "label": "GAKPE (SAVI)",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "805d4786b1b674b3691ddb1c"
+    },
+    "label": "LCB AHOZON",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ebdd1ccdde46a5eb8e562799"
+    },
+    "label": "CARRIERE DJONDJI",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e20d2ecfd21aa34089da1468"
+    },
+    "label": "SATOM HANNAGBO",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "22e98f7c69fc8b6a39f84fd6"
+    },
+    "label": "CARRIERE OUIDAH",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "da25c8462f9c1763feac5eb5"
+    },
+    "label": "CARRIERE ALLADA",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8e931c0fd8b5976e7db0fb15"
+    },
+    "label": "CARRIERE ADOUNKO",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2a117b394d4fb4c171fc4840"
+    },
+    "label": "CARRIERE ONIGBOLO",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1107955ac59cc69b6b07b2fc"
+    },
+    "label": "CARRIERE DOGBO",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "fc2f9ef18c41fa82458e22f8"
+    },
+    "label": "CARRIERE LALO",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "03d3eaa71f47a746efce6f06"
+    },
+    "label": "CARRIERE DOGBO-LALO",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e8e1e1281c53a68885fdfd01"
+    },
+    "label": "PORT",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "51ffbb0dd4ae250036d48b8f"
+    },
+    "label": "CARRIERE BCG",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66f5aa5203b478229d37b578"
+    },
+    "label": "AWENI BTP",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9ada29111548ee73271197ad"
+    },
+    "label": "PK 11",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0b6b2382823ea2df59b2d6c6"
+    },
+    "label": "MDG",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d9fb2bd4b807ab576efb2769"
+    },
+    "label": "PK 10",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ac49a944e1ed6276631873ab"
+    },
+    "label": "PK 17",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "22be1ef59846f68f1f989a22"
+    },
+    "label": "BRETELLE 1",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a28c9caaa846d8ea451f44c4"
+    },
+    "label": "PK 09",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2265af4e715388b822e60d8c"
+    },
+    "label": "PK 02",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6c1a90a75a882f2a27baf1d6"
+    },
+    "label": "PK 08",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a35db573552a76d8635169"
+    },
+    "label": "BRETELLE 6",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0242ddb38b56d28e4cf1ad05"
+    },
+    "label": "PK 16",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d55327fb767a92d2edb5a73f"
+    },
+    "label": "AEP LOKOSSA-ATHIEME",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0e7af503853110a260334e01"
+    },
+    "label": "STATION STRACA",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "438affa9229584aab0def4a9"
+    },
+    "label": "PK 12",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f8e5f5f929750007f2c9b19c"
+    },
+    "label": "ADJAHA-ATHIEME",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0212c45fc25a4fa4866f60bb"
+    },
+    "label": "ADJAHA-ATHIEME-GUINZIN",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ae70e6ba002ed9dd8486a3ca"
+    },
+    "label": "ADJAHA-ATHIEME / DOGBO",
+    "description": "Référentiel de site importé.",
+    "type": "destination",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00533bff97cf960e554f8e2d"
+    },
+    "label": "GARAGE BAZOUNKPA 1",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4fafd6f2be91fa4ea8f835af"
+    },
+    "label": "CARRIERE DOTA",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3c5f42e407853dcc85077604"
+    },
+    "label": "CARRIERE GBEHOUE",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6d7bf45095099e648a7a2c4c"
+    },
+    "label": "CARRIERE OUMAKO",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0dc0e5631bebaa3ad5d90090"
+    },
+    "label": "CARRIERE DOGBO TOTA",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1e01025d2fa7d7fa868aa611"
+    },
+    "label": "CARRIERE WAMANOU",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f659213725a6da99ea3b85af"
+    },
+    "label": "CARRIERE DRE",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a980bd1ebefed63f06271b8e"
+    },
+    "label": "CARRIERE AGAME",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "28b986f31740331f064e606f"
+    },
+    "label": "CARRIERE HOUIN LOKOSSA",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6f97fbb5d7b23de72b8089e6"
+    },
+    "label": "CARRIERE SOHOUNME SÊ",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9fcfaf4bd3087a0384828ff4"
+    },
+    "label": "CARRIERE SALAHOUE",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6e5865bdcd42a1ef5cdb4aad"
+    },
+    "label": "CARRIERE KINDJI LOKOSSA",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a70f498272b5ce7a318c45c0"
+    },
+    "label": "CARRIERE KPINNOU SALAHOUE SÊ",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "eeb63d7edc41e05a1d450319"
+    },
+    "label": "CARRIERE ZOUNGBONOU KEDJI",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2bd6ed32204273cd02d7d924"
+    },
+    "label": "CARRIERE KONOUHOUE",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e22b68de6d5abdf1c4f252c2"
+    },
+    "label": "CARRIERE GBEDJI",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c2d3250b9e2a2970a86afe82"
+    },
+    "label": "STRRILE",
+    "description": "Référentiel de site importé.",
+    "type": "expedition",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-17T06:56:38.491Z"
+    }
+  }
+]

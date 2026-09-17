@@ -11,6 +11,11 @@ const locationSchema = new mongoose.Schema(
       required: true,
     },
     code: { type: String, trim: true, default: null },
+    type: {
+      type: String,
+      enum: ["expedition", "destination"],
+      default: "destination",
+    },
     externalIds: { type: mongoose.Schema.Types.Mixed, default: undefined },
     isActive: { type: Boolean, default: true },
   },
