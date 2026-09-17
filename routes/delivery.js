@@ -145,7 +145,7 @@ const populateArray = [
   },
   {
     path: "replacementDriver",
-    select: "firstName lastName email telephone",
+    select: "fullName nameKey",
   },
   {
     path: "prestataire",

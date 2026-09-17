@@ -6,10 +6,10 @@
     "label": "KERAS",
     "description": "Marque KERAS.",
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -19,10 +19,10 @@
     "label": "RENAULT",
     "description": "Marque RENAULT.",
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -32,10 +32,10 @@
     "label": "MERCEDES",
     "description": "Marque MERCEDES.",
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -45,10 +45,10 @@
     "label": "MAN",
     "description": "Marque MAN.",
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -58,10 +58,10 @@
     "label": "SINOTRUCK",
     "description": "Marque SINOTRUCK.",
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -71,10 +71,10 @@
     "label": "DONGFENG",
     "description": "Marque DONGFENG.",
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -84,10 +84,10 @@
     "label": "VOLVO",
     "description": "Marque VOLVO.",
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -97,10 +97,10 @@
     "label": "MERCEDES AROCS 8X8",
     "description": "Marque MERCEDES AROCS 8X8.",
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -110,10 +110,10 @@
     "label": "FAW",
     "description": "Marque FAW.",
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -123,10 +123,10 @@
     "label": "INCONNU",
     "description": "Marque INCONNU.",
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -136,10 +136,10 @@
     "label": "SITRAK",
     "description": "Marque SITRAK.",
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   },
   {
@@ -149,10 +149,10 @@
     "label": "HOWO",
     "description": "Marque HOWO.",
     "createdAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     },
     "updatedAt": {
-      "$date": "2026-09-17T06:56:38.491Z"
+      "$date": "2026-09-17T08:38:17.846Z"
     }
   }
 ]

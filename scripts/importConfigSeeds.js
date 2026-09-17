@@ -3,8 +3,14 @@
  *
  * Upsert IDEMPOTENT par CLÉ NATURELLE : les documents existants sont matchés par
  * leur clé métier et enrichis (leur _id est préservé) ; l'_id généré ne s'applique
- * qu'à l'insertion. Les sections voient leur `chantier` re-résolu par label après
- * import des locations, pour pointer vers l'_id réel de la location en base.
+ * qu'à l'insertion.
+ *
+ * Références vers des collections pouvant PRÉ-EXISTER (donc avec un _id différent
+ * de celui du seed) résolues à l'import :
+ *   - section.chantier   -> location, par label
+ *   - productMeasureUnit.product -> product, par clé normalisée (productKey)
+ * Les produits eux-mêmes sont rapprochés par clé normalisée pour éviter les
+ * doublons ("SABLE_MARIN" == "SABLE MARIN").
  *
  * Usage :
  *   node scripts/importConfigSeeds.js            # toutes les collections, dans l'ordre
@@ -22,6 +28,13 @@ const { fromExtendedJson } = require("./importReferenceJson");
 const IMPORT_DIR = path.resolve(__dirname, "../imports/reference");
 const DRY_RUN = process.env.DRY_RUN === "1";
 
+// Clé de rapprochement produit (identique à buildConfigSeeds.js).
+const productKey = (s) =>
+  String(s).trim().toUpperCase().normalize("NFD").replace(/\p{M}/gu, "").replace(/_+/g, " ").replace(/\s+/g, " ").trim();
+
+// Rempli lors de l'import des produits, consommé par les PMU.
+let productIdByKey = new Map();
+
 // Ordre = dépendances des références (parents avant enfants).
 const COLLECTIONS = [
   { name: "vehicleBrands", file: "config.vehicleBrands.json", collection: "vehiclebrands", key: ["label"] },
@@ -29,8 +42,8 @@ const COLLECTIONS = [
   { name: "vehicleSources", file: "config.vehicleSources.json", collection: "vehiclesources", key: ["label"] },
   { name: "vehicleModels", file: "config.vehicleModels.json", collection: "vehiclemodels", key: ["label"] },
   { name: "transportTypes", file: "config.transportTypes.json", collection: "transporttypes", key: ["label"] },
-  { name: "products", file: "config.products.json", collection: "products", key: ["name"] },
-  { name: "productMeasureUnits", file: "config.productMeasureUnits.json", collection: "productmeasureunits", key: ["product", "measureUnit"] },
+  { name: "products", file: "config.products.json", collection: "products", importer: importProducts },
+  { name: "productMeasureUnits", file: "config.productMeasureUnits.json", collection: "productmeasureunits", key: ["product", "measureUnit"], resolveProduct: true },
   { name: "locations", file: "config.locations.json", collection: "locations", key: ["label"] },
   { name: "sections", file: "config.sections.json", collection: "sections", key: ["label", "chantier"], resolveChantier: true },
   { name: "drivers", file: "config.drivers.json", collection: "drivers", key: ["nameKey"] },
@@ -51,18 +64,44 @@ function buildOps(docs, key) {
     return {
       updateOne: {
         filter,
-        update: {
-          $set: rest,
-          $setOnInsert: { _id, ...(createdAt ? { createdAt } : {}) },
-        },
+        update: { $set: rest, $setOnInsert: { _id, ...(createdAt ? { createdAt } : {}) } },
         upsert: true,
       },
     };
   });
 }
 
+// Produits : rapproche par clé normalisée pour réutiliser un produit existant
+// (peu importe l'orthographe exacte) et éviter les doublons.
+async function importProducts(config) {
+  const docs = readDocs(config.file);
+  const col = mongoose.connection.db.collection(config.collection);
+  const existing = await col.find({}, { projection: { name: 1 } }).toArray();
+
+  productIdByKey = new Map();
+  for (const row of existing) productIdByKey.set(productKey(row.name), row._id);
+
+  const toInsert = [];
+  const updates = [];
+  for (const doc of docs) {
+    const { _id, createdAt, ...rest } = doc;
+    const k = productKey(doc.name);
+    const found = productIdByKey.get(k);
+    if (found) {
+      // Produit déjà présent : on conserve son _id, on met à jour le type/description.
+      updates.push({ updateOne: { filter: { _id: found }, update: { $set: rest } } });
+    } else {
+      toInsert.push(doc);
+      productIdByKey.set(k, _id);
+    }
+  }
+
+  const ops = [...updates, ...buildOps(toInsert, ["name"])];
+  const result = ops.length ? await col.bulkWrite(ops, { ordered: false }) : { upsertedCount: 0, modifiedCount: 0 };
+  return { collection: config.name, documents: docs.length, inserted: result.upsertedCount, updated: result.modifiedCount };
+}
+
 async function resolveChantiers(docs) {
-  // Remappe section.chantier vers l'_id réel de la location, par label.
   const rows = await mongoose.connection.db.collection("locations").find({}, { projection: { label: 1 } }).toArray();
   const byLabel = new Map(rows.map((row) => [String(row.label).trim().toUpperCase(), row._id]));
   const unresolved = [];
@@ -77,20 +116,41 @@ async function resolveChantiers(docs) {
   return resolved;
 }
 
+// PMU : re-résout product vers l'_id réel via la clé normalisée.
+async function resolveProducts(docs) {
+  if (productIdByKey.size === 0) {
+    const rows = await mongoose.connection.db.collection("products").find({}, { projection: { name: 1 } }).toArray();
+    for (const row of rows) productIdByKey.set(productKey(row.name), row._id);
+  }
+  const unresolved = [];
+  const resolved = [];
+  for (const doc of docs) {
+    const { productKey: pk, ...rest } = doc;
+    const target = productIdByKey.get(pk);
+    if (target) {
+      rest.product = target;
+      resolved.push(rest);
+    } else {
+      unresolved.push(pk);
+    }
+  }
+  if (unresolved.length) console.warn(`PMU sans produit résolu (ignorés) : ${unresolved.join(", ")}`);
+  return resolved;
+}
+
 async function importCollection(config) {
-  let docs = readDocs(config.file);
-  if (DRY_RUN) return { collection: config.name, documents: docs.length, dryRun: true };
+  const docsPreview = readDocs(config.file);
+  if (DRY_RUN) return { collection: config.name, documents: docsPreview.length, dryRun: true };
+  if (config.importer) return config.importer(config);
+
+  let docs = docsPreview;
   if (config.resolveChantier) docs = await resolveChantiers(docs);
+  if (config.resolveProduct) docs = await resolveProducts(docs);
   if (docs.length === 0) return { collection: config.name, documents: 0, inserted: 0, updated: 0 };
 
   const ops = buildOps(docs, config.key);
   const result = await mongoose.connection.db.collection(config.collection).bulkWrite(ops, { ordered: false });
-  return {
-    collection: config.name,
-    documents: docs.length,
-    inserted: result.upsertedCount,
-    updated: result.modifiedCount,
-  };
+  return { collection: config.name, documents: docs.length, inserted: result.upsertedCount, updated: result.modifiedCount };
 }
 
 async function main() {
@@ -116,4 +176,4 @@ if (require.main === module) {
     .finally(() => mongoose.disconnect());
 }
 
-module.exports = { COLLECTIONS, buildOps };
+module.exports = { COLLECTIONS, buildOps, productKey };
