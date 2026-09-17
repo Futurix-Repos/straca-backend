@@ -322,11 +322,14 @@ router.post(
         });
       }
 
-      // Check for any deliveries where either sender and receiver hasn't validated
+      // Bloque si le véhicule a déjà une livraison en attente de validation
+      // (ni l'expéditeur ni le destinataire n'ont validé). Les livraisons
+      // annulées sont exclues : elles ne mobilisent plus le véhicule.
       const pendingDelivery = await Delivery.findOne({
         vehicle: vehicle,
         "sender.validate": false,
         "receiver.validate": false,
+        "canceled.isCanceled": { $ne: true },
       }).populate([
         { path: "sender.user", select: "firstName lastName" },
         { path: "receiver.user", select: "firstName lastName" },
@@ -336,7 +339,8 @@ router.post(
       if (pendingDelivery) {
         return res.status(400).json({
           success: false,
-          message: "Vehicle has pending delivery validation",
+          message:
+            "Ce véhicule a déjà une livraison en attente de validation.",
           delivery: {
             reference: pendingDelivery.reference,
             order: pendingDelivery.order?.reference,
