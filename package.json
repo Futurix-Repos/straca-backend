@@ -8,6 +8,7 @@
     "migrate:vehicle-reference": "node scripts/migrateVehicleReference.js",
     "import:reference": "node scripts/importReferenceJson.js",
     "import:adjaha-athieme": "node scripts/importAdjahaAthiemeSchedule.js",
+    "import:athieme-flotte": "node scripts/importAthiemeFlotte.js",
     "start": "node server.js",
     "serve": "node server.js",
     "dev": "nodemon server.js"

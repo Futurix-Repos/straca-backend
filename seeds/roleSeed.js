@@ -46,6 +46,8 @@ const ROLE_DEFINITIONS = [
       { name: "prestataire", action: "create" },
       { name: "prestataire", action: "update" },
       { name: "product", action: "read" },
+      { name: "location", action: "read" },
+      { name: "productMeasureUnit", action: "read" },
       { name: "pricing", action: "read" },
       { name: "report", action: "read" },
       { name: "catalog", action: "read" },
