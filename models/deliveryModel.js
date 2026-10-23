@@ -1,6 +1,25 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+/// Snapshot carburant/position capturé via trackfuel au moment d'un événement
+/// du voyage (départ ou arrivée). `/trackers/latest` ne donne que l'instant
+/// présent — on fige donc la valeur ici. `source` = "trackfuel.latest" quand la
+/// lecture a réussi, "unavailable" sinon (tracker muet / API indisponible).
+const trackingSnapshotSchema = new Schema(
+  {
+    at: { type: Date },
+    lat: { type: Number, default: null },
+    lng: { type: Number, default: null },
+    fuelLevel: { type: Number, default: null },
+    source: {
+      type: String,
+      enum: ["trackfuel.latest", "unavailable"],
+      default: "unavailable",
+    },
+  },
+  { _id: false },
+);
+
 const deliverySchema = new Schema(
   {
     reference: {
@@ -232,6 +251,15 @@ const deliverySchema = new Schema(
           message: "Sender must be an admin or employee",
         },
       },
+    },
+    /// Données de tracking trackfuel. Les snapshots départ/arrivée sont capturés
+    /// aux moments métier ; le trajet et les événements carburant sont, eux,
+    /// interrogés à la demande (non stockés). `trackerImei` fige l'IMEI utilisé
+    /// pour ce voyage (le véhicule pourrait être re-mappé ensuite).
+    tracking: {
+      trackerImei: { type: String, default: null },
+      departure: { type: trackingSnapshotSchema, default: null },
+      arrival: { type: trackingSnapshotSchema, default: null },
     },
   },
   {

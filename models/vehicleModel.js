@@ -23,6 +23,9 @@ const vehicleSchema = new mongoose.Schema(
     tracking: {
       id: { type: String, unique: true, sparse: true },
       plate: { type: String, unique: true, sparse: true },
+      // IMEI du tracker trackfuel/gestafric (id_engin), renseigné par le script
+      // de synchronisation scripts/syncTrackfuelTrackers.js.
+      trackerImei: { type: String, unique: true, sparse: true, trim: true },
     },
     model: {
       type: mongoose.Schema.Types.ObjectId,

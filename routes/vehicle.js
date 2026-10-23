@@ -11,6 +11,7 @@ const Delivery = require("../models/deliveryModel");
 const wialonServices = require("../helpers/iotHelper");
 const { computeFuelValue, getSensorByP } = require("../helpers/iotModule");
 const vehicleTrackingService = require("../services/vehicleTracking");
+const { trackfuelClient } = require("../services/trackfuel/client");
 const {
   isDuplicateKeyError,
   paginationFromQuery,
@@ -270,6 +271,29 @@ router.get(
           .json({ message: `Vehicle with ID ${id} not found` });
       }
 
+      const imei = vehicle?.tracking?.trackerImei;
+
+      // SOURCE PRIMAIRE : trackfuel (si le véhicule a un IMEI mappé).
+      if (imei) {
+        const pos = await trackfuelClient.latest(imei);
+        if (pos) {
+          return res.status(200).json({
+            id: vehicle.id,
+            tracking: vehicle.tracking,
+            source: "trackfuel",
+            pin_img: null,
+            pos: { lat: pos.lat, lng: pos.lng, speed: pos.speed },
+            // trackfuel ne fournit pas la température.
+            temp: { value: null, unit: null },
+            active: pos.ignitionOn,
+            fuel: { value: pos.fuelLevel ?? null, unit: "l" },
+          });
+        }
+        // IMEI mappé mais tracker inconnu de l'API → on tente le repli Wialon.
+      }
+
+      // REPLI TEMPORAIRE : Wialon, pour les véhicules pas encore mappés sur
+      // trackfuel. À retirer en phase 2 une fois tout le parc mappé.
       if (!vehicle?.tracking?.id) {
         return res
           .status(400)
@@ -279,6 +303,7 @@ router.get(
       let response = {
         id: vehicle.id,
         tracking: vehicle.tracking,
+        source: "wialon",
       };
 
       const dataPos = await wialonServices.searchItemById({
@@ -288,8 +313,6 @@ router.get(
 
       if (dataPos.error)
         return res.status(400).json({ message: "Une erreur est survenue." });
-
-      //console.log(`https://hst-api.wialon.eu${dataPos.item.uri}`);
 
       response["pin_img"] = dataPos?.item?.uri
         ? `https://hst-api.wialon.eu${dataPos.item.uri}`
@@ -432,6 +455,45 @@ router.delete(
     } catch (error) {
       console.error(error.message);
       res.status(500).json({ message: error.message });
+    }
+  },
+);
+
+/// Position courante d'un véhicule via trackfuel (/trackers/latest).
+/// `available:false` si le véhicule n'a pas d'IMEI mappé ou si le tracker est
+/// inconnu de l'API.
+router.get(
+  "/:id/live",
+  authorizeJwt,
+  verifyAccount([{ name: "vehicle", action: "read" }]),
+  async (req, res) => {
+    try {
+      const vehicle = await Vehicle.findById(req.params.id).select("tracking registrationNumber");
+      if (!vehicle) {
+        return res.status(404).json({ success: false, message: "Vehicle not found" });
+      }
+      const imei = vehicle.tracking?.trackerImei;
+      if (!imei) {
+        return res.status(200).json({
+          success: true,
+          data: { available: false, reason: "no_tracker_mapped" },
+        });
+      }
+      const position = await trackfuelClient.latest(imei);
+      if (!position) {
+        return res.status(200).json({
+          success: true,
+          data: { available: false, reason: "tracker_unknown", trackerImei: imei },
+        });
+      }
+      res.status(200).json({ success: true, data: { available: true, ...position } });
+    } catch (error) {
+      console.error("Error getting vehicle live position:", error);
+      res.status(502).json({
+        success: false,
+        message: "Error getting vehicle live position",
+        error: error.message,
+      });
     }
   },
 );
