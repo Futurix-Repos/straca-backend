@@ -11,6 +11,7 @@ const { paginationFromQuery } = require("../services/vehicleReference");
 const multer = require("multer");
 const { exportDeliveryToPdf } = require("../services/delivery");
 const vehicleTrackingService = require("../services/vehicleTracking");
+const deliveryTracking = require("../services/deliveryTracking");
 const ReceptionDraft = require("../models/receptionDraftModel");
 const { spaceImageUploadHelper, spaceImageDeleteHelper } = require("../helpers/spaceImageUploadHelper");
 const {
@@ -49,6 +50,9 @@ async function reconcileReceptionDraft(delivery) {
     validatedAt: null,
     note: null,
   };
+  // La réconciliation via bon/QR est un moment de réception : on capture le
+  // snapshot d'arrivée (best-effort).
+  await deliveryTracking.attachArrivalSnapshot(delivery);
   await delivery.save();
 
   draft.status = "reconciled";
@@ -369,35 +373,25 @@ router.post(
         });
       }
 
-      const reconciledDraft = await reconcileReceptionDraft(savedDelivery);
+      await reconcileReceptionDraft(savedDelivery);
+
+      // Snapshot carburant/position au DÉPART via trackfuel. Best-effort :
+      // attachDepartureSnapshot ne jette jamais ; si l'API est indisponible le
+      // snapshot est enregistré avec source "unavailable". N'empêche jamais la
+      // création du voyage.
+      if (autoStartTracking) {
+        await deliveryTracking.attachDepartureSnapshot(savedDelivery);
+        await savedDelivery.save();
+      }
 
       const populatedDelivery = await Delivery.findById(
         savedDelivery._id,
       ).populate(populateArray);
 
-      let trackingResult = null;
-      if (autoStartTracking && !reconciledDraft) {
-        try {
-          trackingResult = await vehicleTrackingService.startDeliveryTracking(
-            savedDelivery._id.toString(),
-            vehicle,
-            300, //5min
-          );
-          console.log(
-            `✅ Tracking started for delivery ${savedDelivery.reference}`,
-          );
-        } catch (trackingError) {
-          console.error(
-            "⚠️  Warning: Could not start tracking:",
-            trackingError.message,
-          );
-        }
-      }
-
       res.status(201).json({
         success: true,
         data: populatedDelivery,
-        tracking: trackingResult,
+        tracking: populatedDelivery.tracking || null,
       });
     } catch (error) {
       console.error("Error in createDeliveryBySender:", error);
@@ -636,21 +630,12 @@ router.put(
       };
 
       await delivery.validate();
-      const updatedDelivery = await delivery.save();
+      await delivery.save();
 
-      let trackingResult = null;
-      try {
-        trackingResult =
-          await vehicleTrackingService.stopDeliveryTracking(delivery._id.toString());
-        console.log(
-          `🏁 Tracking stopped for completed delivery ${delivery.reference}`,
-        );
-      } catch (trackingError) {
-        console.error(
-          "⚠️  Warning: Could not stop tracking:",
-          trackingError.message,
-        );
-      }
+      // Snapshot carburant/position à l'ARRIVÉE via trackfuel. Best-effort :
+      // ne jette jamais et n'empêche pas la réception.
+      await deliveryTracking.attachArrivalSnapshot(delivery);
+      const updatedDelivery = await delivery.save();
 
       res.status(200).json({
         data: receivedDeliveryResponse(updatedDelivery),
@@ -1052,6 +1037,85 @@ router.get(
       res.status(500).json({
         success: false,
         message: "Error getting tracking stats",
+        error: error.message,
+      });
+    }
+  },
+);
+
+// ---------------------------------------------------------------------------
+// Tracking trackfuel (à la demande) : résumé, trajet, événements carburant.
+// `available:false` + reason quand le véhicule n'a pas d'IMEI mappé.
+// ---------------------------------------------------------------------------
+
+/// Résumé du tracking d'un voyage (snapshots départ/arrivée, distance,
+/// événements carburant, conso estimée).
+router.get(
+  "/:id/tracking",
+  authorizeJwt,
+  verifyAccount([{ name: "delivery", action: "read" }]),
+  async (req, res) => {
+    try {
+      const delivery = await Delivery.findById(req.params.id);
+      if (!delivery) {
+        return res.status(404).json({ success: false, message: "Delivery not found" });
+      }
+      const summary = await deliveryTracking.getDeliverySummary(delivery);
+      res.status(200).json({ success: true, data: summary });
+    } catch (error) {
+      console.error("Error getting delivery tracking summary:", error);
+      res.status(502).json({
+        success: false,
+        message: "Error getting delivery tracking summary",
+        error: error.message,
+      });
+    }
+  },
+);
+
+/// Chemin parcouru (points GPS) d'un voyage, via /history trackfuel.
+router.get(
+  "/:id/trip",
+  authorizeJwt,
+  verifyAccount([{ name: "delivery", action: "read" }]),
+  async (req, res) => {
+    try {
+      const delivery = await Delivery.findById(req.params.id);
+      if (!delivery) {
+        return res.status(404).json({ success: false, message: "Delivery not found" });
+      }
+      const maxPoints = Math.min(Number(req.query.maxPoints) || 2000, 5000);
+      const trip = await deliveryTracking.getDeliveryTrip(delivery, { maxPoints });
+      res.status(200).json({ success: true, data: trip });
+    } catch (error) {
+      console.error("Error getting delivery trip:", error);
+      res.status(502).json({
+        success: false,
+        message: "Error getting delivery trip",
+        error: error.message,
+      });
+    }
+  },
+);
+
+/// Événements carburant (ravitaillements / prélèvements) du voyage.
+router.get(
+  "/:id/fuel-events",
+  authorizeJwt,
+  verifyAccount([{ name: "delivery", action: "read" }]),
+  async (req, res) => {
+    try {
+      const delivery = await Delivery.findById(req.params.id);
+      if (!delivery) {
+        return res.status(404).json({ success: false, message: "Delivery not found" });
+      }
+      const events = await deliveryTracking.getDeliveryFuelEvents(delivery);
+      res.status(200).json({ success: true, data: events });
+    } catch (error) {
+      console.error("Error getting delivery fuel events:", error);
+      res.status(502).json({
+        success: false,
+        message: "Error getting delivery fuel events",
         error: error.message,
       });
     }
