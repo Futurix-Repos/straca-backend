@@ -58,13 +58,14 @@ class VehicleTrackingService {
     try {
       const vehicle = await Vehicle.findById(vehicleId);
 
-      if (!vehicle?.tracking?.id) {
-        throw new Error(`Vehicle ${vehicleId} has no tracking ID`);
+      const deviceId = vehicle?.tracking?.deviceId;
+      if (!deviceId) {
+        throw new Error(`Vehicle ${vehicleId} has no tracking device`);
       }
 
       // flags: 1 (basic) | 256 (position) | 1024 (sensors/params) | 8192 (sensor values)
       const dataPos = await wialonServices.searchItemById({
-        itemId: vehicle.tracking.id,
+        itemId: deviceId,
         flags: 9473,
       });
 
@@ -89,6 +90,7 @@ class VehicleTrackingService {
       // Extraire seulement les données nécessaires pour le tracking
       const trackingData = {
         id: vehicle.id,
+        registrationNumber: vehicle.registrationNumber,
         tracking: vehicle.tracking,
         pos: {
           lat: dataPos?.item?.pos?.y,
@@ -123,10 +125,10 @@ class VehicleTrackingService {
   async saveVehiclePosition(vehicleData, deliveryId = null) {
     try {
       const timestamp = Date.now() * 1000000; // nanoseconds
-      const plate = vehicleData.tracking.plate.replace(/\s/g, "_");
+      const plate = (vehicleData.registrationNumber || "").replace(/\s/g, "_");
 
       // Construire la ligne de données avec delivery_id optionnel
-      let tags = `vehicle_id=${vehicleData.id},plate=${plate},tracking_id=${vehicleData.tracking.id}`;
+      let tags = `vehicle_id=${vehicleData.id},plate=${plate},tracking_id=${vehicleData.tracking.deviceId}`;
       if (deliveryId) {
         tags += `,delivery_id=${deliveryId}`;
       }
@@ -142,7 +144,7 @@ class VehicleTrackingService {
       );
 
       console.log(
-        `📍 Position saved for vehicle ${vehicleData.tracking.plate} ${deliveryId ? `(delivery: ${deliveryId})` : ""}`,
+        `📍 Position saved for vehicle ${vehicleData.registrationNumber} ${deliveryId ? `(delivery: ${deliveryId})` : ""}`,
       );
       return { success: true, timestamp: new Date().toISOString() };
     } catch (error) {

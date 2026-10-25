@@ -1,8 +1,9 @@
 // scripts/syncTrackfuelTrackers.js
 //
 // Rapproche le parc trackfuel (/trackers) des véhicules Straca et écrit l'IMEI
-// (`tracking.trackerImei`) sur chaque véhicule apparié. Le rapprochement se fait
-// sur la clé alphanumérique : normalizeTrackerName(nom_engin) === plateNormalized.
+// (`tracking.deviceId` + `tracking.provider = 'trackfuel'`) sur chaque véhicule
+// apparié. Le rapprochement se fait sur la clé alphanumérique :
+// normalizeTrackerName(nom_engin) === plateNormalized.
 //
 // Idempotent. Les non-appariés (dans les deux sens) sont listés pour traitement
 // manuel.
@@ -62,14 +63,18 @@ async function main() {
     matched += 1;
     usedKeys.add(v.plateNormalized);
 
-    if (v.tracking?.trackerImei !== tracker.imei) {
+    if (v.tracking?.deviceId !== tracker.imei) {
       updated += 1;
       console.log(
         `  ${v.registrationNumber}  ←  IMEI ${tracker.imei} (${tracker.name})` +
-          (v.tracking?.trackerImei ? ` [remplace ${v.tracking.trackerImei}]` : ""),
+          (v.tracking?.deviceId ? ` [remplace ${v.tracking.deviceId}]` : ""),
       );
       if (!DRY_RUN) {
-        v.tracking = { ...(v.tracking?.toObject?.() || v.tracking || {}), trackerImei: tracker.imei };
+        v.tracking = {
+          ...(v.tracking?.toObject?.() || v.tracking || {}),
+          provider: "trackfuel",
+          deviceId: tracker.imei,
+        };
         await v.save();
       }
     }
