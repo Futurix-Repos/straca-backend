@@ -21,11 +21,17 @@ const vehicleSchema = new mongoose.Schema(
       trim: true,
     },
     tracking: {
-      id: { type: String, unique: true, sparse: true },
-      plate: { type: String, unique: true, sparse: true },
-      // IMEI du tracker trackfuel/gestafric (id_engin), renseigné par le script
-      // de synchronisation scripts/syncTrackfuelTrackers.js.
-      trackerImei: { type: String, unique: true, sparse: true, trim: true },
+      // Provider de tracking actif pour ce véhicule (1 provider à la fois).
+      // Résolu via services/tracking/registry.js.
+      provider: {
+        type: String,
+        enum: ["trackfuel", "wialon"],
+        default: "trackfuel",
+      },
+      // Identifiant du device chez le provider (IMEI trackfuel, item id Wialon…),
+      // renseigné par scripts/syncTrackfuelTrackers.js. Générique : chaque
+      // provider sait l'interpréter.
+      deviceId: { type: String, unique: true, sparse: true, trim: true },
     },
     model: {
       type: mongoose.Schema.Types.ObjectId,

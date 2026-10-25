@@ -1,10 +1,12 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-/// Snapshot carburant/position capturé via trackfuel au moment d'un événement
-/// du voyage (départ ou arrivée). `/trackers/latest` ne donne que l'instant
-/// présent — on fige donc la valeur ici. `source` = "trackfuel.latest" quand la
-/// lecture a réussi, "unavailable" sinon (tracker muet / API indisponible).
+/// Snapshot carburant/position capturé via le provider de tracking au moment
+/// d'un événement du voyage (départ ou arrivée). La lecture "latest" ne donne que
+/// l'instant présent — on fige donc la valeur ici. `source` = "<provider>.latest"
+/// quand la lecture a réussi (ex. "trackfuel.latest"), "unavailable" sinon
+/// (device muet / API indisponible). Champ libre pour rester ouvert aux futurs
+/// providers.
 const trackingSnapshotSchema = new Schema(
   {
     at: { type: Date },
@@ -13,7 +15,6 @@ const trackingSnapshotSchema = new Schema(
     fuelLevel: { type: Number, default: null },
     source: {
       type: String,
-      enum: ["trackfuel.latest", "unavailable"],
       default: "unavailable",
     },
   },
@@ -252,12 +253,14 @@ const deliverySchema = new Schema(
         },
       },
     },
-    /// Données de tracking trackfuel. Les snapshots départ/arrivée sont capturés
+    /// Données de tracking du voyage. Les snapshots départ/arrivée sont capturés
     /// aux moments métier ; le trajet et les événements carburant sont, eux,
-    /// interrogés à la demande (non stockés). `trackerImei` fige l'IMEI utilisé
-    /// pour ce voyage (le véhicule pourrait être re-mappé ensuite).
+    /// interrogés à la demande (non stockés). `provider` + `deviceId` figent le
+    /// provider et le device utilisés pour ce voyage (le véhicule pourrait être
+    /// re-mappé ensuite).
     tracking: {
-      trackerImei: { type: String, default: null },
+      provider: { type: String, default: null },
+      deviceId: { type: String, default: null },
       departure: { type: trackingSnapshotSchema, default: null },
       arrival: { type: trackingSnapshotSchema, default: null },
     },

@@ -1,34 +1,45 @@
 // services/deliveryTracking.js
 //
-// Service métier : relie une livraison (voyage) à son tracker trackfuel.
-// Ne connaît pas le HTTP (délégué à services/trackfuel/client). Expose :
+// Service métier : relie une livraison (voyage) à son provider de tracking.
+// Ne connaît ni le HTTP ni un provider en particulier : il résout le provider via
+// services/tracking/registry et appelle l'interface commune. Expose :
 //   - capture des snapshots carburant/position au départ et à l'arrivée
-//   - lecture à la demande du trajet (/history) et des événements (/events)
+//   - lecture à la demande du trajet (historique) et des événements carburant
 //
-// Toutes les captures sont best-effort : une panne trackfuel ne doit jamais
+// Toutes les captures sont best-effort : une panne provider ne doit jamais
 // casser le flux métier (création / réception d'un voyage).
 
 const Vehicle = require("../models/vehicleModel");
-const { trackfuelClient } = require("./trackfuel/client");
+const {
+  getProvider,
+  DEFAULT_PROVIDER_KEY,
+} = require("./tracking/registry");
 
 // Au-delà de ce délai sans remontée, la dernière position est jugée périmée.
 const STALE_THRESHOLD_MS = 60 * 60 * 1000; // 1 h
 
-/// Retrouve l'IMEI tracker d'une livraison : d'abord figé sur la livraison
-/// (tracking.trackerImei), sinon via le véhicule rattaché.
-async function resolveTrackerImei(delivery) {
-  if (delivery?.tracking?.trackerImei) return delivery.tracking.trackerImei;
+/// Résout { key, provider, deviceId } d'une livraison : provider/device figés sur
+/// la livraison en priorité, sinon via le véhicule rattaché. provider est null si
+/// la clé est inconnue ; deviceId est null si aucun device n'est mappé.
+async function resolveDeviceAndProvider(delivery) {
+  let key = delivery?.tracking?.provider || null;
+  let deviceId = delivery?.tracking?.deviceId || null;
 
-  const vehicleRef = delivery?.vehicle;
-  if (!vehicleRef) return null;
+  if (!deviceId) {
+    const vehicleRef = delivery?.vehicle;
+    // vehicle peut être un ObjectId ou un document peuplé.
+    let tracking = vehicleRef?.tracking || null;
+    if (!tracking && vehicleRef) {
+      const vehicleId = vehicleRef?._id || vehicleRef;
+      const vehicle = await Vehicle.findById(vehicleId).select("tracking");
+      tracking = vehicle?.tracking || null;
+    }
+    deviceId = tracking?.deviceId || null;
+    key = key || tracking?.provider || null;
+  }
 
-  // vehicle peut être un ObjectId ou un document peuplé.
-  const imeiFromPopulated = vehicleRef?.tracking?.trackerImei;
-  if (imeiFromPopulated) return imeiFromPopulated;
-
-  const vehicleId = vehicleRef?._id || vehicleRef;
-  const vehicle = await Vehicle.findById(vehicleId).select("tracking");
-  return vehicle?.tracking?.trackerImei || null;
+  key = key || DEFAULT_PROVIDER_KEY;
+  return { key, provider: getProvider(key), deviceId };
 }
 
 function isStale(dateValue) {
@@ -37,15 +48,15 @@ function isStale(dateValue) {
   return Date.now() - ts > STALE_THRESHOLD_MS;
 }
 
-/// Construit un snapshot {at, lat, lng, fuelLevel, source} pour un IMEI.
+/// Construit un snapshot {at, lat, lng, fuelLevel, source} via un provider.
 /// Best-effort : renvoie toujours un objet, source="unavailable" si échec.
-async function captureSnapshot(imei) {
+async function captureSnapshot(provider, deviceId) {
   const at = new Date();
-  if (!imei) {
+  if (!provider || !deviceId) {
     return { at, lat: null, lng: null, fuelLevel: null, source: "unavailable" };
   }
   try {
-    const pos = await trackfuelClient.latest(imei);
+    const pos = await provider.latest(deviceId);
     if (!pos) {
       return { at, lat: null, lng: null, fuelLevel: null, source: "unavailable" };
     }
@@ -54,23 +65,26 @@ async function captureSnapshot(imei) {
       lat: pos.lat,
       lng: pos.lng,
       fuelLevel: pos.fuelLevel,
-      source: "trackfuel.latest",
+      source: `${provider.key}.latest`,
     };
   } catch (e) {
-    console.warn(`[deliveryTracking] snapshot échoué pour ${imei}: ${e.message}`);
+    console.warn(
+      `[deliveryTracking] snapshot échoué pour ${deviceId}: ${e.message}`,
+    );
     return { at, lat: null, lng: null, fuelLevel: null, source: "unavailable" };
   }
 }
 
-/// Mute delivery.tracking.departure (et fige l'IMEI). Ne sauvegarde pas :
-/// l'appelant persiste la livraison. Ne jette jamais.
+/// Mute delivery.tracking.departure (et fige provider + deviceId). Ne sauvegarde
+/// pas : l'appelant persiste la livraison. Ne jette jamais.
 async function attachDepartureSnapshot(delivery) {
   try {
-    const imei = await resolveTrackerImei(delivery);
-    const snapshot = await captureSnapshot(imei);
+    const { key, provider, deviceId } = await resolveDeviceAndProvider(delivery);
+    const snapshot = await captureSnapshot(provider, deviceId);
     delivery.tracking = {
       ...(delivery.tracking?.toObject?.() || delivery.tracking || {}),
-      trackerImei: imei || delivery.tracking?.trackerImei || null,
+      provider: key || delivery.tracking?.provider || null,
+      deviceId: deviceId || delivery.tracking?.deviceId || null,
       departure: snapshot,
     };
   } catch (e) {
@@ -82,11 +96,12 @@ async function attachDepartureSnapshot(delivery) {
 /// Mute delivery.tracking.arrival. Ne sauvegarde pas. Ne jette jamais.
 async function attachArrivalSnapshot(delivery) {
   try {
-    const imei = await resolveTrackerImei(delivery);
-    const snapshot = await captureSnapshot(imei);
+    const { key, provider, deviceId } = await resolveDeviceAndProvider(delivery);
+    const snapshot = await captureSnapshot(provider, deviceId);
     delivery.tracking = {
       ...(delivery.tracking?.toObject?.() || delivery.tracking || {}),
-      trackerImei: imei || delivery.tracking?.trackerImei || null,
+      provider: key || delivery.tracking?.provider || null,
+      deviceId: deviceId || delivery.tracking?.deviceId || null,
       arrival: snapshot,
     };
   } catch (e) {
@@ -130,14 +145,19 @@ function pathDistanceKm(points) {
 
 /// Trajet à la demande : points GPS + distance. Objet {available, ...}.
 async function getDeliveryTrip(delivery, { maxPoints = 2000 } = {}) {
-  const imei = await resolveTrackerImei(delivery);
-  if (!imei) return { available: false, reason: "no_tracker_mapped" };
+  const { key, provider, deviceId } = await resolveDeviceAndProvider(delivery);
+  if (!deviceId) return { available: false, reason: "no_device_mapped" };
+  if (!provider) return { available: false, reason: "unknown_provider", provider: key };
+  if (!provider.capabilities.history) {
+    return { available: false, reason: "unsupported", provider: key };
+  }
 
   const { from, to } = tripWindow(delivery);
-  const points = await trackfuelClient.historyRange(imei, from, to, { maxPoints });
+  const points = await provider.historyRange(deviceId, from, to, { maxPoints });
   return {
     available: true,
-    trackerImei: imei,
+    provider: key,
+    deviceId,
     from,
     to,
     pointCount: points.length,
@@ -154,19 +174,24 @@ async function getDeliveryTrip(delivery, { maxPoints = 2000 } = {}) {
 
 /// Événements carburant (refueling / levy) sur la période du voyage.
 async function getDeliveryFuelEvents(delivery) {
-  const imei = await resolveTrackerImei(delivery);
-  if (!imei) return { available: false, reason: "no_tracker_mapped" };
+  const { key, provider, deviceId } = await resolveDeviceAndProvider(delivery);
+  if (!deviceId) return { available: false, reason: "no_device_mapped" };
+  if (!provider) return { available: false, reason: "unknown_provider", provider: key };
+  if (!provider.capabilities.fuelEvents) {
+    return { available: false, reason: "unsupported", provider: key };
+  }
 
   const { from, to } = tripWindow(delivery);
   const toDate = (d) => new Date(d).toISOString().slice(0, 10);
-  const events = await trackfuelClient.events(imei, toDate(from), toDate(to));
+  const events = await provider.events(deviceId, toDate(from), toDate(to));
   const sumBy = (type) =>
     events
       .filter((e) => e.type === type)
       .reduce((acc, e) => acc + (Number(e.value) || 0), 0);
   return {
     available: true,
-    trackerImei: imei,
+    provider: key,
+    deviceId,
     events,
     refueledTotal: sumBy("refueling"),
     leviedTotal: sumBy("levy"),
@@ -175,8 +200,9 @@ async function getDeliveryFuelEvents(delivery) {
 
 /// Résumé léger : snapshots stockés + distance + événements + conso estimée.
 async function getDeliverySummary(delivery, { maxPoints = 1000 } = {}) {
-  const imei = await resolveTrackerImei(delivery);
-  if (!imei) return { available: false, reason: "no_tracker_mapped" };
+  const { key, provider, deviceId } = await resolveDeviceAndProvider(delivery);
+  if (!deviceId) return { available: false, reason: "no_device_mapped" };
+  if (!provider) return { available: false, reason: "unknown_provider", provider: key };
 
   const departure = delivery.tracking?.departure || null;
   const arrival = delivery.tracking?.arrival || null;
@@ -206,18 +232,20 @@ async function getDeliverySummary(delivery, { maxPoints = 1000 } = {}) {
       (fuel.leviedTotal || 0);
   }
 
-  // Dernière position pour signaler un tracker muet.
+  // Dernière position pour signaler un device muet. date peut être absente selon
+  // le provider (ex. Wialon) → on ne peut pas juger la péremption.
   let stale = null;
   try {
-    const live = await trackfuelClient.latest(imei);
-    stale = live ? isStale(live.date) : true;
+    const live = await provider.latest(deviceId);
+    stale = live ? (live.date ? isStale(live.date) : null) : true;
   } catch (_e) {
     stale = null;
   }
 
   return {
     available: true,
-    trackerImei: imei,
+    provider: key,
+    deviceId,
     stale,
     departure,
     arrival,
@@ -231,7 +259,7 @@ async function getDeliverySummary(delivery, { maxPoints = 1000 } = {}) {
 }
 
 module.exports = {
-  resolveTrackerImei,
+  resolveDeviceAndProvider,
   captureSnapshot,
   attachDepartureSnapshot,
   attachArrivalSnapshot,

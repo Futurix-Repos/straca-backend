@@ -9,9 +9,8 @@ const mongoose = require("mongoose");
 const { authorizeJwt, verifyAccount } = require("../helpers/verifyAccount");
 const Delivery = require("../models/deliveryModel");
 const wialonServices = require("../helpers/iotHelper");
-const { computeFuelValue, getSensorByP } = require("../helpers/iotModule");
 const vehicleTrackingService = require("../services/vehicleTracking");
-const { trackfuelClient } = require("../services/trackfuel/client");
+const { resolveVehicleProvider } = require("../services/tracking/registry");
 const {
   isDuplicateKeyError,
   paginationFromQuery,
@@ -271,87 +270,45 @@ router.get(
           .json({ message: `Vehicle with ID ${id} not found` });
       }
 
-      const imei = vehicle?.tracking?.trackerImei;
+      // Résout le provider de tracking du véhicule (trackfuel, wialon, …) et
+      // interroge sa position courante via l'interface commune.
+      const { key, provider, deviceId } = resolveVehicleProvider(vehicle);
 
-      // SOURCE PRIMAIRE : trackfuel (si le véhicule a un IMEI mappé).
-      if (imei) {
-        const pos = await trackfuelClient.latest(imei);
-        if (pos) {
-          return res.status(200).json({
-            id: vehicle.id,
-            tracking: vehicle.tracking,
-            source: "trackfuel",
-            pin_img: null,
-            pos: { lat: pos.lat, lng: pos.lng, speed: pos.speed },
-            // trackfuel ne fournit pas la température.
-            temp: { value: null, unit: null },
-            active: pos.ignitionOn,
-            fuel: { value: pos.fuelLevel ?? null, unit: "l" },
-          });
-        }
-        // IMEI mappé mais tracker inconnu de l'API → on tente le repli Wialon.
-      }
-
-      // REPLI TEMPORAIRE : Wialon, pour les véhicules pas encore mappés sur
-      // trackfuel. À retirer en phase 2 une fois tout le parc mappé.
-      if (!vehicle?.tracking?.id) {
+      if (!deviceId) {
         return res
           .status(400)
           .json({ message: `This vehicle has not tracking` });
       }
-
-      let response = {
-        id: vehicle.id,
-        tracking: vehicle.tracking,
-        source: "wialon",
-      };
-
-      const dataPos = await wialonServices.searchItemById({
-        itemId: vehicle.tracking.id,
-        flags: 4294967295,
-      });
-
-      if (dataPos.error)
-        return res.status(400).json({ message: "Une erreur est survenue." });
-
-      response["pin_img"] = dataPos?.item?.uri
-        ? `https://hst-api.wialon.eu${dataPos.item.uri}`
-        : null;
-
-      response["pos"] = {
-        lat: dataPos?.item?.pos?.y,
-        lng: dataPos?.item?.pos?.x,
-        speed: dataPos?.item?.pos?.s,
-      };
-
-      const tempRaw = dataPos?.item?.prms?.io_26?.v;
-      const tempSensor = getSensorByP(dataPos?.item?.sens, "io_26*const10");
-
-      response.temp = {
-        value: tempRaw !== undefined ? tempRaw * 10 : null,
-        unit: tempSensor?.m || null,
-      };
-
-      response["active"] =
-        dataPos?.item?.prms?.io_239?.v !== null
-          ? dataPos.item.prms.io_239.v === 1
-          : null;
-
-      const fuelRaw = dataPos?.item?.prms?.io_273?.v;
-      const fuelSensor = getSensorByP(dataPos?.item?.sens, "io_273");
-
-      if (
-        fuelRaw !== undefined &&
-        fuelSensor?.tbl &&
-        Array.isArray(fuelSensor.tbl)
-      ) {
-        response.fuel = {
-          value: computeFuelValue(fuelRaw, fuelSensor.tbl),
-          unit: fuelSensor.m || null,
-        };
+      if (!provider) {
+        return res
+          .status(400)
+          .json({ message: `Unknown tracking provider: ${key}` });
       }
 
-      res.status(200).json(response);
+      const pos = await provider.latest(deviceId);
+      if (!pos) {
+        return res
+          .status(400)
+          .json({ message: "Une erreur est survenue." });
+      }
+
+      const caps = provider.capabilities;
+      res.status(200).json({
+        id: vehicle.id,
+        tracking: vehicle.tracking,
+        source: key,
+        pin_img: pos.pinImg ?? null,
+        pos: { lat: pos.lat, lng: pos.lng, speed: pos.speed },
+        temp: {
+          value: caps.temperature ? pos.temperature ?? null : null,
+          unit: caps.temperature ? "°C" : null,
+        },
+        active: pos.ignitionOn,
+        fuel: {
+          value: caps.fuel ? pos.fuelLevel ?? null : null,
+          unit: caps.fuel ? "l" : null,
+        },
+      });
     } catch (error) {
       console.error(error.message);
       res.status(500).json({ message: error.message });
@@ -459,9 +416,9 @@ router.delete(
   },
 );
 
-/// Position courante d'un véhicule via trackfuel (/trackers/latest).
-/// `available:false` si le véhicule n'a pas d'IMEI mappé ou si le tracker est
-/// inconnu de l'API.
+/// Position courante d'un véhicule via son provider de tracking.
+/// `available:false` si le véhicule n'a pas de device mappé, si le provider est
+/// inconnu, ou si le device est inconnu de l'API.
 router.get(
   "/:id/live",
   authorizeJwt,
@@ -472,21 +429,30 @@ router.get(
       if (!vehicle) {
         return res.status(404).json({ success: false, message: "Vehicle not found" });
       }
-      const imei = vehicle.tracking?.trackerImei;
-      if (!imei) {
+      const { key, provider, deviceId } = resolveVehicleProvider(vehicle);
+      if (!deviceId) {
         return res.status(200).json({
           success: true,
-          data: { available: false, reason: "no_tracker_mapped" },
+          data: { available: false, reason: "no_device_mapped" },
         });
       }
-      const position = await trackfuelClient.latest(imei);
+      if (!provider) {
+        return res.status(200).json({
+          success: true,
+          data: { available: false, reason: "unknown_provider", provider: key },
+        });
+      }
+      const position = await provider.latest(deviceId);
       if (!position) {
         return res.status(200).json({
           success: true,
-          data: { available: false, reason: "tracker_unknown", trackerImei: imei },
+          data: { available: false, reason: "device_unknown", provider: key, deviceId },
         });
       }
-      res.status(200).json({ success: true, data: { available: true, ...position } });
+      res.status(200).json({
+        success: true,
+        data: { available: true, provider: key, ...position },
+      });
     } catch (error) {
       console.error("Error getting vehicle live position:", error);
       res.status(502).json({
